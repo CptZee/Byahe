@@ -1,4 +1,4 @@
-Contributing to BYAHE: A Mobile Game Journey to the Historical Landmarks of Batagas
+# Contributing to BYAHE: A Mobile Game Journey to the Historical Landmarks of Batagas
 
 Thank you for your interest in contributing to Byahe! We value your effort and aim to make the contribution process straightforward and meaningful.
 
