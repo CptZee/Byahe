@@ -1,50 +1,44 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
-
-public class DialogScript : MonoBehaviour
+public class DialogWithNextSceneScript : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
     public string[] lines;
     public float textSpeed;
-
+    public string nextScene;
+    public LoadingManager loadingManager;
     private int index;
-    
+
     void Start()
     {
         textDisplay.text = string.Empty;
         StartDialogue();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
-            if(textDisplay.text == lines[index])
-                NextLine();
-            else
+            if(index == lines.Length - 1 && textDisplay.text == lines[index])
             {
-                StopAllCoroutines();
-                textDisplay.text = lines[index];
+                Debug.Log("Loading next scene...");
+                loadingManager.LoadScene(nextScene);
+                textDisplay.gameObject.SetActive(false);
             }
-        }
-
-        if (Input.touchCount > 0)
-        {
-        Touch touch = Input.GetTouch(0);
-
-        if (touch.phase == TouchPhase.Began)
-        {
             if (textDisplay.text == lines[index])
+            {
+                Debug.Log("Continuing to the next line...");
                 NextLine();
+            }
             else
             {
+                Debug.Log("Skipping the animation...");
                 StopAllCoroutines();
                 textDisplay.text = lines[index];
-            }   
             }
         }
+
     }
 
     void StartDialogue()
