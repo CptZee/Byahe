@@ -32,16 +32,12 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
-
-        // Decrease gas over time
         gasLevel -= gasDecreaseSpeed * Time.deltaTime;
         gasLevel = Mathf.Clamp(gasLevel, 0f, 100f);
 
-        // Increase destination progress over time
         destinationProgress += destinationIncreaseSpeed * Time.deltaTime;
         destinationProgress = Mathf.Clamp(destinationProgress, 0f, 100f);
 
-        // Update UI
         gasSlider.value = gasLevel;
         destinationSlider.value = destinationProgress;
 
@@ -97,7 +93,6 @@ public class PlayerScript : MonoBehaviour
 
     public void StopMoving()
     {
-        Debug.Log("Stopped Moving");
         rb.velocity = new Vector2(0, 0);
     }
 }
