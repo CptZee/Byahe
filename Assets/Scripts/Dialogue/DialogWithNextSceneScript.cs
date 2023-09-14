@@ -23,8 +23,8 @@ public class DialogWithNextSceneScript : MonoBehaviour
             if(index == lines.Length - 1 && textDisplay.text == lines[index])
             {
                 Debug.Log("Loading next scene...");
+                textDisplay.gameObject.transform.parent.gameObject.SetActive(false);
                 loadingManager.LoadScene(nextScene);
-                textDisplay.gameObject.SetActive(false);
             }
             if (textDisplay.text == lines[index])
             {
