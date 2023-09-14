@@ -1,13 +1,13 @@
-Contributing to BYAHE: A Mobile Game Journey to the Historical Landmarks of Batagas
+# Contributing to BYAHE: A Mobile Game Journey to the Historical Landmarks of Batagas
 
 Thank you for your interest in contributing to Byahe! We value your effort and aim to make the contribution process straightforward and meaningful.
 
 Before contributing, please read these guidelines to understand what is expected when contributing to this project.
 
-##Code of Conduct
+## Code of Conduct
 By participating in this project, you are expected to uphold our Code of Conduct. Please report unacceptable behavior to ajmission@codeitph.com
 
-##How to Contribute
+## How to Contribute
 
 1. **Fork the Repository**: Start by forking the repository to your GitHub account.
 2. **Clone the Repository**: Clone the forked repository to your local machine.
@@ -25,13 +25,13 @@ By participating in this project, you are expected to uphold our Code of Conduct
     ```
 6. **Submit a Pull Request**: Go to your fork on GitHub and submit a pull request for the changes.
 
-##What Can You Contribute?
+## What Can You Contribute?
 - `Bug fixes`
 - `Performance improvements`
 - `Documentation updates`
 
-##What You Should Not Modify
-###Data Restrictions
+## What You Should Not Modify
+### Data Restrictions
 **Data in this project, particularly those related to historical landmarks and cultural facts, should not be modified.** These are carefully curated and verified. Any pull request that modifies this data will be immediately closed without review.
 
 ##Reporting Issues
