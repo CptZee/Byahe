@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -16,7 +14,7 @@ public class SceneOrientationManager : MonoBehaviour
         if (scene.name == "TravelLevel")
             Screen.orientation = ScreenOrientation.Portrait;
         else
-            Screen.orientation = ScreenOrientation.LandscapeLeft;
+            Screen.orientation = ScreenOrientation.LandscapeRight;
     }
 
     void OnDestroy()
