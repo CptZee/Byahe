@@ -1,4 +1,4 @@
-# Welcome to BYAHE: A Mobile Game Journey to the Historical Landmarks of Batagas
+# Welcome to BYAHE: A Mobile Game Journey to the Historical Landmarks of Batangas
 ## Introduction
 Welcome to Byahe, a captivating mobile gaming experience that takes you on an adventure through the beautiful province of Batangas in the Philippines. Set against the backdrop of Batangas' breathtaking landscapes and historic landmarks, this game isn't just about entertainment; it's a virtual tour that educates and celebrates the rich cultural heritage of the region.
 
