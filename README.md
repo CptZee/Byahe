@@ -1,4 +1,5 @@
-# Welcome to BYAHE: A Mobile Game Journey to the Historical Landmarks of Batagas
+# Welcome to BYAHE: A Mobile Game Journey to the Historical Landmarks of Batangas
+![Byahe Mascot](https://i.imgur.com/VQsxnnO.png)
 ## Introduction
 Welcome to Byahe, a captivating mobile gaming experience that takes you on an adventure through the beautiful province of Batangas in the Philippines. Set against the backdrop of Batangas' breathtaking landscapes and historic landmarks, this game isn't just about entertainment; it's a virtual tour that educates and celebrates the rich cultural heritage of the region.
 
@@ -7,6 +8,10 @@ Batangas, known for its stunning beaches, intricate craftwork, and mouth-waterin
 
 ## Game Objective
 The primary aim of this game is to showcase these remarkable landmarks and share the untold stories that bring them to life. As you navigate through various challenges and levels, you'll have the opportunity to explore these sites, learn interesting facts, and perhaps even get a glimpse into Batangas' past.
+
+## GAME UML
+![Byahe UML](https://i.imgur.com/OgVmXL5.png)
+Here is a simple Use Case Diagram which shows the overall flow of the system and the accessible modules by each module. The player have access to all the modules of the game.
 
 ## Who is this Game For?
 This game is perfect for anyone interested in Filipino culture, history enthusiasts, and of course, residents and fans of Batangas! Whether you're a local looking to explore your home province in a new way or a tourist eager to learn, Byahe offers an engaging way to experience Batangas like never before.
