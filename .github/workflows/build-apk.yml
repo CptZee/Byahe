@@ -1,0 +1,45 @@
+name: Build Unity Project
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Unity environment
+      uses: game-ci/unity-setup@v2
+      with:
+        unity-version: '2022.3.9f1'
+
+    - name: Activate Unity license
+      uses: game-ci/unity-activate@v2
+      with:
+        personal: true
+
+    - name: Build Unity Project
+      uses: game-ci/unity-builder@v2
+      with:
+        targetPlatform: Android
+        buildsPath: builds
+        androidAppBundle: false
+        androidKeystoreName: ${{ secrets.KEYSTORE_NAME }}
+        androidKeystoreBase64: ${{ secrets.KEYSTORE_BASE64 }}
+        androidKeystorePass: ${{ secrets.KEYSTORE_PASS }}
+        androidKeyaliasName: ${{ secrets.KEY_ALIAS_NAME }}
+        androidKeyaliasPass: ${{ secrets.KEY_ALIAS_PASS }}
+
+    - name: Upload Build Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: build
+        path: builds/
