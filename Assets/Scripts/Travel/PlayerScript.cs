@@ -10,6 +10,7 @@ public class PlayerScript : MonoBehaviour
     public float gasDecreaseSpeed = 0.25f;
     public float destinationIncreaseSpeed = 2.25f;
     public float collisionGasLoss = 2.5f;
+    public Animator animator;
 
     private float gasLevel = 100f;
     private float destinationProgress = 0f;
@@ -53,6 +54,7 @@ public class PlayerScript : MonoBehaviour
             gameOverPanel.SetActive(true);
             Time.timeScale = 0;
         }
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -89,17 +91,23 @@ public class PlayerScript : MonoBehaviour
     public void MoveLeft()
     {
         float moveDirection = -1;
+        animator.SetFloat("Vertical", moveDirection);
+        animator.SetFloat("Speed", moveSpeed);
         rb.velocity = new Vector2(moveDirection * moveSpeed, 0);
     }
 
     public void MoveRight()
     {
         float moveDirection = 1;
+        animator.SetFloat("Vertical", moveDirection);
+        animator.SetFloat("Speed", moveSpeed);
         rb.velocity = new Vector2(moveDirection * moveSpeed, 0);
     }
 
     public void StopMoving()
     {
+        animator.SetFloat("Vertical", 0);
+        animator.SetFloat("Speed", 0);
         rb.velocity = new Vector2(0, 0);
     }
 }
