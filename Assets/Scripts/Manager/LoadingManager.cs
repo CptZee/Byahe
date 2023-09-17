@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class LoadingManager : MonoBehaviour
 {
-    public static LoadingManager instance;
     public GameObject loadingPanel;
     private string targetScene;
     public float MinLoadingTime;
@@ -14,11 +13,6 @@ public class LoadingManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
         loadingPanel.SetActive(false);
         FadeImage.gameObject.SetActive(false);
     }

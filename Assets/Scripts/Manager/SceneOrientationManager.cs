@@ -3,9 +3,14 @@ using UnityEngine.SceneManagement;
 
 public class SceneOrientationManager : MonoBehaviour
 {
+    public static SceneOrientationManager instance;
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
