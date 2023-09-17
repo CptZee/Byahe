@@ -11,7 +11,8 @@ public class TravelLevelFollow : MonoBehaviour
     void Update()
     {
         Vector3 movePosition = target.position + offset;
-        movePosition.z = transform.position.z;  // Keep the original Z position
+        movePosition.z = transform.position.z;
+        movePosition.y = transform.position.y;
 
         transform.position = Vector3.SmoothDamp(transform.position, movePosition, ref velocity, damping);
     }
