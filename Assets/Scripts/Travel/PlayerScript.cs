@@ -21,6 +21,13 @@ public class PlayerScript : MonoBehaviour
     private bool isCollisionEnabled = false; 
     void Start()
     {
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        BoxCollider2D boxCollider = GetComponent<BoxCollider2D>();
+
+        // Adjust the Box Collider dimensions to match the Sprite dimensions
+        boxCollider.size = spriteRenderer.sprite.bounds.size;
+        boxCollider.offset = spriteRenderer.sprite.bounds.center;
+        
         rb = GetComponent<Rigidbody2D>();
         rend = GetComponent<Renderer>();
 
