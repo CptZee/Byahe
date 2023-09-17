@@ -26,3 +26,8 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+
+![Byahe Mascot](https://i.imgur.com/wOrEnoK.png)
+![Byahe Mascot](https://i.imgur.com/buvmmtE.png)
+![Byahe Mascot](https://i.imgur.com/mYGgRfN.png)
