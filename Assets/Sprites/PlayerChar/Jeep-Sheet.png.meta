@@ -140,11 +140,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 194
-        width: 46
-        height: 97
+        y: 0
+        width: 52
+        height: 101
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,12 +160,12 @@ TextureImporter:
       name: Jeep-Sheet_1
       rect:
         serializedVersion: 2
-        x: 46
-        y: 194
-        width: 46
-        height: 97
+        x: 52
+        y: 0
+        width: 52
+        height: 101
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,12 +181,12 @@ TextureImporter:
       name: Jeep-Sheet_2
       rect:
         serializedVersion: 2
-        x: 92
-        y: 194
-        width: 46
-        height: 97
+        x: 104
+        y: 0
+        width: 52
+        height: 101
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,12 +202,12 @@ TextureImporter:
       name: Jeep-Sheet_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 97
-        width: 46
-        height: 97
+        x: 156
+        y: 0
+        width: 52
+        height: 101
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,12 +223,12 @@ TextureImporter:
       name: Jeep-Sheet_4
       rect:
         serializedVersion: 2
-        x: 46
-        y: 97
-        width: 46
-        height: 97
+        x: 208
+        y: 0
+        width: 52
+        height: 101
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -244,12 +244,12 @@ TextureImporter:
       name: Jeep-Sheet_5
       rect:
         serializedVersion: 2
-        x: 92
-        y: 97
-        width: 46
-        height: 97
+        x: 260
+        y: 0
+        width: 52
+        height: 101
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,12 +265,12 @@ TextureImporter:
       name: Jeep-Sheet_6
       rect:
         serializedVersion: 2
-        x: 0
+        x: 312
         y: 0
-        width: 46
-        height: 97
+        width: 52
+        height: 101
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -286,12 +286,12 @@ TextureImporter:
       name: Jeep-Sheet_7
       rect:
         serializedVersion: 2
-        x: 46
+        x: 364
         y: 0
-        width: 46
-        height: 97
+        width: 52
+        height: 101
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -557,7 +557,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 137224426}
           m_TargetAssemblyTypeName: PlayerTourScript, Assembly-CSharp
-          m_MethodName: StopMoving
+          m_MethodName: StopMovingLeft
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3184,7 +3184,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 137224426}
           m_TargetAssemblyTypeName: PlayerTourScript, Assembly-CSharp
-          m_MethodName: StopMoving
+          m_MethodName: StopMovingRight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
