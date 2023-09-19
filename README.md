@@ -7,7 +7,12 @@ Welcome to Byahe, a captivating mobile gaming experience that takes you on an ad
 Batangas, known for its stunning beaches, intricate craftwork, and mouth-watering cuisine, is a province that holds a special place in the history and culture of the Philippines. From the historic Taal Volcano to the architectural marvels like the Basilica of St. Martin de Tours, Batangas offers a unique blend of natural beauty and cultural richness.
 
 ## Game Objective
-The primary aim of this game is to showcase these remarkable landmarks and share the untold stories that bring them to life. As you navigate through various challenges and levels, you'll have the opportunity to explore these sites, learn interesting facts, and perhaps even get a glimpse into Batangas' past.
+The primary aim of this game is to showcase these remarkable landmarks and share the untold stories that bring them to life. As you navigate through various challenges and levels, you'll have the opportunity to explore these sites, learn interesting facts, and perhaps even get a glimpse into Batangas' past. The game is divided into two parts, the byahe (travel) stage and the tour stage.  The byahe stage is composed of an action packed arcade-like stage where the player will have to avoid obstacles in the road. Meanwhile the tour level is composed of a strategy money making tycoon format. The player will have to talk to NPCs and even setup their own shops to gain money to refill their gas in order to travel again.
+
+### Byahe Stage
+![Byahe](https://i.imgur.com/Wje32vr.gif)
+### Tour Stage
+![Byahe](https://i.imgur.com/ttMy8Dx.gif)
 
 ## GAME UML
 ![Byahe UML](https://i.imgur.com/OgVmXL5.png)
