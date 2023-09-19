@@ -22,6 +22,7 @@ public class PlayerScript : MonoBehaviour
     private bool isCollisionEnabled = false; 
     void Start()
     {
+        Time.timeScale = 1; //Resume the game if it is paused
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         BoxCollider2D boxCollider = GetComponent<BoxCollider2D>();
 
