@@ -47,10 +47,19 @@ public class PlayerTourScript : MonoBehaviour
         rb.velocity = new Vector2(moveDirection * moveSpeed, 0);
     }
 
-    public void StopMoving()
+    public void StopMovingRight()
     {
         Debug.Log("Standing...");
-        animator.SetFloat("Vertical", 0);
+        animator.SetFloat("Vertical", 0.01f);
+        animator.SetFloat("Speed", 0);
+        rb.velocity = new Vector2(0, 0);
+    }
+
+    
+    public void StopMovingLeft()
+    {
+        Debug.Log("Standing...");
+        animator.SetFloat("Vertical", -0.01f);
         animator.SetFloat("Speed", 0);
         rb.velocity = new Vector2(0, 0);
     }
