@@ -280,7 +280,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 25454234}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1279520185}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: TourLevel
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &25454234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3463,10 +3475,13 @@ MonoBehaviour:
   destinationIncreaseSpeed: 2
   collisionGasLoss: 5
   animator: {fileID: 1275061920}
+  rend: {fileID: 1275061915}
   rb: {fileID: 1275061918}
   moveSpeed: 5
   blinkDuration: 1
   blinkSpeed: 0.2
+  spriteRenderer: {fileID: 1275061915}
+  boxCollider: {fileID: 1275061919}
 --- !u!50 &1275061918
 Rigidbody2D:
   serializedVersion: 4
@@ -3530,7 +3545,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.575, y: 1.2125}
+    oldSize: {x: 0.65, y: 1.2625}
     newSize: {x: 0.95, y: 1.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5380,7 +5395,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4f7878f26a6d03344aa87b38486b41a8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 59ae5a312ca2b774f8e1b822dd659cd3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5477,6 +5492,7 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1279520186}
   - {fileID: 963194228}
   - {fileID: 705507995}
   - {fileID: 2029099273}
@@ -5486,4 +5502,3 @@ SceneRoots:
   - {fileID: 682954531}
   - {fileID: 388172207}
   - {fileID: 1275061916}
-  - {fileID: 1279520186}

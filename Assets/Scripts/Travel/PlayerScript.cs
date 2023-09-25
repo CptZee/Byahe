@@ -12,31 +12,29 @@ public class PlayerScript : MonoBehaviour
     public float collisionGasLoss = 2.5f;
     public Animator animator;
 
-    private float gasLevel = 100f;
+    private float gasLevel;
     private float destinationProgress = 0f;
-    private Renderer rend;
+    public Renderer rend;
     public Rigidbody2D rb;
     public float moveSpeed = 5;
     public float blinkDuration = 1f;
     public float blinkSpeed = 0.2f;
     private bool isCollisionEnabled = false; 
+    public SpriteRenderer spriteRenderer;
+    public BoxCollider2D boxCollider;
     void Start()
     {
         Time.timeScale = 1; //Resume the game if it is paused
-        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-        BoxCollider2D boxCollider = GetComponent<BoxCollider2D>();
 
         // Adjust the Box Collider dimensions to match the Sprite dimensions
         boxCollider.size = spriteRenderer.sprite.bounds.size;
         boxCollider.offset = spriteRenderer.sprite.bounds.center;
         
-        rb = GetComponent<Rigidbody2D>();
-        rend = GetComponent<Renderer>();
-
         gasSlider.value = gasLevel;
         destinationSlider.value = destinationProgress;
 
         StartCoroutine(EnableCollisionAfterWarmup(2f));
+        gasLevel = DataManager.instance.Gas;
     }
 
     void Update()
@@ -49,7 +47,7 @@ public class PlayerScript : MonoBehaviour
 
         gasSlider.value = gasLevel;
         destinationSlider.value = destinationProgress;
-
+        DataManager.instance.Gas = gasLevel;
         if (gasSlider.value <= 0)
         {
             gameOverPanel.SetActive(true);
