@@ -2,15 +2,17 @@ using UnityEngine;
 
 public class PlayerTourScript : MonoBehaviour
 {
-
+    public AudioSource audioSource;
     public Renderer rend;
     public Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
     public BoxCollider2D boxCollider;
     public float moveSpeed = 5;
     public Animator animator;
+    private ScreenShake screenShake;
 
     //This part is really ifty and prolly should be moved to its own later on
+
     public GameObject uiButtons;
     public GameObject sign1;
     public GameObject sign2;
@@ -23,9 +25,12 @@ public class PlayerTourScript : MonoBehaviour
     public GameObject sign2UI;
     public GameObject shop1UI;
     public GameObject shop2UI;
+    public AudioClip successAudio;
+    public AudioClip failedAudio;
 
     void Start()
     {
+        screenShake = Camera.main.GetComponent<ScreenShake>();
         Time.timeScale = 1; //Resume the game if it is paused
         boxCollider.size = spriteRenderer.sprite.bounds.size;
         boxCollider.offset = spriteRenderer.sprite.bounds.center;
@@ -121,6 +126,16 @@ public class PlayerTourScript : MonoBehaviour
     public void BuyShop1()
     {
         Debug.Log("Buying Shop 1...");
+        if (DataManager.instance.Money < 15)
+        {
+            screenShake.StartShake(0.5f, 0.2f);
+            Debug.Log("Not enough money");
+            audioSource.clip = failedAudio;
+            audioSource.Play();
+            return;
+        }
+        audioSource.clip = successAudio;
+        audioSource.Play();
         shop1.SetActive(true);
         hideUI(sign1UI);
     }
@@ -128,11 +143,21 @@ public class PlayerTourScript : MonoBehaviour
     public void BuyShop2()
     {
         Debug.Log("Buying Shop 2...");
+        if (DataManager.instance.Money < 25)
+        {
+            screenShake.StartShake(0.5f, 0.2f);
+            Debug.Log("Not enough money");
+            audioSource.clip = failedAudio;
+            audioSource.Play();
+            return;
+        }
+        audioSource.clip = successAudio;
+        audioSource.Play();
         shop2.SetActive(true);
         hideUI(sign2UI);
     }
 
-    
+
     // Private methods just for modularization
     void showUI(GameObject menu)
     {
