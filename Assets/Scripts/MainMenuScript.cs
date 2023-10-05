@@ -4,7 +4,8 @@ using System.Collections;
 public class MainMenuScript : MonoBehaviour
 {
     public AudioSource audioSource;
-    
+    public GameObject newGamePanel;
+
     public DataManager dataManager;
     void Start()
     {
@@ -23,8 +24,9 @@ public class MainMenuScript : MonoBehaviour
     public void PlayGame()
     {
         Debug.Log("Starting a new Game");
-        if(PlayerPrefs.HasKey("CurrentScene")){
-            ContinueGame(); //TODO: Change this to a warning that data will be erased
+        if (PlayerPrefs.HasKey("CurrentScene"))
+        {
+            newGamePanel.SetActive(true);
             return;
         }
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
@@ -35,11 +37,25 @@ public class MainMenuScript : MonoBehaviour
         SaveData();
     }
 
+    public void NewGame(){
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
+        dataManager.CurrentScene = "TravelLevel";
+        dataManager.Destination = "Mabini";
+        dataManager.Gas = 100;
+        dataManager.Money = 25;
+        SaveData();
+    }
+
+    public void CloseNewGameUI(){
+        newGamePanel.SetActive(false);
+    }
+
     public void ContinueGame()
     {
         Debug.Log("Continuing Game");
         LoadData();
-        if(!PlayerPrefs.HasKey("CurrentScene")){
+        if (!PlayerPrefs.HasKey("CurrentScene"))
+        {
             PlayGame();
             return;
         }
@@ -51,20 +67,21 @@ public class MainMenuScript : MonoBehaviour
         AsyncOperation task = SceneManager.LoadSceneAsync(dataManager.CurrentScene);
         float elapsedLoadTime = 0f;
 
-        while(!task.isDone)
+        while (!task.isDone)
         {
             elapsedLoadTime += Time.deltaTime;
             yield return null;
         }
 
-        while(elapsedLoadTime < 3)
+        while (elapsedLoadTime < 3)
         {
             elapsedLoadTime += Time.deltaTime;
             yield return null;
         }
     }
 
-    void SaveData(){
+    void SaveData()
+    {
         PlayerPrefs.SetString("CurrentScene", dataManager.CurrentScene);
         PlayerPrefs.SetString("Destination", dataManager.Destination);
         PlayerPrefs.SetFloat("Gas", dataManager.Gas);
@@ -74,7 +91,8 @@ public class MainMenuScript : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    void LoadData(){
+    void LoadData()
+    {
         dataManager.CurrentScene = PlayerPrefs.GetString("CurrentScene");
         dataManager.Destination = PlayerPrefs.GetString("Destination");
         dataManager.Gas = PlayerPrefs.GetFloat("Gas");
