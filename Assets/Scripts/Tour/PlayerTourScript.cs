@@ -134,6 +134,9 @@ public class PlayerTourScript : MonoBehaviour
             audioSource.Play();
             return;
         }
+        DataManager.instance.Money = DataManager.instance.Money - 15;
+        if (DataManager.instance.CurrentScene.Equals("Mabini"))
+            DataManager.instance.MabiniShop1 = true;
         audioSource.clip = successAudio;
         audioSource.Play();
         shop1.SetActive(true);
@@ -149,12 +152,29 @@ public class PlayerTourScript : MonoBehaviour
             Debug.Log("Not enough money");
             audioSource.clip = failedAudio;
             audioSource.Play();
+            Save();
             return;
         }
+        DataManager.instance.Money = DataManager.instance.Money - 25;
+        if (DataManager.instance.CurrentScene.Equals("Mabini"))
+            DataManager.instance.MabiniShop2 = true;
         audioSource.clip = successAudio;
         audioSource.Play();
         shop2.SetActive(true);
         hideUI(sign2UI);
+        Save();
+    }
+
+    public void Save()
+    {
+        DataManager dataManager = DataManager.instance;
+        PlayerPrefs.SetString("CurrentScene", dataManager.CurrentScene);
+        PlayerPrefs.SetString("Destination", dataManager.Destination);
+        PlayerPrefs.SetFloat("Gas", dataManager.Gas);
+        PlayerPrefs.SetFloat("Money", dataManager.Money);
+        PlayerPrefs.SetInt("MabiniShop1", dataManager.MabiniShop1 ? 1 : 0);
+        PlayerPrefs.SetInt("MabiniShop2", dataManager.MabiniShop2 ? 1 : 0);
+        PlayerPrefs.Save();
     }
 
 
@@ -164,6 +184,7 @@ public class PlayerTourScript : MonoBehaviour
         menu.SetActive(true);
         uiButtons.SetActive(false);
         Time.timeScale = 0;
+        Save();
     }
 
     void hideUI(GameObject menu)
@@ -171,5 +192,6 @@ public class PlayerTourScript : MonoBehaviour
         menu.SetActive(false);
         uiButtons.SetActive(true);
         Time.timeScale = 1;
+        Save();
     }
 }
