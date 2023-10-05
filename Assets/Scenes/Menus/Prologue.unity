@@ -1082,7 +1082,7 @@ MonoBehaviour:
   - 'Mother: Gising na! What are you day dreaming about? It''s already 9 o'' clock
     in the morning!'
   - 'YOU: Huh? I could have swear I was at the Mabini Museum...'
-  textSpeed: 0.2
+  textSpeed: 0.02
   nextScene: TravelLevel
   loadingManager: {fileID: 1416962592}
 --- !u!114 &2113814232

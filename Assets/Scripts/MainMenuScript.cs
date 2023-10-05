@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuScript : MonoBehaviour
 {
     public AudioSource audioSource;
+    public DataManager dataManager;
     void Start()
     {
         // Locate the GameObject with the AudioSource component
@@ -20,8 +21,22 @@ public class MainMenuScript : MonoBehaviour
 
     public void PlayGame()
     {
-        Debug.Log("Game is starting...");
+        Debug.Log("Starting a new Game");
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
+        dataManager.CurrentScene = "TravelLevel";
+        dataManager.Destination = "Mabini";
+        dataManager.Gas = 100;
+        dataManager.Money = 25;
+        saveData();
+    }
+    void saveData(){
+        PlayerPrefs.SetString("CurrentScene", dataManager.CurrentScene);
+        PlayerPrefs.SetString("Destination", dataManager.Destination);
+        PlayerPrefs.SetFloat("Gas", dataManager.Gas);
+        PlayerPrefs.SetFloat("Money", dataManager.Money);
+        PlayerPrefs.SetInt("MabiniShop1", dataManager.MabiniShop1 ? 1 : 0);
+        PlayerPrefs.SetInt("MabiniShop2", dataManager.MabiniShop2 ? 1 : 0);
+        PlayerPrefs.Save();
     }
 
     public void ExitGame()

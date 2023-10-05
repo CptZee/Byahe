@@ -52,8 +52,8 @@ public class PlayerScript : MonoBehaviour
         {
             gameOverPanel.SetActive(true);
             Time.timeScale = 0;
+            DataManager.instance.Money -= 10;
         }
-
     }
 
     void OnTriggerEnter2D(Collider2D other)

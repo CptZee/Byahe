@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class LoadingManager : MonoBehaviour
 {
     public GameObject loadingPanel;
+    private DataManager dataManager;
     private string targetScene;
     public float MinLoadingTime;
     public Image FadeImage;
@@ -15,12 +16,26 @@ public class LoadingManager : MonoBehaviour
     {
         loadingPanel.SetActive(false);
         FadeImage.gameObject.SetActive(false);
+        dataManager = DataManager.instance;
     }
 
     public void LoadScene(string sceneName)
     {
         targetScene = sceneName;
         StartCoroutine(LoadSceneRoutine());
+        saveData();
+    }
+
+    void saveData(){
+        string oldCurrentScene = dataManager.CurrentScene;
+        dataManager.CurrentScene = targetScene;
+        dataManager.Destination = oldCurrentScene;
+
+        PlayerPrefs.SetString("CurrentScene", dataManager.CurrentScene);
+        PlayerPrefs.SetString("Destination", dataManager.Destination);
+        PlayerPrefs.SetFloat("Gas", dataManager.Gas);
+        PlayerPrefs.SetFloat("Money", dataManager.Money);
+        PlayerPrefs.Save();
     }
 
     private IEnumerator LoadSceneRoutine()
