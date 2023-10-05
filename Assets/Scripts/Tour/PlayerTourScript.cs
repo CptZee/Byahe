@@ -9,7 +9,6 @@ public class PlayerTourScript : MonoBehaviour
     public BoxCollider2D boxCollider;
     public float moveSpeed = 5;
     public Animator animator;
-    private ScreenShake screenShake;
 
     //This part is really ifty and prolly should be moved to its own later on
 
@@ -30,7 +29,6 @@ public class PlayerTourScript : MonoBehaviour
 
     void Start()
     {
-        screenShake = Camera.main.GetComponent<ScreenShake>();
         Time.timeScale = 1; //Resume the game if it is paused
         boxCollider.size = spriteRenderer.sprite.bounds.size;
         boxCollider.offset = spriteRenderer.sprite.bounds.center;
@@ -128,7 +126,6 @@ public class PlayerTourScript : MonoBehaviour
         Debug.Log("Buying Shop 1...");
         if (DataManager.instance.Money < 15)
         {
-            screenShake.StartShake(0.5f, 0.2f);
             Debug.Log("Not enough money");
             audioSource.clip = failedAudio;
             audioSource.Play();
@@ -148,7 +145,6 @@ public class PlayerTourScript : MonoBehaviour
         Debug.Log("Buying Shop 2...");
         if (DataManager.instance.Money < 25)
         {
-            screenShake.StartShake(0.5f, 0.2f);
             Debug.Log("Not enough money");
             audioSource.clip = failedAudio;
             audioSource.Play();
