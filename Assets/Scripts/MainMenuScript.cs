@@ -3,7 +3,9 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 public class MainMenuScript : MonoBehaviour
 {
-    public AudioSource audioSource;
+    private AudioSource audioSource;
+    public AudioSource sfxSource;
+    public AudioClip openClip;
     public GameObject newGamePanel;
 
     public DataManager dataManager;
@@ -27,6 +29,8 @@ public class MainMenuScript : MonoBehaviour
         if (PlayerPrefs.HasKey("CurrentScene"))
         {
             newGamePanel.SetActive(true);
+            sfxSource.clip = openClip;
+            sfxSource.Play();
             return;
         }
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
