@@ -12,7 +12,8 @@ The primary aim of this game is to showcase these remarkable landmarks and share
 ### Byahe Stage
 ![Byahe](https://i.imgur.com/Wje32vr.gif)
 ### Tour Stage
-![Byahe](https://i.imgur.com/Yip9pZ4.gif)
+![Byahe](https://i.imgur.com/TLmUUxI.gif)
+Check out (https://i.imgur.com/TLmUUxI.gif)
 
 ## GAME UML
 ![Byahe UML](https://i.imgur.com/OgVmXL5.png)
