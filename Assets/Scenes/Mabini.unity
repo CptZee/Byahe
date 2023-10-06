@@ -1118,6 +1118,7 @@ MonoBehaviour:
   audioSource: {fileID: 1254096522}
   failedAudio: {fileID: 8300000, guid: bb2fe1f345be1894fadb526026ebaa9f, type: 3}
   successAudio: {fileID: 8300000, guid: c92987143eefcb742a79f09deec00842, type: 3}
+  controls: {fileID: 159835988}
 --- !u!1 &92143115
 GameObject:
   m_ObjectHideFlags: 0
