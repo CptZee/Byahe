@@ -8,6 +8,7 @@ public class QuestionsScript : MonoBehaviour
     public GameObject maxUpgradePanel;
     public AudioSource audioSource;
     public AudioClip failedAudio;
+    public AudioClip successAudio;
 
     private int randomIndex;
     public void UpgradeQuestion()
@@ -35,6 +36,18 @@ public class QuestionsScript : MonoBehaviour
             Time.timeScale = 1;
             gameObject.SetActive(false);
         }
+    }
+
+    public void CorrectPreAnswer(){
+        Debug.Log("Correct answer");
+        audioSource.clip = successAudio;
+        audioSource.Play();
+        DataManager.instance.Money += 2; //TODO: Tweak this later yeah?
+        DataManager.instance.Income += 0.1f; //TODO: Tweak this later yeah?
+        DataManager.instance.Knowledge += 1;
+        PlayerPrefs.SetFloat("Income", DataManager.instance.Income);
+        PlayerPrefs.SetFloat("Knowledge", DataManager.instance.Knowledge);
+        RemoveQuestion();
     }
 
     public void WrongAnswer()
