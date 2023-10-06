@@ -5,6 +5,7 @@ public class InformationScript : MonoBehaviour
 {
     public List<GameObject> informations;
     public GameObject informationPanel;
+    public GameObject controls;
     private int currentInformationIndex = 0;
 
     public void NextInformation()
@@ -32,6 +33,7 @@ public class InformationScript : MonoBehaviour
     public void CloseInformation()
     {
         informationPanel.SetActive(false);
+        controls.SetActive(true);
         Time.timeScale = 1;
     }
 }
