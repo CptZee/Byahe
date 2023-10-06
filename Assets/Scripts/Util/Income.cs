@@ -42,6 +42,8 @@ public class Income : MonoBehaviour
     private void AddIncome()
     {
         dataManager = DataManager.instance;
+        if(dataManager.Income == 0)
+            return;
         dataManager.Money += dataManager.Income;
         PlayerPrefs.SetFloat("Money", dataManager.Money);
         Debug.Log("Added income. Current money: " + dataManager.Money);

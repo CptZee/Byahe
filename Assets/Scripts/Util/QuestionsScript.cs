@@ -9,6 +9,7 @@ public class QuestionsScript : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip failedAudio;
     public AudioClip successAudio;
+    public GameObject controls;
 
     private int randomIndex;
     public void UpgradeQuestion()
@@ -36,6 +37,7 @@ public class QuestionsScript : MonoBehaviour
             Time.timeScale = 1;
             gameObject.SetActive(false);
         }
+        controls.SetActive(true);
     }
 
     public void CorrectPreAnswer(){
@@ -67,5 +69,6 @@ public class QuestionsScript : MonoBehaviour
     public void CloseMaxPanel(){
         maxUpgradePanel.SetActive(false);
         Time.timeScale = 1;
+        controls.SetActive(true);
     }
 }
