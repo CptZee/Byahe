@@ -11,9 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menus/Prologue.unity
     guid: b2280abae5251de41aa13a8d88472eaa
-  - enabled: 0
-    path: Assets/Scenes/Menus/Tour.unity
-    guid: 561f2eb4e484e54449cea6fda967a415
   - enabled: 1
     path: Assets/Scenes/TravelLevel.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
