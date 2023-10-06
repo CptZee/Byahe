@@ -33,12 +33,7 @@ public class MainMenuScript : MonoBehaviour
             sfxSource.Play();
             return;
         }
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
-        dataManager.CurrentScene = "TravelLevel";
-        dataManager.Destination = "Mabini";
-        dataManager.Gas = 100;
-        dataManager.Money = 25;
-        SaveData();
+        NewGame();
     }
 
     public void NewGame(){
@@ -47,6 +42,10 @@ public class MainMenuScript : MonoBehaviour
         dataManager.Destination = "Mabini";
         dataManager.Gas = 100;
         dataManager.Money = 25;
+        dataManager.Income = 0;
+        dataManager.Knowledge = 0;
+        dataManager.MabiniShop1 = false;
+        dataManager.MabiniShop2 = false;
         SaveData();
     }
 
@@ -90,6 +89,8 @@ public class MainMenuScript : MonoBehaviour
         PlayerPrefs.SetString("Destination", dataManager.Destination);
         PlayerPrefs.SetFloat("Gas", dataManager.Gas);
         PlayerPrefs.SetFloat("Money", dataManager.Money);
+        PlayerPrefs.SetFloat("Income", dataManager.Income);
+        PlayerPrefs.SetFloat("Knowledge", dataManager.Knowledge);
         PlayerPrefs.SetInt("MabiniShop1", dataManager.MabiniShop1 ? 1 : 0);
         PlayerPrefs.SetInt("MabiniShop2", dataManager.MabiniShop2 ? 1 : 0);
         PlayerPrefs.Save();

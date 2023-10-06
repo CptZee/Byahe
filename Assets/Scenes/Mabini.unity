@@ -569,8 +569,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1504602186}
-        m_TargetAssemblyTypeName: MabiniRewards, Assembly-CSharp
+      - m_Target: {fileID: 77366504}
+        m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
         m_MethodName: CorrectPreAnswer
         m_Mode: 1
         m_Arguments:
@@ -1117,6 +1117,7 @@ MonoBehaviour:
   maxUpgradePanel: {fileID: 1187059279}
   audioSource: {fileID: 1254096522}
   failedAudio: {fileID: 8300000, guid: bb2fe1f345be1894fadb526026ebaa9f, type: 3}
+  successAudio: {fileID: 8300000, guid: c92987143eefcb742a79f09deec00842, type: 3}
 --- !u!1 &92143115
 GameObject:
   m_ObjectHideFlags: 0
@@ -14423,7 +14424,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1504602185}
-  - component: {fileID: 1504602186}
   m_Layer: 5
   m_Name: ManageShop
   m_TagString: Untagged
@@ -14452,21 +14452,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1504602186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1504602184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edee1854462822e46a29023335bb6dfe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  script: {fileID: 77366504}
-  audioSource: {fileID: 1254096522}
-  successAudio: {fileID: 8300000, guid: c92987143eefcb742a79f09deec00842, type: 3}
 --- !u!1 &1510667802
 GameObject:
   m_ObjectHideFlags: 0
@@ -16358,8 +16343,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1504602186}
-        m_TargetAssemblyTypeName: MabiniRewards, Assembly-CSharp
+      - m_Target: {fileID: 77366504}
+        m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
         m_MethodName: CorrectPreAnswer
         m_Mode: 1
         m_Arguments:
