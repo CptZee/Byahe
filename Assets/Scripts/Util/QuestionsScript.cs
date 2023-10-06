@@ -40,7 +40,7 @@ public class QuestionsScript : MonoBehaviour
         controls.SetActive(true);
     }
 
-    public void CorrectPreAnswer()
+    public void CorrectAnswer()
     {
         Debug.Log("Correct answer");
         audioSource.clip = successAudio;

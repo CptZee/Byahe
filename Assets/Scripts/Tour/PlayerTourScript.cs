@@ -20,12 +20,14 @@ public class PlayerTourScript : MonoBehaviour
     public GameObject landmark;
     public GameObject gasStation;
     public GameObject modShop;
+    public GameObject landmarkUI;
     public GameObject sign1UI;
     public GameObject sign2UI;
     public GameObject shop1UI;
     public GameObject shop2UI;
     public AudioClip successAudio;
     public AudioClip failedAudio;
+    private bool checkedLandmark = false;
 
     void Start()
     {
@@ -74,7 +76,14 @@ public class PlayerTourScript : MonoBehaviour
     public void Interact()
     {
         Debug.Log("Interacting...");
-        float distance = Vector3.Distance(transform.position, shop1.transform.position);
+        float distance = Vector3.Distance(transform.position, landmark.transform.position);
+        if (distance < 5.0f)
+        {
+            Debug.Log("Interacting with The landmark...");
+            checkedLandmark = true;
+            showUI(landmarkUI);
+        }
+        distance = Vector3.Distance(transform.position, shop1.transform.position);
         if (distance < 3.0f && shop1.activeSelf)
         {
             Debug.Log("Interacting with Shop 1...");
@@ -93,7 +102,7 @@ public class PlayerTourScript : MonoBehaviour
             showUI(sign1UI);
         }
         distance = Vector3.Distance(transform.position, sign2.transform.position);
-        if (distance < 3.0f && !shop2.activeSelf)
+        if (distance < 3.0f && !shop2.activeSelf && checkedLandmark)
         {
             Debug.Log("Interacting with Shop 2 Sign...");
             showUI(sign2UI);
