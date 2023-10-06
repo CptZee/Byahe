@@ -1700,12 +1700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37abef09acdb0064ab6635844c959b9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjects:
-  - {fileID: 625780005}
-  - {fileID: 231554214}
-  - {fileID: 563715156}
-  - {fileID: 1534902385}
-  - {fileID: 1359486059}
+  questions: []
   stations:
   - {fileID: 77366500}
   - {fileID: 189555689}
@@ -3136,8 +3131,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -15.488705, y: -114.61929}
-  m_SizeDelta: {x: 1801.47, y: 151.2385}
+  m_AnchoredPosition: {x: -165.64368, y: -212}
+  m_SizeDelta: {x: 1496.1829, y: 151.2385}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &153515706
 MonoBehaviour:
@@ -3168,8 +3163,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4283322111
+  m_fontColor: {r: 1, g: 0.3066038, b: 0.3066038, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3186,7 +3181,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 138.35
+  m_fontSize: 114.9
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3953,7 +3948,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 200, y: 100}
-  m_SizeDelta: {x: 320, y: 155.55792}
+  m_SizeDelta: {x: 340, y: 155.55792}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &205694563
 MonoBehaviour:
@@ -3998,7 +3993,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 205694564}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 493687453}
+        m_TargetAssemblyTypeName: InformationScript, Assembly-CSharp
+        m_MethodName: PreviousInformation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &205694564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4756,7 +4763,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &255181366
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7317,13 +7324,14 @@ GameObject:
   - component: {fileID: 493687450}
   - component: {fileID: 493687452}
   - component: {fileID: 493687451}
+  - component: {fileID: 493687453}
   m_Layer: 5
   m_Name: Info
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &493687450
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7345,8 +7353,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 6.6804, y: -2.6495}
-  m_SizeDelta: {x: 1900.0293, y: 1086.4379}
+  m_AnchoredPosition: {x: -16.347702, y: -0.017601013}
+  m_SizeDelta: {x: 2350.064, y: 1139.0734}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &493687451
 MonoBehaviour:
@@ -7361,15 +7369,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: b33f91436faa922428e82c4a97fe41df, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7386,6 +7394,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493687449}
   m_CullTransparentMesh: 1
+--- !u!114 &493687453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493687449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9604c1cb39b4ea4b99ae254741cd047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  informations:
+  - {fileID: 255181365}
+  - {fileID: 2096988934}
+  - {fileID: 447722162}
+  - {fileID: 1878502751}
+  - {fileID: 992709929}
+  informationPanel: {fileID: 493687449}
 --- !u!1 &519008169
 GameObject:
   m_ObjectHideFlags: 0
@@ -15259,7 +15286,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CLOSE
+  m_text: NEXT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -16886,7 +16913,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -200, y: 100}
-  m_SizeDelta: {x: 320, y: 155.55792}
+  m_SizeDelta: {x: 340, y: 155.55792}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1185524738
 MonoBehaviour:
@@ -16931,7 +16958,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1185524739}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 493687453}
+        m_TargetAssemblyTypeName: InformationScript, Assembly-CSharp
+        m_MethodName: NextInformation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1185524739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19260,7 +19299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1373982260
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31105,7 +31144,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CLOSE
+  m_text: PREVIOUS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -32584,7 +32623,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2039183761}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 493687453}
+        m_TargetAssemblyTypeName: InformationScript, Assembly-CSharp
+        m_MethodName: CloseInformation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2039183761
 MonoBehaviour:
   m_ObjectHideFlags: 0
