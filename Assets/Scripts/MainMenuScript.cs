@@ -9,6 +9,7 @@ public class MainMenuScript : MonoBehaviour
     public GameObject newGamePanel;
 
     public DataManager dataManager;
+    public GameObject tutorialPanel;
     void Start()
     {
         // Locate the GameObject with the AudioSource component
@@ -21,6 +22,10 @@ public class MainMenuScript : MonoBehaviour
         GameObject orientationManager = new GameObject("SceneOrientationManager");
         orientationManager.AddComponent<SceneOrientationManager>();
         DontDestroyOnLoad(orientationManager);
+    }
+
+    public void ShowTutorial(){
+        tutorialPanel.SetActive(true);
     }
 
     public void PlayGame()
