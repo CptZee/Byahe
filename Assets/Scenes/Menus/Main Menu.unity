@@ -1214,7 +1214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a97c0632a0ab8e4f95b6c575b11130d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
+  sfxSource: {fileID: 1198434082}
+  openClip: {fileID: 8300000, guid: 4769246bccead504ea20ff837e26dca6, type: 3}
   newGamePanel: {fileID: 1877202060}
   dataManager: {fileID: 817920397}
 --- !u!1 &921983192
