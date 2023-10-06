@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class QuestionsScript : MonoBehaviour
 {
-    public List<GameObject> gameObjects;
+    public List<GameObject> questions;
     public List<GameObject> stations;
     public GameObject maxUpgradePanel;
     public AudioSource audioSource;
@@ -16,10 +16,10 @@ public class QuestionsScript : MonoBehaviour
     {
         foreach (GameObject station in stations)
             gameObject.SetActive(false);
-        if (gameObjects.Count > 0)
+        if (questions.Count > 0)
         {
-            randomIndex = Random.Range(0, gameObjects.Count);
-            GameObject randomGameObject = gameObjects[randomIndex];
+            randomIndex = Random.Range(0, questions.Count);
+            GameObject randomGameObject = questions[randomIndex];
             randomGameObject.SetActive(true);
             Debug.Log("Randomly selected GameObject: " + randomGameObject.name);
         }
@@ -32,7 +32,7 @@ public class QuestionsScript : MonoBehaviour
 
     public void CloseQuestions()
     {
-        foreach (GameObject gameObject in gameObjects)
+        foreach (GameObject gameObject in questions)
         {
             Time.timeScale = 1;
             gameObject.SetActive(false);
@@ -64,7 +64,7 @@ public class QuestionsScript : MonoBehaviour
     public void RemoveQuestion()
     {
         CloseQuestions();
-        gameObjects.RemoveAt(randomIndex);
+        questions.RemoveAt(randomIndex);
     }
 
     public void CloseMaxPanel()
