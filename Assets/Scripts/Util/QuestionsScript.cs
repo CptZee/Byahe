@@ -14,13 +14,13 @@ public class QuestionsScript : MonoBehaviour
     private int randomIndex;
     public void UpgradeQuestion()
     {
+        foreach (GameObject station in stations)
+            gameObject.SetActive(false);
         if (gameObjects.Count > 0)
         {
             randomIndex = Random.Range(0, gameObjects.Count);
             GameObject randomGameObject = gameObjects[randomIndex];
             randomGameObject.SetActive(true);
-            foreach (GameObject station in stations)
-                gameObject.SetActive(false);
             Debug.Log("Randomly selected GameObject: " + randomGameObject.name);
         }
         else
@@ -40,7 +40,8 @@ public class QuestionsScript : MonoBehaviour
         controls.SetActive(true);
     }
 
-    public void CorrectPreAnswer(){
+    public void CorrectPreAnswer()
+    {
         Debug.Log("Correct answer");
         audioSource.clip = successAudio;
         audioSource.Play();
@@ -66,7 +67,8 @@ public class QuestionsScript : MonoBehaviour
         gameObjects.RemoveAt(randomIndex);
     }
 
-    public void CloseMaxPanel(){
+    public void CloseMaxPanel()
+    {
         maxUpgradePanel.SetActive(false);
         Time.timeScale = 1;
         controls.SetActive(true);
