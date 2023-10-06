@@ -108,7 +108,7 @@ public class PlayerTourScript : MonoBehaviour
             Debug.Log("Interacting with Shop 2 Sign...");
             if (!checkedLandmark)
             {
-                notForSaleUI.SetActive(true);
+                showUI(notForSaleUI);
                 return;
             }
             showUI(sign2UI);
