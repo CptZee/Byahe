@@ -20,6 +20,8 @@ public class PlayerTourScript : MonoBehaviour
     public GameObject landmark;
     public GameObject gasStation;
     public GameObject modShop;
+    public GameObject gasStationUI;
+    public GameObject modShopUI;
     public GameObject landmarkUI;
     public GameObject notForSaleUI;
     public GameObject sign1UI;
@@ -84,6 +86,18 @@ public class PlayerTourScript : MonoBehaviour
             checkedLandmark = true;
             showUI(landmarkUI);
         }
+        distance = Vector3.Distance(transform.position, gasStation.transform.position);
+        if (distance < 2.0f)
+        {
+            Debug.Log("Interacting with the gas station...");
+            showUI(gasStationUI);
+        }
+        distance = Vector3.Distance(transform.position, modShop.transform.position);
+        if (distance < 2.0f)
+        {
+            Debug.Log("Interacting with the mod shop...");
+            showUI(modShopUI);
+        }
         distance = Vector3.Distance(transform.position, shop1.transform.position);
         if (distance < 3.0f && shop1.activeSelf)
         {
@@ -115,6 +129,13 @@ public class PlayerTourScript : MonoBehaviour
         }
     }
 
+    public void CloseGasStationUI(){
+        hideUI(gasStationUI);
+    }
+
+    public void CloseModShopUI(){
+        hideUI(modShopUI);
+    }
 
     public void CloseNotForSaleUI()
     {
