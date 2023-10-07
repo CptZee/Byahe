@@ -7,7 +7,6 @@ public class MainMenuScript : MonoBehaviour
     public AudioSource sfxSource;
     public AudioClip openClip;
     public GameObject newGamePanel;
-
     public DataManager dataManager;
     public GameObject tutorialPanel;
     void Start()
@@ -99,6 +98,8 @@ public class MainMenuScript : MonoBehaviour
         PlayerPrefs.SetInt("MabiniShop1", dataManager.MabiniShop1 ? 1 : 0);
         PlayerPrefs.SetInt("MabiniShop2", dataManager.MabiniShop2 ? 1 : 0);
         PlayerPrefs.Save();
+        Debug.Log("Money: " + PlayerPrefs.GetFloat("Money"));
+        Debug.Log("Money: " + PlayerPrefs.GetInt("Money"));
     }
 
     void LoadData()

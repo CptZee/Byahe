@@ -46,6 +46,7 @@ public class Income : MonoBehaviour
             return;
         dataManager.Money += dataManager.Income;
         PlayerPrefs.SetFloat("Money", dataManager.Money);
+        PlayerPrefs.Save();
         Debug.Log("Added income. Current money: " + dataManager.Money);
     }
 }

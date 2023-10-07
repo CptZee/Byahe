@@ -50,6 +50,7 @@ public class QuestionsScript : MonoBehaviour
         DataManager.instance.Knowledge += 1;
         PlayerPrefs.SetFloat("Income", DataManager.instance.Income);
         PlayerPrefs.SetFloat("Knowledge", DataManager.instance.Knowledge);
+        PlayerPrefs.Save();
         RemoveQuestion();
     }
 

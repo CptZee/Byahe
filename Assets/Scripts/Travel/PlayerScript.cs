@@ -36,6 +36,7 @@ public class PlayerScript : MonoBehaviour
         StartCoroutine(EnableCollisionAfterWarmup(2f));
         gasLevel = DataManager.instance.Gas;
     }
+    private bool gameOver = false;
 
     void Update()
     {
@@ -48,11 +49,12 @@ public class PlayerScript : MonoBehaviour
         gasSlider.value = gasLevel;
         destinationSlider.value = destinationProgress;
         DataManager.instance.Gas = gasLevel;
-        if (gasSlider.value <= 0)
+        if (gasSlider.value <= 0 && !gameOver)
         {
             gameOverPanel.SetActive(true);
-            Time.timeScale = 0;
             DataManager.instance.Money -= 10;
+            Time.timeScale = 0;
+            gameOver = true;
         }
     }
 
