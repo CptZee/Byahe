@@ -42,7 +42,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void NewGame(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        dataManager.TravelActor = "Jeepney";
+        dataManager.TravelActor = "Multicab";
         dataManager.TourActor = "Kalesa";
         dataManager.CurrentScene = "TravelLevel";
         dataManager.Destination = "Mabini";

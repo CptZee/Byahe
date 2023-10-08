@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -140,18 +140,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 81
-        width: 47
-        height: 81
+        y: 0
+        width: 51
+        height: 85
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c634ee5f51c2ef4ea76cb2587e82987
-      internalID: -114863348
+      spriteID: 7c0ebe34ab21b044388393d0ba86ee28
+      internalID: -1820321155
       vertices: []
       indices: 
       edges: []
@@ -160,19 +160,19 @@ TextureImporter:
       name: Multicab-Sheet_1
       rect:
         serializedVersion: 2
-        x: 47
-        y: 81
-        width: 47
-        height: 81
+        x: 51
+        y: 0
+        width: 51
+        height: 85
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7ccb5e5c069afd46ae0c8b2b2758180
-      internalID: 987169925
+      spriteID: 6e6d8d4f6d63c7d4abb40a4773bef93e
+      internalID: 1102030605
       vertices: []
       indices: 
       edges: []
@@ -181,19 +181,19 @@ TextureImporter:
       name: Multicab-Sheet_2
       rect:
         serializedVersion: 2
-        x: 94
-        y: 81
-        width: 47
-        height: 81
+        x: 102
+        y: 0
+        width: 51
+        height: 85
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 092cd6465a2f2714a98cadcc98d655f4
-      internalID: 1347408486
+      spriteID: f5dd26d61d585ea45be223bc330fcf38
+      internalID: -638670640
       vertices: []
       indices: 
       edges: []
@@ -202,19 +202,19 @@ TextureImporter:
       name: Multicab-Sheet_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 153
         y: 0
-        width: 47
-        height: 81
+        width: 51
+        height: 85
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c24e64733b3fafa49998bfc0aa4530e4
-      internalID: 954734648
+      spriteID: 90fc87d3398e4984db41fecf27eda8a2
+      internalID: -1812184187
       vertices: []
       indices: 
       edges: []
@@ -223,19 +223,19 @@ TextureImporter:
       name: Multicab-Sheet_4
       rect:
         serializedVersion: 2
-        x: 47
+        x: 204
         y: 0
-        width: 47
-        height: 81
+        width: 51
+        height: 85
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d582c2fd75085274ca073946b76ed5a1
-      internalID: 302785929
+      spriteID: cd71faa7f02d6c04ca3a0de98f6271f0
+      internalID: -1093700201
       vertices: []
       indices: 
       edges: []
@@ -244,19 +244,61 @@ TextureImporter:
       name: Multicab-Sheet_5
       rect:
         serializedVersion: 2
-        x: 94
+        x: 255
         y: 0
-        width: 47
-        height: 81
+        width: 51
+        height: 85
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f098a0f220d5014bb7a31989d4a5c8d
-      internalID: 1297498894
+      spriteID: 3538292547e34134d96ee65745423797
+      internalID: 1881845990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Multicab-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 0
+        width: 51
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ae8096f5bea3f41b4049fb6ef9a240
+      internalID: -1196179990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Multicab-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 0
+        width: 51
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a7613463f2b524ba74740e400d20d5
+      internalID: 890318374
       vertices: []
       indices: 
       edges: []
@@ -264,7 +306,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e4a1cf1f48c878499efeadaad9744c5
+    spriteID: 8c67b932acc3713419109b04e11d1bb8
     internalID: 0
     vertices: []
     indices: 
@@ -272,12 +314,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Multicab-Sheet_0: -114863348
-      Multicab-Sheet_1: 987169925
-      Multicab-Sheet_2: 1347408486
-      Multicab-Sheet_3: 954734648
-      Multicab-Sheet_4: 302785929
-      Multicab-Sheet_5: 1297498894
+      Multicab-Sheet_0: -1820321155
+      Multicab-Sheet_1: 1102030605
+      Multicab-Sheet_2: -638670640
+      Multicab-Sheet_3: -1812184187
+      Multicab-Sheet_4: -1093700201
+      Multicab-Sheet_5: 1881845990
+      Multicab-Sheet_6: -1196179990
+      Multicab-Sheet_7: 890318374
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

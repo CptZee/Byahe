@@ -22,6 +22,7 @@ public class PlayerScript : MonoBehaviour
     private bool isCollisionEnabled = false; 
     public SpriteRenderer spriteRenderer;
     public BoxCollider2D boxCollider;
+    private int spriteVariation = 0;
     void Start()
     {
         Time.timeScale = 1; //Resume the game if it is paused
@@ -56,6 +57,21 @@ public class PlayerScript : MonoBehaviour
             Time.timeScale = 0;
             gameOver = true;
         }
+
+        DataManager manager = DataManager.instance;
+        Debug.Log("Current Tour Actor: " + manager.TourActor);
+        if(manager.TravelActor.Equals("Jeepney")){
+            spriteVariation = -1;
+        }
+        if(manager.TravelActor.Equals("Multicab")){
+            spriteVariation = 1;
+        }
+        Debug.Log("Current Sprite Variation " + spriteVariation);
+        animator.SetFloat("SpriteVariation", spriteVariation);
+        Debug.Log("Current Sprite Variation in animator " + animator.GetFloat("SpriteVariation"));
+        
+        boxCollider.size = spriteRenderer.sprite.bounds.size;
+        boxCollider.offset = spriteRenderer.sprite.bounds.center;
     }
 
     void OnTriggerEnter2D(Collider2D other)
