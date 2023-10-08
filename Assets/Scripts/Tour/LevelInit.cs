@@ -3,13 +3,15 @@ using UnityEngine;
 
 public class LevelInit : MonoBehaviour
 {
-    
     public TextMeshProUGUI gasText;
     public TextMeshProUGUI moneyText;
     public TextMeshProUGUI tourIncomeText;
     public TextMeshProUGUI souvenirIncomeText;
     public GameObject shop1;
     public GameObject shop2;
+    public GameObject player;
+    public RuntimeAnimatorController kalesaController;
+    public RuntimeAnimatorController tricycleController;
     void Update()
     {
         DataManager manager = DataManager.instance;

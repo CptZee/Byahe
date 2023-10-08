@@ -9,6 +9,7 @@ public class PlayerTourScript : MonoBehaviour
     public BoxCollider2D boxCollider;
     public float moveSpeed = 5;
     public Animator animator;
+    private int spriteVariation = 0;
 
     //This part is really ifty and prolly should be moved to its own later on
 
@@ -37,6 +38,20 @@ public class PlayerTourScript : MonoBehaviour
         Time.timeScale = 1; //Resume the game if it is paused
         boxCollider.size = spriteRenderer.sprite.bounds.size;
         boxCollider.offset = spriteRenderer.sprite.bounds.center;
+    }
+
+    void Update(){
+        DataManager manager = DataManager.instance;
+        Debug.Log("Current Tour Actor: " + manager.TourActor);
+        if(manager.TourActor.Equals("Kalesa")){
+            spriteVariation = -1;
+        }
+        if(manager.TourActor.Equals("Tricycle")){
+            spriteVariation = 1;
+        }
+        Debug.Log("Current Sprite Variation " + spriteVariation);
+        animator.SetFloat("SpriteVariation", spriteVariation);
+        Debug.Log("Current Sprite Variation in animator " + animator.GetFloat("SpriteVariation"));
     }
 
     public void MoveLeft()

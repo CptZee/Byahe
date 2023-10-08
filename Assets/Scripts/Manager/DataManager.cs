@@ -12,6 +12,8 @@ public class DataManager: MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
             if(!PlayerPrefs.HasKey("CurrentScene"))
                 return;
+            TravelActor = PlayerPrefs.GetString("TravelActor");
+            TourActor = PlayerPrefs.GetString("TourActor");
             CurrentScene = PlayerPrefs.GetString("CurrentScene");
             Destination = PlayerPrefs.GetString("Destination");
             Gas = PlayerPrefs.GetFloat("Gas");
@@ -22,6 +24,8 @@ public class DataManager: MonoBehaviour
             MabiniShop2 = PlayerPrefs.GetInt("MabiniShop2") == 1;
         }
     }
+    public string TravelActor {get; set;}
+    public string TourActor {get; set;}
 
     public string CurrentScene { get; set; }
     public string Destination { get; set; }

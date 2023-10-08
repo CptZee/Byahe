@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e299733243822424097fc14d8e205070
+guid: 7eb6b4eb91fcc384db9da70adb0347e9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kalesa_Left_0
+      name: Kalesa-idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58554ba6d50baa7419a29543beec563f
-      internalID: -1605463374
+      spriteID: 2414b2f8c1720174a982bf73be029829
+      internalID: 194623471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kalesa_Left_1
+      name: Kalesa-idle_1
       rect:
         serializedVersion: 2
         x: 197
@@ -171,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd0ace9765694af4daefc273d98fd6be
-      internalID: -1460098773
+      spriteID: 3e155ada5b60a3c48a898e0ae8e59685
+      internalID: -313027404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kalesa_Left_2
+      name: Kalesa-idle_2
       rect:
         serializedVersion: 2
         x: 394
@@ -192,14 +192,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e257cb2b3ad180e469824c63a9b123b8
-      internalID: 13408289
+      spriteID: 50f64a7f8dcb9ef40ad422add88ea087
+      internalID: -706545364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kalesa_Left_3
+      name: Kalesa-idle_3
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 194
+        width: 197
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d85bff999f1464aac418420a03afbc
+      internalID: 1645586974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kalesa-idle_4
       rect:
         serializedVersion: 2
         x: 0
@@ -213,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9154bc1efde3f564ca9588e273b3f1fe
-      internalID: 142907089
+      spriteID: 9763303d0ed6a8f4d8b03174d04f2fe2
+      internalID: 300685585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kalesa_Left_4
+      name: Kalesa-idle_5
       rect:
         serializedVersion: 2
         x: 197
@@ -234,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cd474cc1a9c28744bcbe27c61e1ea2f
-      internalID: 1610054930
+      spriteID: 56dd0bce474af244e8b1701fa24958cb
+      internalID: -1845407239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kalesa_Left_5
+      name: Kalesa-idle_6
       rect:
         serializedVersion: 2
         x: 394
@@ -255,14 +276,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ebc2c93e675c6848897ec5941cbd2e6
-      internalID: -1544428001
+      spriteID: a62c76ad8c5151c44989ba5bebd61e82
+      internalID: 152011776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kalesa_Left_6
+      name: Kalesa-idle_7
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 97
+        width: 197
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f6c385398d4eb489ecd1d1dae68866
+      internalID: -1691336007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kalesa-idle_8
       rect:
         serializedVersion: 2
         x: 0
@@ -276,14 +318,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84aee3f63eff45141ad1cd901d264e5b
-      internalID: 1188773575
+      spriteID: 32793b88b01ee5e459dd0d6058d4cb19
+      internalID: -590400336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kalesa_Left_7
+      name: Kalesa-idle_9
       rect:
         serializedVersion: 2
         x: 197
@@ -297,14 +339,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9df023f951934ca449429fc95997113d
-      internalID: 672491873
+      spriteID: f0bc805425779be4ca4059f89b015f1c
+      internalID: -1570153468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kalesa_Left_8
+      name: Kalesa-idle_10
       rect:
         serializedVersion: 2
         x: 394
@@ -318,8 +360,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c2931e4adc42874096d03e75432ceef
-      internalID: -1624693318
+      spriteID: d8ac55ee4a972a34a9c9d1d05f5f55bd
+      internalID: 984178530
       vertices: []
       indices: 
       edges: []
@@ -327,7 +369,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8127e92946375264cb3ca7f2762108e6
+    spriteID: 4bf5db7aa987bef49ac78befbb21d0c1
     internalID: 0
     vertices: []
     indices: 
@@ -335,15 +377,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Kalesa_Left_0: -1605463374
-      Kalesa_Left_1: -1460098773
-      Kalesa_Left_2: 13408289
-      Kalesa_Left_3: 142907089
-      Kalesa_Left_4: 1610054930
-      Kalesa_Left_5: -1544428001
-      Kalesa_Left_6: 1188773575
-      Kalesa_Left_7: 672491873
-      Kalesa_Left_8: -1624693318
+      Kalesa-idle_0: 194623471
+      Kalesa-idle_1: -313027404
+      Kalesa-idle_10: 984178530
+      Kalesa-idle_2: -706545364
+      Kalesa-idle_3: 1645586974
+      Kalesa-idle_4: 300685585
+      Kalesa-idle_5: -1845407239
+      Kalesa-idle_6: 152011776
+      Kalesa-idle_7: -1691336007
+      Kalesa-idle_8: -590400336
+      Kalesa-idle_9: -1570153468
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

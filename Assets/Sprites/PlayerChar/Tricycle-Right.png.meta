@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e299733243822424097fc14d8e205070
+guid: 7610d94f9ea8525438ca425460201783
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,12 +136,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kalesa_Left_0
+      name: Tricycle-Right_0
       rect:
         serializedVersion: 2
         x: 0
         y: 194
-        width: 197
+        width: 115
         height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -150,19 +150,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58554ba6d50baa7419a29543beec563f
-      internalID: -1605463374
+      spriteID: d00b9c445df178140a2bb47e9f9fdd95
+      internalID: -1053234299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kalesa_Left_1
+      name: Tricycle-Right_1
       rect:
         serializedVersion: 2
-        x: 197
+        x: 115
         y: 194
-        width: 197
+        width: 115
         height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -171,19 +171,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd0ace9765694af4daefc273d98fd6be
-      internalID: -1460098773
+      spriteID: 788a9ca48f1fc7c41867a6315ae38300
+      internalID: 707037227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kalesa_Left_2
+      name: Tricycle-Right_2
       rect:
         serializedVersion: 2
-        x: 394
+        x: 230
         y: 194
-        width: 197
+        width: 115
         height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -192,19 +192,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e257cb2b3ad180e469824c63a9b123b8
-      internalID: 13408289
+      spriteID: 0058d2aee2086ef4cbee551e6b22d861
+      internalID: 2010824276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kalesa_Left_3
+      name: Tricycle-Right_3
       rect:
         serializedVersion: 2
         x: 0
         y: 97
-        width: 197
+        width: 115
         height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -213,19 +213,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9154bc1efde3f564ca9588e273b3f1fe
-      internalID: 142907089
+      spriteID: d26306f5e2e819046a635011420ccc23
+      internalID: 1350408285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kalesa_Left_4
+      name: Tricycle-Right_4
       rect:
         serializedVersion: 2
-        x: 197
+        x: 115
         y: 97
-        width: 197
+        width: 115
         height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -234,19 +234,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cd474cc1a9c28744bcbe27c61e1ea2f
-      internalID: 1610054930
+      spriteID: dc0d762d8354cc34a8ff1c296fc8ad90
+      internalID: 486649309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kalesa_Left_5
+      name: Tricycle-Right_5
       rect:
         serializedVersion: 2
-        x: 394
+        x: 230
         y: 97
-        width: 197
+        width: 115
         height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -255,19 +255,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ebc2c93e675c6848897ec5941cbd2e6
-      internalID: -1544428001
+      spriteID: da8f7af4c9eb8164eb578c0caaf3caca
+      internalID: 704116745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kalesa_Left_6
+      name: Tricycle-Right_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 197
+        width: 115
         height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -276,19 +276,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84aee3f63eff45141ad1cd901d264e5b
-      internalID: 1188773575
+      spriteID: 8802ce56cb3aaa9459305a11ccb3e08d
+      internalID: -1960703023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kalesa_Left_7
+      name: Tricycle-Right_7
       rect:
         serializedVersion: 2
-        x: 197
+        x: 115
         y: 0
-        width: 197
+        width: 115
         height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -297,29 +297,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9df023f951934ca449429fc95997113d
-      internalID: 672491873
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kalesa_Left_8
-      rect:
-        serializedVersion: 2
-        x: 394
-        y: 0
-        width: 197
-        height: 97
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c2931e4adc42874096d03e75432ceef
-      internalID: -1624693318
+      spriteID: a484a1ef50e49324d95f3ff78854bc86
+      internalID: -1172506682
       vertices: []
       indices: 
       edges: []
@@ -327,7 +306,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8127e92946375264cb3ca7f2762108e6
+    spriteID: 873e50464c23c7246ac04c6f4303b589
     internalID: 0
     vertices: []
     indices: 
@@ -335,15 +314,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Kalesa_Left_0: -1605463374
-      Kalesa_Left_1: -1460098773
-      Kalesa_Left_2: 13408289
-      Kalesa_Left_3: 142907089
-      Kalesa_Left_4: 1610054930
-      Kalesa_Left_5: -1544428001
-      Kalesa_Left_6: 1188773575
-      Kalesa_Left_7: 672491873
-      Kalesa_Left_8: -1624693318
+      Tricycle-Right_0: -1053234299
+      Tricycle-Right_1: 707037227
+      Tricycle-Right_2: 2010824276
+      Tricycle-Right_3: 1350408285
+      Tricycle-Right_4: 486649309
+      Tricycle-Right_5: 704116745
+      Tricycle-Right_6: -1960703023
+      Tricycle-Right_7: -1172506682
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

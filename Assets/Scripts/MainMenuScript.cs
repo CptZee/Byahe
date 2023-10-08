@@ -41,7 +41,9 @@ public class MainMenuScript : MonoBehaviour
     }
 
     public void NewGame(){
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        dataManager.TravelActor = "Jeepney";
+        dataManager.TourActor = "Kalesa";
         dataManager.CurrentScene = "TravelLevel";
         dataManager.Destination = "Mabini";
         dataManager.Gas = 100;
@@ -89,6 +91,8 @@ public class MainMenuScript : MonoBehaviour
 
     void SaveData()
     {
+        PlayerPrefs.SetString("TravelActor", dataManager.TravelActor);
+        PlayerPrefs.SetString("TourActor", dataManager.TourActor);
         PlayerPrefs.SetString("CurrentScene", dataManager.CurrentScene);
         PlayerPrefs.SetString("Destination", dataManager.Destination);
         PlayerPrefs.SetFloat("Gas", dataManager.Gas);
