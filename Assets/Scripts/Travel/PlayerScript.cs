@@ -69,7 +69,7 @@ public class PlayerScript : MonoBehaviour
         Debug.Log("Current Sprite Variation " + spriteVariation);
         animator.SetFloat("SpriteVariation", spriteVariation);
         Debug.Log("Current Sprite Variation in animator " + animator.GetFloat("SpriteVariation"));
-        
+
         boxCollider.size = spriteRenderer.sprite.bounds.size;
         boxCollider.offset = spriteRenderer.sprite.bounds.center;
     }
