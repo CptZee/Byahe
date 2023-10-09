@@ -42,17 +42,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void NewGame(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        dataManager.TravelActor = "Jeepney";
-        dataManager.TourActor = "Kalesa";
-        dataManager.CurrentScene = "TravelLevel";
-        dataManager.Destination = "Mabini";
-        dataManager.Gas = 100;
-        dataManager.Money = 25;
-        dataManager.Income = 0;
-        dataManager.Knowledge = 0;
-        dataManager.MabiniShop1 = false;
-        dataManager.MabiniShop2 = false;
-        SaveData();
+        dataManager.Reset();
     }
 
     public void CloseNewGameUI(){
@@ -62,7 +52,7 @@ public class MainMenuScript : MonoBehaviour
     public void ContinueGame()
     {
         Debug.Log("Continuing Game");
-        LoadData();
+        dataManager.Load();
         if (!PlayerPrefs.HasKey("CurrentScene"))
         {
             PlayGame();
@@ -87,33 +77,6 @@ public class MainMenuScript : MonoBehaviour
             elapsedLoadTime += Time.deltaTime;
             yield return null;
         }
-    }
-
-    void SaveData()
-    {
-        PlayerPrefs.SetString("TravelActor", dataManager.TravelActor);
-        PlayerPrefs.SetString("TourActor", dataManager.TourActor);
-        PlayerPrefs.SetString("CurrentScene", dataManager.CurrentScene);
-        PlayerPrefs.SetString("Destination", dataManager.Destination);
-        PlayerPrefs.SetFloat("Gas", dataManager.Gas);
-        PlayerPrefs.SetFloat("Money", dataManager.Money);
-        PlayerPrefs.SetFloat("Income", dataManager.Income);
-        PlayerPrefs.SetFloat("Knowledge", dataManager.Knowledge);
-        PlayerPrefs.SetInt("MabiniShop1", dataManager.MabiniShop1 ? 1 : 0);
-        PlayerPrefs.SetInt("MabiniShop2", dataManager.MabiniShop2 ? 1 : 0);
-        PlayerPrefs.Save();
-        Debug.Log("Money: " + PlayerPrefs.GetFloat("Money"));
-        Debug.Log("Money: " + PlayerPrefs.GetInt("Money"));
-    }
-
-    void LoadData()
-    {
-        dataManager.CurrentScene = PlayerPrefs.GetString("CurrentScene");
-        dataManager.Destination = PlayerPrefs.GetString("Destination");
-        dataManager.Gas = PlayerPrefs.GetFloat("Gas");
-        dataManager.Money = PlayerPrefs.GetFloat("Money");
-        dataManager.MabiniShop1 = PlayerPrefs.GetInt("MabiniShop1") == 1 ? true : false;
-        dataManager.MabiniShop2 = PlayerPrefs.GetInt("MabiniShop2") == 1 ? true : false;
     }
 
     public void ExitGame()
