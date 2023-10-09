@@ -41,7 +41,7 @@ public class DataManager : MonoBehaviour
         CurrentScene = "TravelLevel";
         Destination = "Mabini";
         Gas = 100;
-        Money = 25;
+        Money = 100;
         Income = 0;
         Knowledge = 0;
         MabiniShop1 = false;

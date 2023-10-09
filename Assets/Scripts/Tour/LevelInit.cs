@@ -9,8 +9,8 @@ public class LevelInit : MonoBehaviour
     public TextMeshProUGUI souvenirIncomeText;
     public GameObject shop1;
     public GameObject shop2;
-    public TextMeshPro tricycleText;
-    public TextMeshPro multicabText;
+    public TextMeshProUGUI tricycleText;
+    public TextMeshProUGUI multicabText;
     void Update()
     {
         DataManager manager = DataManager.instance;

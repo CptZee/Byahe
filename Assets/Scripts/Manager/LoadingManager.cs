@@ -29,9 +29,12 @@ public class LoadingManager : MonoBehaviour
     void saveData()
     {
         string oldCurrentScene = dataManager.CurrentScene;
-        dataManager.SetString("CurrentScene", targetScene);
-        dataManager.SetString("Destination", oldCurrentScene);
+        dataManager.CurrentScene = targetScene;
+        dataManager.Destination = oldCurrentScene;
         dataManager.Save();
+        Debug.Log("Saved");
+        Debug.Log("Current Scene: " + dataManager.CurrentScene);
+        Debug.Log("Destination: " + dataManager.Destination);
     }
 
     private IEnumerator LoadSceneRoutine()

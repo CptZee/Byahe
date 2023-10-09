@@ -6,6 +6,7 @@ public class ModShop : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip successAudio;
     public AudioClip failedAudio;
+    public LoadingManager loadingManager;
     public void BuyTricycle()
     {
         if (DataManager.instance.Money < 75)
@@ -18,9 +19,11 @@ public class ModShop : MonoBehaviour
         {
             DataManager.instance.HasTricycle = true;
             DataManager.instance.Money -= 75;
+            DataManager.instance.TourActor = "Tricycle";
             DataManager.instance.Save();
             audioSource.clip = successAudio;
             audioSource.Play();
+            loadingManager.LoadScene(DataManager.instance.CurrentScene);
         }
         Close();
     }
@@ -38,14 +41,44 @@ public class ModShop : MonoBehaviour
         {
             DataManager.instance.HasMulticab = true;
             DataManager.instance.Money -= 50;
+            DataManager.instance.TravelActor = "Multicab";
             DataManager.instance.Save();
             audioSource.clip = successAudio;
             audioSource.Play();
+            loadingManager.LoadScene(DataManager.instance.CurrentScene);
         }
         Close();
     }
+    public void EquipMulticab(){
+        Equip("Travel", "Multicab");
+    }
 
-    void Close(){
+    public void EquipJeepney(){
+        Equip("Travel", "Jeepney");
+    }
+
+    public void EquipTricycle(){
+        Equip("Travel", "Tricycle");
+    }
+
+    public void EquipKalesa(){
+        Equip("Tour", "Kalesa");
+    }
+
+    void Equip(string phase, string vehicle)
+    {
+        if(phase.Equals("Tour"))
+            DataManager.instance.TourActor = vehicle;
+
+        if(phase.Equals("Travel"))
+            DataManager.instance.TravelActor = vehicle;
+        
+        loadingManager.LoadScene(DataManager.instance.CurrentScene);
+        Close();
+    }
+
+    void Close()
+    {
         ModShopMenu.SetActive(false);
         Time.timeScale = 1f;
     }
