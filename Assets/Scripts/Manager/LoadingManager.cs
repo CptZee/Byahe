@@ -7,9 +7,9 @@ public class LoadingManager : MonoBehaviour
 {
     public GameObject loadingPanel;
     private DataManager dataManager;
+    public Image FadeImage;
     private string targetScene;
     public float MinLoadingTime;
-    public Image FadeImage;
     public float FadeDuration;
 
     private void Awake()
@@ -26,16 +26,12 @@ public class LoadingManager : MonoBehaviour
         saveData();
     }
 
-    void saveData(){
+    void saveData()
+    {
         string oldCurrentScene = dataManager.CurrentScene;
-        dataManager.CurrentScene = targetScene;
-        dataManager.Destination = oldCurrentScene;
-
-        PlayerPrefs.SetString("CurrentScene", dataManager.CurrentScene);
-        PlayerPrefs.SetString("Destination", dataManager.Destination);
-        PlayerPrefs.SetFloat("Gas", dataManager.Gas);
-        PlayerPrefs.SetFloat("Money", dataManager.Money);
-        PlayerPrefs.Save();
+        dataManager.SetString("CurrentScene", targetScene);
+        dataManager.SetString("Destination", oldCurrentScene);
+        dataManager.Save();
     }
 
     private IEnumerator LoadSceneRoutine()
@@ -43,24 +39,24 @@ public class LoadingManager : MonoBehaviour
         FadeImage.gameObject.SetActive(true);
         FadeImage.canvasRenderer.SetAlpha(0f);
 
-        while(!Fade(1f))
+        while (!Fade(1f))
             yield return null;
 
         loadingPanel.SetActive(true);
 
-        while(!Fade(0f))
+        while (!Fade(0f))
             yield return null;
 
         AsyncOperation task = SceneManager.LoadSceneAsync(targetScene);
         float elapsedLoadTime = 0f;
 
-        while(!task.isDone)
+        while (!task.isDone)
         {
             elapsedLoadTime += Time.deltaTime;
             yield return null;
         }
 
-        while(elapsedLoadTime < MinLoadingTime)
+        while (elapsedLoadTime < MinLoadingTime)
         {
             elapsedLoadTime += Time.deltaTime;
             yield return null;
@@ -71,7 +67,7 @@ public class LoadingManager : MonoBehaviour
     {
         FadeImage.CrossFadeAlpha(traget, FadeDuration, true);
 
-        if(Mathf.Abs(FadeImage.canvasRenderer.GetAlpha() - traget) <= 0.05f)
+        if (Mathf.Abs(FadeImage.canvasRenderer.GetAlpha() - traget) <= 0.05f)
         {
             FadeImage.canvasRenderer.SetAlpha(traget);
             return true;

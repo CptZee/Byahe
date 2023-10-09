@@ -40,13 +40,16 @@ public class PlayerTourScript : MonoBehaviour
         boxCollider.offset = spriteRenderer.sprite.bounds.center;
     }
 
-    void Update(){
+    void Update()
+    {
         DataManager manager = DataManager.instance;
         Debug.Log("Current Tour Actor: " + manager.TourActor);
-        if(manager.TourActor.Equals("Kalesa")){
+        if (manager.TourActor.Equals("Kalesa"))
+        {
             spriteVariation = -1;
         }
-        if(manager.TourActor.Equals("Tricycle")){
+        if (manager.TourActor.Equals("Tricycle"))
+        {
             spriteVariation = 1;
         }
         Debug.Log("Current Sprite Variation " + spriteVariation);
@@ -144,11 +147,13 @@ public class PlayerTourScript : MonoBehaviour
         }
     }
 
-    public void CloseGasStationUI(){
+    public void CloseGasStationUI()
+    {
         hideUI(gasStationUI);
     }
 
-    public void CloseModShopUI(){
+    public void CloseModShopUI()
+    {
         hideUI(modShopUI);
     }
 
@@ -180,17 +185,18 @@ public class PlayerTourScript : MonoBehaviour
 
     public void BuyShop1()
     {
+        DataManager manager = DataManager.instance;
         Debug.Log("Buying Shop 1...");
-        if (DataManager.instance.Money < 15)
+        if (manager.Money < 15)
         {
             Debug.Log("Not enough money");
             audioSource.clip = failedAudio;
             audioSource.Play();
             return;
         }
-        DataManager.instance.Money = DataManager.instance.Money - 15;
-        if (DataManager.instance.CurrentScene.Equals("Mabini"))
-            DataManager.instance.MabiniShop1 = true;
+        manager.Money -= 15;
+        if (manager.CurrentScene.Equals("Mabini"))
+            manager.MabiniShop1 = true;
         audioSource.clip = successAudio;
         audioSource.Play();
         shop1.SetActive(true);
@@ -199,52 +205,44 @@ public class PlayerTourScript : MonoBehaviour
 
     public void BuyShop2()
     {
+        DataManager manager = DataManager.instance;
         Debug.Log("Buying Shop 2...");
-        if (DataManager.instance.Money < 25)
+        if (manager.Money < 25)
         {
             Debug.Log("Not enough money");
             audioSource.clip = failedAudio;
             audioSource.Play();
-            Save();
+
+            manager.Save();
             return;
         }
-        DataManager.instance.Money = DataManager.instance.Money - 25;
-        if (DataManager.instance.CurrentScene.Equals("Mabini"))
-            DataManager.instance.MabiniShop2 = true;
+        manager.Money = DataManager.instance.Money - 25;
+        if (manager.CurrentScene.Equals("Mabini"))
+            manager.MabiniShop2 = true;
         audioSource.clip = successAudio;
         audioSource.Play();
         shop2.SetActive(true);
         hideUI(sign2UI);
-        Save();
-    }
-
-    public void Save()
-    {
-        DataManager dataManager = DataManager.instance;
-        PlayerPrefs.SetString("CurrentScene", dataManager.CurrentScene);
-        PlayerPrefs.SetString("Destination", dataManager.Destination);
-        PlayerPrefs.SetFloat("Gas", dataManager.Gas);
-        PlayerPrefs.SetFloat("Money", dataManager.Money);
-        PlayerPrefs.SetInt("MabiniShop1", dataManager.MabiniShop1 ? 1 : 0);
-        PlayerPrefs.SetInt("MabiniShop2", dataManager.MabiniShop2 ? 1 : 0);
-        PlayerPrefs.Save();
+        manager.Save();
     }
 
 
     // Private methods just for modularization
     void showUI(GameObject menu)
     {
+        DataManager manager = DataManager.instance;
         menu.SetActive(true);
         uiButtons.SetActive(false);
         Time.timeScale = 0;
-        Save();
+        manager.Save();
     }
 
     void hideUI(GameObject menu)
     {
+        DataManager manager = DataManager.instance;
         menu.SetActive(false);
         uiButtons.SetActive(true);
         Time.timeScale = 1;
-        Save();
+        manager.Save();
     }
 }

@@ -6881,8 +6881,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingPanel: {fileID: 1312083923}
-  MinLoadingTime: 3
   FadeImage: {fileID: 173636116}
+  MinLoadingTime: 3
   FadeDuration: 1
 --- !u!4 &401064431
 Transform:
@@ -6917,9 +6917,8 @@ MonoBehaviour:
   souvenirIncomeText: {fileID: 1060580393}
   shop1: {fileID: 519008169}
   shop2: {fileID: 719477535}
-  player: {fileID: 137224420}
-  kalesaController: {fileID: 9100000, guid: 988d0883f3ba55b44a94bf7d84136c29, type: 2}
-  tricycleController: {fileID: 0}
+  tricycleText: {fileID: 0}
+  multicabText: {fileID: 0}
 --- !u!1 &403567956
 GameObject:
   m_ObjectHideFlags: 0
@@ -7558,7 +7557,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'JEEPNEY: FREE'
+  m_text: JEEPNEY (OWNED)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -18378,7 +18377,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1094881703
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18504,7 +18503,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Kalesa: FREE'
+  m_text: Kalesa (OWNED)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -26302,7 +26301,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -114863348, guid: be704be07976ba04ea1e0413db015770, type: 3}
+  m_Sprite: {fileID: -1820321155, guid: be704be07976ba04ea1e0413db015770, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -41,6 +41,8 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
+
+        DataManager manager = DataManager.instance;
         gasLevel -= gasDecreaseSpeed * Time.deltaTime;
         gasLevel = Mathf.Clamp(gasLevel, 0f, 100f);
 
@@ -49,16 +51,14 @@ public class PlayerScript : MonoBehaviour
 
         gasSlider.value = gasLevel;
         destinationSlider.value = destinationProgress;
-        DataManager.instance.Gas = gasLevel;
+        manager.Gas = gasLevel;
         if (gasSlider.value <= 0 && !gameOver)
         {
             gameOverPanel.SetActive(true);
-            DataManager.instance.Money -= 10;
+            manager.Money -= 10;
             Time.timeScale = 0;
             gameOver = true;
         }
-
-        DataManager manager = DataManager.instance;
         Debug.Log("Current Tour Actor: " + manager.TourActor);
         if(manager.TravelActor.Equals("Jeepney")){
             spriteVariation = -1;

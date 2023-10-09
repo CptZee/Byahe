@@ -9,9 +9,8 @@ public class LevelInit : MonoBehaviour
     public TextMeshProUGUI souvenirIncomeText;
     public GameObject shop1;
     public GameObject shop2;
-    public GameObject player;
-    public RuntimeAnimatorController kalesaController;
-    public RuntimeAnimatorController tricycleController;
+    public TextMeshPro tricycleText;
+    public TextMeshPro multicabText;
     void Update()
     {
         DataManager manager = DataManager.instance;
@@ -25,6 +24,12 @@ public class LevelInit : MonoBehaviour
         }
         if(manager.MabiniShop2){
             shop2.SetActive(true);
+        }
+        if(manager.HasTricycle){
+            tricycleText.text = "Tricycle (Owned)";
+        }
+        if(manager.HasMulticab){
+            multicabText.text = "Multicab (Owned)";
         }
     }
 }
