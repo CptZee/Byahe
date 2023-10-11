@@ -25,10 +25,7 @@ jobs:
       - name: Setup Unity
         uses: kuler90/setup-unity@v1
         with:
-          unity-modules: 
-              - android
-              - ios
-    
+          unity-modules: android
       - name: Build debug APK
         uses: akiojin/unity-build-github-action@v3
         with:
