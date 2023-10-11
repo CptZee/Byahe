@@ -22,10 +22,18 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
 
+      - name: Setup Unity
+        uses: kuler90/setup-unity@v1
+        with:
+          unity-modules: 
+              - android
+              - ios
+    
       - name: Build debug APK
         uses: akiojin/unity-build-github-action@v3
         with:
           build-target: 'Android'
+          configuration: 'Debug'
           project-directory: ${{ github.workspace }}
           output-directory: ${{ runner.temp }}/Unity
           
@@ -33,6 +41,7 @@ jobs:
         uses: akiojin/unity-build-github-action@v3
         with:
           build-target: 'iOS'
+          configuration: 'Debug'
           project-directory: ${{ github.workspace }}
           output-directory: ${{ runner.temp }}/Unity
 
