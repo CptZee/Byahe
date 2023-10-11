@@ -22,10 +22,6 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
 
-      - name: Install dependencies
-        run: |
-          bundle exec fastlane install
-
       - name: Build debug APK
         uses: akiojin/unity-build-github-action@v3
         with:
