@@ -1,0 +1,47 @@
+name: Build APK
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  project_name: Byahe
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name:  Set up Ruby
+        uses: ruby/setup-ruby@v1
+
+      - name: Install dependencies
+        run: |
+          bundle exec fastlane install
+
+      - name: Setup Unity
+        uses: game-ci/setup-unity@v1
+
+      - name: Build debug APK
+        uses: akiojin/unity-build-github-action@v3
+        with:
+          build-target: 'Android'
+          project-directory: ${{ github.workspace }}
+          output-directory: ${{ runner.temp }}/Unity
+          
+      - name: Build debug IPA
+        uses: akiojin/unity-build-github-action@v3
+        with:
+          build-target: 'iOS'
+          project-directory: ${{ github.workspace }}
+          output-directory: ${{ runner.temp }}/Unity
+
+      - name: Upload Files
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ env.date_today }} - ${{ env.project_name }}} - APK(s) debug generated
+          path: ${{ runner.temp }}/Unity
+      
