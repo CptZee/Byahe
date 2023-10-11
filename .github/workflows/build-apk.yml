@@ -16,7 +16,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - uses: fastlane/github-actions/fastlane-env-reminder@latest
+      - name:  Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Install dependencies
+        run: |
+          bundle exec fastlane install
 
       - name: Build debug APK
         uses: akiojin/unity-build-github-action@v3
