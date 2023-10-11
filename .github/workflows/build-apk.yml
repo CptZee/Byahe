@@ -16,11 +16,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name:  Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - name: Cache Library
+        uses: actions/cache@v3
         with:
-          ruby-version: '3.2'
-          bundler-cache: true
+          path: Library
+          key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          restore-keys: |
+            Library-
 
       - name: Build project
         uses: game-ci/unity-builder@v3
@@ -41,12 +43,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name:  Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - name: Cache Library
+        uses: actions/cache@v3
         with:
-          ruby-version: '3.2'
-          bundler-cache: true
-
+          path: Library
+          key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          restore-keys: |
+            Library-
+            
       - name: Build project
         uses: game-ci/unity-builder@v3
         env:
