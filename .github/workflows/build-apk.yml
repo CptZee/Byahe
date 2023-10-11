@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 env:
   project_name: Byahe
@@ -21,9 +22,6 @@ jobs:
       - name: Install dependencies
         run: |
           bundle exec fastlane install
-
-      - name: Setup Unity
-        uses: game-ci/setup-unity@v1
 
       - name: Build debug APK
         uses: akiojin/unity-build-github-action@v3
