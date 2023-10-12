@@ -29,6 +29,8 @@ public class PlayerTourScript : MonoBehaviour
     public GameObject sign2UI;
     public GameObject shop1UI;
     public GameObject shop2UI;
+    public GameObject cantTravelUI;
+    public GameObject destinationUI;
     public AudioClip successAudio;
     public AudioClip failedAudio;
     private bool checkedLandmark = false;
@@ -110,6 +112,16 @@ public class PlayerTourScript : MonoBehaviour
             Debug.Log("Interacting with the gas station...");
             showUI(gasStationUI);
         }
+        distance = Vector3.Distance(transform.position, gasStation.transform.position);
+        if (distance < 2.0f)
+        {
+            Debug.Log("Interacting with the travel station...");
+            if(DataManager.instance.Gas < 0){
+                showUI(cantTravelUI);
+                return;
+            }
+            showUI(destinationUI);
+        }
         distance = Vector3.Distance(transform.position, modShop.transform.position);
         if (distance < 2.0f)
         {
@@ -181,6 +193,16 @@ public class PlayerTourScript : MonoBehaviour
     public void CloseSign2UI()
     {
         hideUI(sign2UI);
+    }
+
+    public void CloseCantTravel()
+    {
+        hideUI(notForSaleUI);
+    }
+
+    public void CloseDestinationUI()
+    {
+        hideUI(destinationUI);
     }
 
     public void BuyShop1()

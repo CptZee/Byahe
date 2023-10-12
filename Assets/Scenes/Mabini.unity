@@ -3141,6 +3141,8 @@ MonoBehaviour:
   sign2UI: {fileID: 967410244}
   shop1UI: {fileID: 77366500}
   shop2UI: {fileID: 189555689}
+  cantTravelUI: {fileID: 0}
+  destinationUI: {fileID: 0}
   successAudio: {fileID: 8300000, guid: c92987143eefcb742a79f09deec00842, type: 3}
   failedAudio: {fileID: 8300000, guid: bb2fe1f345be1894fadb526026ebaa9f, type: 3}
 --- !u!1 &146118504
@@ -13718,7 +13720,7 @@ GameObject:
   - component: {fileID: 937857280}
   - component: {fileID: 937857279}
   m_Layer: 5
-  m_Name: Third (1)
+  m_Name: Cancel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13787,7 +13789,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 937857280}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 137224426}
+        m_TargetAssemblyTypeName: PlayerTourScript, Assembly-CSharp
+        m_MethodName: CloseDestinationUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &937857280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27160,7 +27174,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 137224426}
         m_TargetAssemblyTypeName: PlayerTourScript, Assembly-CSharp
-        m_MethodName: CloseNotForSaleUI
+        m_MethodName: CloseCantTravel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
