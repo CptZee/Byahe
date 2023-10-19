@@ -141,8 +141,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 88.875
-        height: 111
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,10 +160,10 @@ TextureImporter:
       name: Crow-3_1
       rect:
         serializedVersion: 2
-        x: 88
+        x: 16
         y: 0
-        width: 88.875
-        height: 111
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +181,10 @@ TextureImporter:
       name: Crow-3_2
       rect:
         serializedVersion: 2
-        x: 176
+        x: 32
         y: 0
-        width: 88.875
-        height: 111
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +202,10 @@ TextureImporter:
       name: Crow-3_3
       rect:
         serializedVersion: 2
-        x: 264
+        x: 48
         y: 0
-        width: 88.875
-        height: 111
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,10 +223,10 @@ TextureImporter:
       name: Crow-3_4
       rect:
         serializedVersion: 2
-        x: 352
+        x: 64
         y: 0
-        width: 88.875
-        height: 111
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,10 +244,10 @@ TextureImporter:
       name: Crow-3_5
       rect:
         serializedVersion: 2
-        x: 440
+        x: 80
         y: 0
-        width: 88.875
-        height: 111
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,10 +265,10 @@ TextureImporter:
       name: Crow-3_6
       rect:
         serializedVersion: 2
-        x: 528
+        x: 96
         y: 0
-        width: 88.875
-        height: 111
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,10 +286,10 @@ TextureImporter:
       name: Crow-3_7
       rect:
         serializedVersion: 2
-        x: 616
+        x: 112
         y: 0
-        width: 88.875
-        height: 111
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

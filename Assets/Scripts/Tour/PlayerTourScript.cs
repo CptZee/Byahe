@@ -14,6 +14,7 @@ public class PlayerTourScript : MonoBehaviour
     //This part is really ifty and prolly should be moved to its own later on
 
     public GameObject uiButtons;
+    public GameObject terminal;
     public GameObject sign1;
     public GameObject sign2;
     public GameObject shop1;
@@ -105,6 +106,15 @@ public class PlayerTourScript : MonoBehaviour
             Debug.Log("Interacting with The landmark...");
             checkedLandmark = true;
             showUI(landmarkUI);
+        }
+        distance = Vector3.Distance(transform.position, terminal.transform.position);
+        if (distance < 2.0f)
+        {
+            if(DataManager.instance.Gas < 50){
+                showUI(cantTravelUI);
+                return;
+            }
+            showUI(destinationUI);
         }
         distance = Vector3.Distance(transform.position, gasStation.transform.position);
         if (distance < 2.0f)

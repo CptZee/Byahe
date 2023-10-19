@@ -1,43 +1,45 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BirdPatrol : MonoBehaviour
 {
     public GameObject pointA;
     public GameObject pointB;
+    public bool isMovingLeft = false;
     private Animator anim;
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     private Transform currentPoint;
     public float speed;
     void Start()
     {
         anim = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody>();
-        currentPoint = pointA.transform;
-        anim.SetBool("isLookingRight", true);
+        rb = GetComponent<Rigidbody2D>();
+        if(isMovingLeft)
+            currentPoint = pointB.transform;
+        else
+            currentPoint = pointA.transform;
+        anim.SetBool(anim.GetParameter(0).name, isMovingLeft);
     }
 
-    // Update is called once per frame
     void Update()
     {
+        Debug.Log("Current bool: " + anim.GetBool(anim.GetParameter(0).name));
         Vector2 point = currentPoint.position - transform.position;
-        if(currentPoint == pointB.transform)
+        if (currentPoint == pointB.transform)
         {
-            anim.SetBool("isLookingRight", false);
+            anim.SetBool(anim.GetParameter(0).name, false);
             rb.velocity = new Vector2(speed, 0);
         }
         else
         {
-            anim.SetBool("isLookingRight", true);
+            anim.SetBool(anim.GetParameter(0).name, true);
             rb.velocity = new Vector2(-speed, 0);
         }
 
-        if(Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointB.transform)
+        if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointB.transform)
         {
             currentPoint = pointA.transform;
         }
-        else if(Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointA.transform)
+        else if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointA.transform)
         {
             currentPoint = pointB.transform;
         }
