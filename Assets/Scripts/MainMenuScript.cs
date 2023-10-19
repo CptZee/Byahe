@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.UI;
 public class MainMenuScript : MonoBehaviour
 {
     private AudioSource audioSource;
@@ -9,10 +10,16 @@ public class MainMenuScript : MonoBehaviour
     public GameObject newGamePanel;
     public DataManager dataManager;
     public GameObject tutorialPanel;
+    public GameObject settingsUI;
+    public Slider musicSlider;
+    public Slider audioSlider;
+    private SettingsManager settingsManager;
+    public AudioSource musicPlayer;
     void Start()
     {
-        // Locate the GameObject with the AudioSource component
-        GameObject musicPlayer = GameObject.Find("MainMusic");
+        settingsManager = SettingsManager.instance;
+        musicSlider.value = settingsManager.MusicLevel;
+        audioSlider.value = settingsManager.AudioLevel;
         if (musicPlayer != null)
             audioSource = musicPlayer.GetComponent<AudioSource>();
         else
@@ -21,9 +28,28 @@ public class MainMenuScript : MonoBehaviour
         GameObject orientationManager = new GameObject("SceneOrientationManager");
         orientationManager.AddComponent<SceneOrientationManager>();
         DontDestroyOnLoad(orientationManager);
+        musicSlider.onValueChanged.AddListener(OnMusicSliderValueChanged);
+        audioSlider.onValueChanged.AddListener(OnAudioSliderValueChanged);
     }
 
-    public void ShowTutorial(){
+    void Update(){
+        musicPlayer.volume = settingsManager.MusicLevel;
+    }
+
+    void OnMusicSliderValueChanged(float value)
+    {
+        settingsManager.MusicLevel = value;
+        Debug.Log("Music Slider Value: " + value);
+    }
+    
+    void OnAudioSliderValueChanged(float value)
+    {
+        settingsManager.AudioLevel = value;
+        Debug.Log("Audio Slider Value: " + value);
+    }
+
+    public void ShowTutorial()
+    {
         tutorialPanel.SetActive(true);
     }
 
@@ -40,13 +66,25 @@ public class MainMenuScript : MonoBehaviour
         NewGame();
     }
 
-    public void NewGame(){
+    public void NewGame()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         dataManager.Reset();
     }
 
-    public void CloseNewGameUI(){
+    public void showSettingsUI()
+    {
+        settingsUI.SetActive(true);
+    }
+
+    public void CloseNewGameUI()
+    {
         newGamePanel.SetActive(false);
+    }
+
+    public void CloseSettingsUI()
+    {
+        settingsUI.SetActive(false);
     }
 
     public void ContinueGame()
