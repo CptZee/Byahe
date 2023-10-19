@@ -207,7 +207,7 @@ public class PlayerTourScript : MonoBehaviour
 
     public void CloseCantTravel()
     {
-        hideUI(notForSaleUI);
+        hideUI(cantTravelUI);
     }
 
     public void CloseDestinationUI()
