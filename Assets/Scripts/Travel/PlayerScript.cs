@@ -22,6 +22,7 @@ public class PlayerScript : MonoBehaviour
     private bool isCollisionEnabled = false; 
     public SpriteRenderer spriteRenderer;
     public BoxCollider2D boxCollider;
+    public AudioManager audioManager;
     private int spriteVariation = 0;
     void Start()
     {
@@ -82,6 +83,7 @@ public class PlayerScript : MonoBehaviour
             StartCoroutine(Blink());
             gasLevel -= collisionGasLoss;
             gasLevel = Mathf.Clamp(gasLevel, 0f, 100f);
+            audioManager.PlayAudio(0); //Play Crash Sound
         }
 
     }

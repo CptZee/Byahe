@@ -9,6 +9,7 @@ public class PlayerTourScript : MonoBehaviour
     public BoxCollider2D boxCollider;
     public float moveSpeed = 5;
     public Animator animator;
+    public AudioManager audioManager;
     private int spriteVariation = 0;
 
     //This part is really ifty and prolly should be moved to its own later on
@@ -104,12 +105,14 @@ public class PlayerTourScript : MonoBehaviour
         if (distance < 5.0f)
         {
             Debug.Log("Interacting with The landmark...");
+            audioManager.PlayAudio(2);
             checkedLandmark = true;
             showUI(landmarkUI);
         }
         distance = Vector3.Distance(transform.position, terminal.transform.position);
         if (distance < 2.0f)
         {
+            audioManager.PlayAudio(0);
             if(DataManager.instance.Gas < 50){
                 showUI(cantTravelUI);
                 return;
@@ -119,46 +122,42 @@ public class PlayerTourScript : MonoBehaviour
         distance = Vector3.Distance(transform.position, gasStation.transform.position);
         if (distance < 2.0f)
         {
+            audioManager.PlayAudio(0);
             Debug.Log("Interacting with the gas station...");
             showUI(gasStationUI);
-        }
-        distance = Vector3.Distance(transform.position, gasStation.transform.position);
-        if (distance < 2.0f)
-        {
-            Debug.Log("Interacting with the travel station...");
-            if(DataManager.instance.Gas < 0){
-                showUI(cantTravelUI);
-                return;
-            }
-            showUI(destinationUI);
         }
         distance = Vector3.Distance(transform.position, modShop.transform.position);
         if (distance < 2.0f)
         {
+            audioManager.PlayAudio(0);
             Debug.Log("Interacting with the mod shop...");
             showUI(modShopUI);
         }
         distance = Vector3.Distance(transform.position, shop1.transform.position);
         if (distance < 3.0f && shop1.activeSelf)
         {
+            audioManager.PlayAudio(1);
             Debug.Log("Interacting with Shop 1...");
             showUI(shop1UI);
         }
         distance = Vector3.Distance(transform.position, shop2.transform.position);
         if (distance < 3.0f && shop2.activeSelf)
         {
+            audioManager.PlayAudio(1);
             Debug.Log("Interacting with Shop 2...");
             showUI(shop2UI);
         }
         distance = Vector3.Distance(transform.position, sign1.transform.position);
         if (distance < 3.0f && !shop1.activeSelf)
         {
+            audioManager.PlayAudio(3);
             Debug.Log("Interacting with Shop 1 Sign...");
             showUI(sign1UI);
         }
         distance = Vector3.Distance(transform.position, sign2.transform.position);
         if (distance < 3.0f && !shop2.activeSelf)
         {
+            audioManager.PlayAudio(4);
             Debug.Log("Interacting with Shop 2 Sign...");
             if (!checkedLandmark)
             {
