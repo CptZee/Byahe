@@ -7,6 +7,8 @@ public class PlayerScript : MonoBehaviour
     public Slider gasSlider;
     public Slider destinationSlider;
     public GameObject gameOverPanel;
+    public GameObject gameWonPanel;
+    public GameObject nearIndicatorPanel;
     public float gasDecreaseSpeed = 0.25f;
     public float destinationIncreaseSpeed = 2.25f;
     public float collisionGasLoss = 2.5f;
@@ -19,7 +21,7 @@ public class PlayerScript : MonoBehaviour
     public float moveSpeed = 5;
     public float blinkDuration = 1f;
     public float blinkSpeed = 0.2f;
-    private bool isCollisionEnabled = false; 
+    private bool isCollisionEnabled = false;
     public SpriteRenderer spriteRenderer;
     public BoxCollider2D boxCollider;
     public AudioManager audioManager;
@@ -31,7 +33,7 @@ public class PlayerScript : MonoBehaviour
         // Adjust the Box Collider dimensions to match the Sprite dimensions
         boxCollider.size = spriteRenderer.sprite.bounds.size;
         boxCollider.offset = spriteRenderer.sprite.bounds.center;
-        
+
         gasSlider.value = gasLevel;
         destinationSlider.value = destinationProgress;
 
@@ -53,6 +55,18 @@ public class PlayerScript : MonoBehaviour
         gasSlider.value = gasLevel;
         destinationSlider.value = destinationProgress;
         manager.Gas = gasLevel;
+
+        if (destinationProgress >= 80 && !gameOver)
+        {
+            nearIndicatorPanel.SetActive(true);
+        }
+        if (destinationProgress == 100 && !gameOver)
+        {
+            gameWonPanel.SetActive(true);
+            gameOver = true;
+            Time.timeScale = 0;
+        }
+
         if (gasSlider.value <= 0 && !gameOver)
         {
             gameOverPanel.SetActive(true);
@@ -61,10 +75,12 @@ public class PlayerScript : MonoBehaviour
             gameOver = true;
         }
         Debug.Log("Current Tour Actor: " + manager.TourActor);
-        if(manager.TravelActor.Equals("Jeepney")){
+        if (manager.TravelActor.Equals("Jeepney"))
+        {
             spriteVariation = -1;
         }
-        if(manager.TravelActor.Equals("Multicab")){
+        if (manager.TravelActor.Equals("Multicab"))
+        {
             spriteVariation = 1;
         }
         Debug.Log("Current Sprite Variation " + spriteVariation);
@@ -78,7 +94,7 @@ public class PlayerScript : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (!isCollisionEnabled) return;
-        if(other.gameObject.CompareTag("Obstacles"))
+        if (other.gameObject.CompareTag("Obstacles"))
         {
             StartCoroutine(Blink());
             gasLevel -= collisionGasLoss;
@@ -94,11 +110,11 @@ public class PlayerScript : MonoBehaviour
 
         while (Time.time < endTime)
         {
-            rend.enabled = !rend.enabled;  
-            yield return new WaitForSeconds(blinkSpeed); 
+            rend.enabled = !rend.enabled;
+            yield return new WaitForSeconds(blinkSpeed);
         }
 
-        rend.enabled = true; 
+        rend.enabled = true;
     }
 
     IEnumerator EnableCollisionAfterWarmup(float seconds)
@@ -106,7 +122,7 @@ public class PlayerScript : MonoBehaviour
         yield return new WaitForSeconds(seconds);
         isCollisionEnabled = true;
     }
-    
+
     public void MoveLeft()
     {
         float moveDirection = -1;
