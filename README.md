@@ -27,7 +27,7 @@ The primary aim of this game is to showcase these remarkable landmarks and share
 Check out (https://i.imgur.com/TLmUUxI.gif)
 
 ## GAME UML
-![Byahe UML](https://i.imgur.com/OgVmXL5.png)
+![Byahe UML](https://i.imgur.com/lyjEZX0.png)
 Here is a simple Use Case Diagram which shows the overall flow of the system and the accessible modules by each module. The player have access to all the modules of the game.
 
 ## Who is this Game For?
