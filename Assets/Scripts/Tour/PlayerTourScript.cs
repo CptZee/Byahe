@@ -225,7 +225,7 @@ public class PlayerTourScript : MonoBehaviour
             return;
         }
         manager.Money -= 10;
-        manager.Gas += 10;
+        manager.Gas += 2;
         audioSource.clip = successAudio;
         audioSource.Play();
     }

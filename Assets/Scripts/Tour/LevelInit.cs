@@ -17,6 +17,7 @@ public class LevelInit : MonoBehaviour
         manager = DataManager.instance;
         manager.CurrentScene = manager.Destination;
         manager.Destination = "";
+        manager.Save();
     }
     void Update()
     {

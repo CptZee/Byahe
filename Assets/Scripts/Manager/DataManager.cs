@@ -40,7 +40,7 @@ public class DataManager : MonoBehaviour
         HasMulticab = false;
         CurrentScene = "TravelLevel";
         Destination = "Mabini";
-        Gas = 100;
+        Gas = 50;
         Money = 100;
         Income = 0;
         Knowledge = 0;
