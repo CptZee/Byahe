@@ -11,9 +11,15 @@ public class LevelInit : MonoBehaviour
     public GameObject shop2;
     public TextMeshProUGUI tricycleText;
     public TextMeshProUGUI multicabText;
+    private DataManager manager;
+
+    void Start(){
+        manager = DataManager.instance;
+        manager.CurrentScene = manager.Destination;
+        manager.Destination = "";
+    }
     void Update()
     {
-        DataManager manager = DataManager.instance;
         gasText.text = manager.Gas.ToString("F0");
         moneyText.text = manager.Money.ToString("F0");
         tourIncomeText.text = manager.Income.ToString();

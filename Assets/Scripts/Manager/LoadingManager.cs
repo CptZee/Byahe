@@ -17,6 +17,7 @@ public class LoadingManager : MonoBehaviour
         loadingPanel.SetActive(false);
         FadeImage.gameObject.SetActive(false);
         dataManager = DataManager.instance;
+        Debug.Log("The destination is " + dataManager.Destination + " from " + dataManager.CurrentScene);
     }
 
     public void LoadScene(string sceneName)
@@ -24,17 +25,19 @@ public class LoadingManager : MonoBehaviour
         if(sceneName.Equals(""))
         {
             targetScene = dataManager.Destination;
-            Debug.Log("Scene name is empty");
-            return;
+            Debug.Log("Set the destination to " + dataManager.Destination + " from " + dataManager.CurrentScene);
+        }else{
+            targetScene = sceneName;
         }
-        targetScene = sceneName;
         StartCoroutine(LoadSceneRoutine());
-        saveData();
     }
 
     void saveData()
     {
         string oldCurrentScene = dataManager.CurrentScene;
+        if(oldCurrentScene.Equals(dataManager.Destination))
+            return;
+        
         dataManager.CurrentScene = targetScene;
         dataManager.Destination = oldCurrentScene;
         dataManager.Save();

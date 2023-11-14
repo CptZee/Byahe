@@ -9,6 +9,7 @@ public class PlayerScript : MonoBehaviour
     public GameObject gameOverPanel;
     public GameObject gameWonPanel;
     public GameObject nearIndicatorPanel;
+    public float colliderReductionAmount = 1f;
     public float gasDecreaseSpeed = 0.25f;
     public float destinationIncreaseSpeed = 2.25f;
     public float collisionGasLoss = 2.5f;
@@ -26,13 +27,21 @@ public class PlayerScript : MonoBehaviour
     public BoxCollider2D boxCollider;
     public AudioManager audioManager;
     private int spriteVariation = 0;
+    private bool gameOver = false;
     void Start()
     {
         Time.timeScale = 1; //Resume the game if it is paused
 
         // Adjust the Box Collider dimensions to match the Sprite dimensions
         boxCollider.size = spriteRenderer.sprite.bounds.size;
-        boxCollider.offset = spriteRenderer.sprite.bounds.center;
+        
+        BoxCollider2D[] colliders = FindObjectsOfType<BoxCollider2D>();
+
+        // Iterate through each BoxCollider and match its size to the sprite's bounds
+        foreach (BoxCollider2D collider in colliders)
+        {
+            MatchColliderSizeToSprite(collider);
+        }
 
         gasSlider.value = gasLevel;
         destinationSlider.value = destinationProgress;
@@ -40,7 +49,6 @@ public class PlayerScript : MonoBehaviour
         StartCoroutine(EnableCollisionAfterWarmup(2f));
         gasLevel = DataManager.instance.Gas;
     }
-    private bool gameOver = false;
 
     void Update()
     {
@@ -89,6 +97,25 @@ public class PlayerScript : MonoBehaviour
 
         boxCollider.size = spriteRenderer.sprite.bounds.size;
         boxCollider.offset = spriteRenderer.sprite.bounds.center;
+    }
+
+    void MatchColliderSizeToSprite(BoxCollider2D collider)
+    {
+        // Check if there is a SpriteRenderer attached to the same GameObject
+        SpriteRenderer spriteRenderer = collider.GetComponent<SpriteRenderer>();
+
+        if (spriteRenderer != null)
+        {
+            // Get the trimmed size of the sprite
+            Vector2 trimmedSize = spriteRenderer.sprite.textureRect.size / spriteRenderer.sprite.pixelsPerUnit;
+
+            // Set the BoxCollider size to match the trimmed size
+            collider.size = trimmedSize;
+        }
+        else
+        {
+            Debug.LogWarning("SpriteRenderer not found for " + collider.gameObject.name);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
