@@ -23,8 +23,8 @@ public class LevelInit : MonoBehaviour
     {
         gasText.text = manager.Gas.ToString("F0");
         moneyText.text = manager.Money.ToString("F0");
-        tourIncomeText.text = manager.Income.ToString();
-        souvenirIncomeText.text = manager.Income.ToString();
+        tourIncomeText.text = "Establishment Passive Income (Coins/Second)" + manager.Income.ToString();
+        souvenirIncomeText.text = "Establishment Passive Income (Coins/Second)" + manager.Income.ToString();
         
         if(manager.MabiniShop1){
             shop1.SetActive(true);
