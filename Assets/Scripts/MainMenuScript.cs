@@ -11,6 +11,7 @@ public class MainMenuScript : MonoBehaviour
     public DataManager dataManager;
     public GameObject tutorialPanel;
     public GameObject settingsUI;
+    public GameObject aboutUsPanel;
     public Slider musicSlider;
     public Slider audioSlider;
     private SettingsManager settingsManager;
@@ -72,9 +73,18 @@ public class MainMenuScript : MonoBehaviour
         dataManager.Reset();
     }
 
+    public void ShowAboutUs()
+    {
+        aboutUsPanel.SetActive(true);
+    }
     public void showSettingsUI()
     {
         settingsUI.SetActive(true);
+    }
+
+    public void CloseAboutUS()
+    {
+        aboutUsPanel.SetActive(false);
     }
 
     public void CloseNewGameUI()
