@@ -21,6 +21,12 @@ public class LoadingManager : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
+        if(sceneName.Equals(""))
+        {
+            targetScene = dataManager.Destination;
+            Debug.Log("Scene name is empty");
+            return;
+        }
         targetScene = sceneName;
         StartCoroutine(LoadSceneRoutine());
         saveData();
