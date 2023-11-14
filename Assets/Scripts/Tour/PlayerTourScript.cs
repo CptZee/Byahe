@@ -214,6 +214,22 @@ public class PlayerTourScript : MonoBehaviour
         hideUI(destinationUI);
     }
 
+    public void BuyGas(){
+        
+        DataManager manager = DataManager.instance;
+        if (manager.Money < 10)
+        {
+            Debug.Log("Not enough money");
+            audioSource.clip = failedAudio;
+            audioSource.Play();
+            return;
+        }
+        manager.Money -= 10;
+        manager.Gas += 10;
+        audioSource.clip = successAudio;
+        audioSource.Play();
+    }
+
     public void BuyShop1()
     {
         DataManager manager = DataManager.instance;
