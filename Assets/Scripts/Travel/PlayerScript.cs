@@ -55,7 +55,7 @@ public class PlayerScript : MonoBehaviour
 
         DataManager manager = DataManager.instance;
         gasLevel -= gasDecreaseSpeed * Time.deltaTime;
-        gasLevel = Mathf.Clamp(gasLevel, 0f, 100f);
+        gasLevel = Mathf.Clamp(gasLevel, 0f, gasSlider.maxValue);
 
         destinationProgress += destinationIncreaseSpeed * Time.deltaTime;
         destinationProgress = Mathf.Clamp(destinationProgress, 0f, 100f);
@@ -125,8 +125,9 @@ public class PlayerScript : MonoBehaviour
         {
             StartCoroutine(Blink());
             gasLevel -= collisionGasLoss;
-            gasLevel = Mathf.Clamp(gasLevel, 0f, 100f);
+            gasLevel = Mathf.Clamp(gasLevel, 0f, gasSlider.maxValue);
             audioManager.PlayAudio(0); //Play Crash Sound
+            Debug.Log("Gas Level: " + gasLevel);
         }
 
     }

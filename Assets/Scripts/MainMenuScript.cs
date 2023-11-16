@@ -111,7 +111,7 @@ public class MainMenuScript : MonoBehaviour
     private IEnumerator LoadSceneRoutine()
     {
 
-        AsyncOperation task = SceneManager.LoadSceneAsync(dataManager.CurrentScene);
+        AsyncOperation task = SceneManager.LoadSceneAsync(PlayerPrefs.GetString("CurrentScene"));
         float elapsedLoadTime = 0f;
 
         while (!task.isDone)

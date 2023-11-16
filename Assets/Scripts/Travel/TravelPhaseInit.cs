@@ -9,5 +9,6 @@ public class TravelPhaseInit : MonoBehaviour
     {
         datamanager = DataManager.instance;
         gasSlider.maxValue = datamanager.Gas;
+        Debug.Log("Max Gas: " + gasSlider.maxValue );
     }
 }

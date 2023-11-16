@@ -17,7 +17,6 @@ public class LoadingManager : MonoBehaviour
         loadingPanel.SetActive(false);
         FadeImage.gameObject.SetActive(false);
         dataManager = DataManager.instance;
-        Debug.Log("The destination is " + dataManager.Destination + " from " + dataManager.CurrentScene);
     }
 
     public void LoadScene(string sceneName)
