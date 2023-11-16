@@ -55,6 +55,7 @@ public class Pause : MonoBehaviour
 
         settingsManager.Save();
         sessionManager.Save();
+        Debug.Log("Saving...");
         quitOverlay.gameObject.SetActive(true);
     }
 
