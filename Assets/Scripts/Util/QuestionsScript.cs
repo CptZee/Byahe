@@ -6,6 +6,8 @@ public class QuestionsScript : MonoBehaviour
     public List<GameObject> questions;
     public List<GameObject> stations;
     public GameObject maxUpgradePanel;
+    public GameObject succcessPanel;
+    public GameObject failedPanel;
     public AudioSource audioSource;
     public AudioClip failedAudio;
     public AudioClip successAudio;
@@ -14,7 +16,7 @@ public class QuestionsScript : MonoBehaviour
     private int randomIndex;
     public void UpgradeQuestion()
     {
-        foreach (GameObject station in stations)
+        foreach (GameObject ignored in stations)
             gameObject.SetActive(false);
         if (questions.Count > 0)
         {
@@ -59,12 +61,12 @@ public class QuestionsScript : MonoBehaviour
         Debug.Log("Wrong answer");
         audioSource.clip = failedAudio;
         audioSource.Play();
-        CloseQuestions();
+        failedPanel.SetActive(true);
     }
 
     public void RemoveQuestion()
     {
-        CloseQuestions();
+        succcessPanel.SetActive(true);
         questions.RemoveAt(randomIndex);
     }
 
