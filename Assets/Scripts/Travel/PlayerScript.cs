@@ -34,7 +34,7 @@ public class PlayerScript : MonoBehaviour
 
         // Adjust the Box Collider dimensions to match the Sprite dimensions
         boxCollider.size = spriteRenderer.sprite.bounds.size;
-        
+
         BoxCollider2D[] colliders = FindObjectsOfType<BoxCollider2D>();
 
         // Iterate through each BoxCollider and match its size to the sprite's bounds
@@ -52,7 +52,6 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
-
         DataManager manager = DataManager.instance;
         gasLevel -= gasDecreaseSpeed * Time.deltaTime;
         gasLevel = Mathf.Clamp(gasLevel, 0f, gasSlider.maxValue);
@@ -64,6 +63,14 @@ public class PlayerScript : MonoBehaviour
         destinationSlider.value = destinationProgress;
         manager.Gas = gasLevel;
 
+        if (gasSlider.value <= (0.15f * gasSlider.maxValue))
+        {
+            if (!audioManager.IsPlaying())
+            {
+                Debug.Log("Low Gas! " + gasSlider.value);
+                audioManager.PlayAudio(1); //Play Low Gas Sound
+            }
+        }
         if (destinationProgress >= 80 && !gameOver)
         {
             nearIndicatorPanel.SetActive(true);

@@ -6,17 +6,20 @@ public class AudioManager : MonoBehaviour
     private AudioSource audioSource;
     public List<AudioClip> audioClips;
     private SettingsManager settingsManager;
-    void Start(){
+    void Start()
+    {
         settingsManager = SettingsManager.instance;
         audioSource = GetComponent<AudioSource>();
     }
 
-    void Update(){
+    void Update()
+    {
         audioSource.volume = settingsManager.AudioLevel;
         audioSource.loop = false;
     }
-    
-    public void PlayAudio(int index){
+
+    public void PlayAudio(int index)
+    {
         if (audioSource.isPlaying)
         {
             audioSource.Stop();
@@ -31,5 +34,10 @@ public class AudioManager : MonoBehaviour
         {
             audioSource.Stop();
         }
+    }
+
+    public bool IsPlaying()
+    {
+        return audioSource.isPlaying;
     }
 }
