@@ -23601,7 +23601,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77366504}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
+<<<<<<< HEAD
         m_MethodName: CloseQuestions
+=======
+        m_MethodName: CloseMaxPanel
+>>>>>>> 57c430bf4dd9cac19eafaf401feff02919e151e7
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -32685,7 +32689,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77366504}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
+<<<<<<< HEAD
         m_MethodName: CloseQuestions
+=======
+        m_MethodName: CloseMaxPanel
+>>>>>>> 57c430bf4dd9cac19eafaf401feff02919e151e7
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

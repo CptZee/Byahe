@@ -5,6 +5,7 @@ public class Pause : MonoBehaviour
 {
     
     public GameObject pauseOverlay;
+    public GameObject quitOverlay;
     public LoadingManager loadingManager;
     public Slider musicSlider;
     public Slider audioSlider;
@@ -47,13 +48,17 @@ public class Pause : MonoBehaviour
         settingsManager.Save();
         Time.timeScale = 1;
         pauseOverlay.gameObject.SetActive(false);
+        quitOverlay.gameObject.SetActive(false);
     }
 
     public void Quit(){
 
         settingsManager.Save();
         sessionManager.Save();
-        //Quit Game
+        quitOverlay.gameObject.SetActive(true);
+    }
+
+    public void ConfirmQuit(){
         Application.Quit();
     }
 }
