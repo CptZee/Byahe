@@ -14401,7 +14401,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1978288104}
         m_TargetAssemblyTypeName: Pause, Assembly-CSharp
         m_MethodName: ConfirmQuit
         m_Mode: 1
