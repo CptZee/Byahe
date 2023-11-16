@@ -85,7 +85,7 @@ public class PlayerScript : MonoBehaviour
         if (gasSlider.value <= 0 && !gameOver)
         {
             gameOverPanel.SetActive(true);
-            manager.Money -= 10;
+            manager.Money -= 12.5f;
             Time.timeScale = 0;
             gameOver = true;
         }
