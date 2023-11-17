@@ -20,4 +20,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menus/MabiniEpilogue.unity
     guid: 586c12017c01c204cb5ac9d7a06386d7
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 10d2aebd6ddc94b45aef726c03fd8a24, type: 2}
