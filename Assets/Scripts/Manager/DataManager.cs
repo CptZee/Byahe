@@ -30,6 +30,17 @@ public class DataManager : MonoBehaviour
         Knowledge = PlayerPrefs.GetFloat("Knowledge");
         MabiniShop1 = PlayerPrefs.GetInt("MabiniShop1") == 1;
         MabiniShop2 = PlayerPrefs.GetInt("MabiniShop2") == 1;
+        MalvarShop1 = PlayerPrefs.GetInt("MalvarShop1") == 1;
+        MalvarShop2 = PlayerPrefs.GetInt("MalvarShop2") == 1;
+        BauanShop1 = PlayerPrefs.GetInt("BauanShop1") == 1;
+        BauanShop2 = PlayerPrefs.GetInt("BauanShop2") == 1;
+        SanJoseShop1 = PlayerPrefs.GetInt("SanJoseShop1") == 1;
+        SanJoseShop2 = PlayerPrefs.GetInt("SanJoseShop2") == 1;
+        LoboShop1 = PlayerPrefs.GetInt("LoboShop1") == 1;
+        LoboShop2 = PlayerPrefs.GetInt("LoboShop2") == 1;
+        GocoShop1 = PlayerPrefs.GetInt("GocoShop1") == 1;
+        GocoShop2 = PlayerPrefs.GetInt("GocoShop2") == 1;
+
     }
 
     public void Reset()
@@ -46,6 +57,16 @@ public class DataManager : MonoBehaviour
         Knowledge = 0;
         MabiniShop1 = false;
         MabiniShop2 = false;
+        MalvarShop1 = false;
+        MalvarShop2 = false;
+        BauanShop1 = false;
+        BauanShop2 = false;
+        SanJoseShop1 = false;
+        SanJoseShop2 = false;
+        LoboShop1 = false; 
+        LoboShop2 = false; 
+        GocoShop1 = false; 
+        GocoShop2 = false; 
 
         Save();
     }
@@ -64,6 +85,16 @@ public class DataManager : MonoBehaviour
         PlayerPrefs.SetFloat("Knowledge", Knowledge);
         PlayerPrefs.SetInt("MabiniShop1", MabiniShop1 ? 1 : 0);
         PlayerPrefs.SetInt("MabiniShop2", MabiniShop2 ? 1 : 0);
+        PlayerPrefs.SetInt("MalvarShop1", MalvarShop1 ? 1 : 0);
+        PlayerPrefs.SetInt("MalvarShop2", MalvarShop2 ? 1 : 0);
+        PlayerPrefs.SetInt("BauanShop1", BauanShop1 ? 1 : 0);
+        PlayerPrefs.SetInt("BauanShop2", BauanShop2 ? 1 : 0);
+        PlayerPrefs.SetInt("SanJoseShop1", SanJoseShop1 ? 1 : 0);
+        PlayerPrefs.SetInt("SanJoseShop2", SanJoseShop2 ? 1 : 0);
+        PlayerPrefs.SetInt("LoboShop1", LoboShop1 ? 1 : 0);
+        PlayerPrefs.SetInt("LoboShop2", LoboShop2 ? 1 : 0);
+        PlayerPrefs.SetInt("GocoShop1", GocoShop1 ? 1 : 0);
+        PlayerPrefs.SetInt("GocoShop2", GocoShop2 ? 1 : 0);
         PlayerPrefs.Save();
     }
 
@@ -103,4 +134,14 @@ public class DataManager : MonoBehaviour
     public float Knowledge { get; set; }
     public bool MabiniShop1 { get; set; }
     public bool MabiniShop2 { get; set; }
+    public bool MalvarShop1 { get; set; }
+    public bool MalvarShop2 { get; set; }
+    public bool BauanShop1 { get; set; }
+    public bool BauanShop2 { get; set; }
+    public bool SanJoseShop1 { get; set; }
+    public bool SanJoseShop2 { get; set; }
+    public bool LoboShop1 { get; set; }
+    public bool LoboShop2 { get; set; }
+    public bool GocoShop1 { get; set; }
+    public bool GocoShop2 { get; set; }
 }
