@@ -38,8 +38,8 @@ public class DataManager : MonoBehaviour
         SanJoseShop2 = PlayerPrefs.GetInt("SanJoseShop2") == 1;
         LoboShop1 = PlayerPrefs.GetInt("LoboShop1") == 1;
         LoboShop2 = PlayerPrefs.GetInt("LoboShop2") == 1;
-        GocoShop1 = PlayerPrefs.GetInt("GocoShop1") == 1;
-        GocoShop2 = PlayerPrefs.GetInt("GocoShop2") == 1;
+        BalayanShop1 = PlayerPrefs.GetInt("BalayanShop1") == 1;
+        BalayanShop2 = PlayerPrefs.GetInt("BalayanShop2") == 1;
 
     }
 
@@ -65,8 +65,8 @@ public class DataManager : MonoBehaviour
         SanJoseShop2 = false;
         LoboShop1 = false; 
         LoboShop2 = false; 
-        GocoShop1 = false; 
-        GocoShop2 = false; 
+        BalayanShop1 = false; 
+        BalayanShop2 = false; 
 
         Save();
     }
@@ -93,8 +93,8 @@ public class DataManager : MonoBehaviour
         PlayerPrefs.SetInt("SanJoseShop2", SanJoseShop2 ? 1 : 0);
         PlayerPrefs.SetInt("LoboShop1", LoboShop1 ? 1 : 0);
         PlayerPrefs.SetInt("LoboShop2", LoboShop2 ? 1 : 0);
-        PlayerPrefs.SetInt("GocoShop1", GocoShop1 ? 1 : 0);
-        PlayerPrefs.SetInt("GocoShop2", GocoShop2 ? 1 : 0);
+        PlayerPrefs.SetInt("BalayanShop1", BalayanShop1 ? 1 : 0);
+        PlayerPrefs.SetInt("BalayanShop2", BalayanShop2 ? 1 : 0);
         PlayerPrefs.Save();
     }
 
@@ -142,6 +142,6 @@ public class DataManager : MonoBehaviour
     public bool SanJoseShop2 { get; set; }
     public bool LoboShop1 { get; set; }
     public bool LoboShop2 { get; set; }
-    public bool GocoShop1 { get; set; }
-    public bool GocoShop2 { get; set; }
+    public bool BalayanShop1 { get; set; }
+    public bool BalayanShop2 { get; set; }
 }

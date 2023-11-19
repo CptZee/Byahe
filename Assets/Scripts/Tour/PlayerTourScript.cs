@@ -258,8 +258,8 @@ public class PlayerTourScript : MonoBehaviour
             case "Lobo":
                 manager.LoboShop1 = true;
                 break;
-            case "Goco":
-                manager.GocoShop1 = true;
+            case "Balayan":
+                manager.BalayanShop1 = true;
                 break;
         }
         audioSource.clip = successAudio;
@@ -298,8 +298,8 @@ public class PlayerTourScript : MonoBehaviour
             case "Lobo":
                 manager.LoboShop2 = true;
                 break;
-            case "Goco":
-                manager.GocoShop2 = true;
+            case "Balayan":
+                manager.BalayanShop2 = true;
                 break;
         }
         audioSource.clip = successAudio;

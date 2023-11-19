@@ -60,9 +60,9 @@ public class LevelInit : MonoBehaviour
                     shop2.SetActive(true);
                 break;
             case "Goco":
-                if (manager.GocoShop1)
+                if (manager.BalayanShop1)
                     shop1.SetActive(true);
-                if (manager.GocoShop2)
+                if (manager.BalayanShop2)
                     shop2.SetActive(true);
                 break;
         }
