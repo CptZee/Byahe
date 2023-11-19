@@ -242,8 +242,26 @@ public class PlayerTourScript : MonoBehaviour
             return;
         }
         manager.Money -= 15;
-        if (manager.CurrentScene.Equals("Mabini"))
-            manager.MabiniShop1 = true;
+        switch(manager.CurrentScene){
+            case "Mabini":
+                manager.MabiniShop1 = true;
+                break;
+            case "Malvar":
+                manager.MalvarShop1 = true;
+                break;
+            case "Bauan":
+                manager.BauanShop1 = true;
+                break;
+            case "SanJose":
+                manager.SanJoseShop1 = true;
+                break;
+            case "Lobo":
+                manager.LoboShop1 = true;
+                break;
+            case "Goco":
+                manager.GocoShop1 = true;
+                break;
+        }
         audioSource.clip = successAudio;
         audioSource.Play();
         shop1.SetActive(true);
@@ -264,8 +282,26 @@ public class PlayerTourScript : MonoBehaviour
             return;
         }
         manager.Money = DataManager.instance.Money - 25;
-        if (manager.CurrentScene.Equals("Mabini"))
-            manager.MabiniShop2 = true;
+        switch(manager.CurrentScene){
+            case "Mabini":
+                manager.MabiniShop2 = true;
+                break;
+            case "Malvar":
+                manager.MalvarShop2 = true;
+                break;
+            case "Bauan":
+                manager.BauanShop2 = true;
+                break;
+            case "SanJose":
+                manager.SanJoseShop2 = true;
+                break;
+            case "Lobo":
+                manager.LoboShop2 = true;
+                break;
+            case "Goco":
+                manager.GocoShop2 = true;
+                break;
+        }
         audioSource.clip = successAudio;
         audioSource.Play();
         shop2.SetActive(true);
