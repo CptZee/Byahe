@@ -1878,7 +1878,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bauan church
+  m_text: Parola ng lobo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -14567,6 +14567,7 @@ Transform:
   - {fileID: 295676639}
   - {fileID: 1278367764}
   - {fileID: 51349248}
+  - {fileID: 1009264927}
   - {fileID: 635488295}
   - {fileID: 1298547671}
   - {fileID: 2004984830}
@@ -14910,7 +14911,7 @@ Transform:
   m_GameObject: {fileID: 719477535}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.82, y: -0.05, z: 0.24732438}
+  m_LocalPosition: {x: 24.82, y: -0.09, z: 0.24732438}
   m_LocalScale: {x: 2.155607, y: 2.4021106, z: 2.755}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15573,7 +15574,7 @@ Transform:
   m_GameObject: {fileID: 767747064}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.860446, y: 0.1703353, z: -0.18486935}
+  m_LocalPosition: {x: 12.732, y: 0.126, z: -0.18486935}
   m_LocalScale: {x: 2.4479334, y: 2.4000554, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21279,6 +21280,90 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 4.8, y: 2.7}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1009264926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1009264927}
+  - component: {fileID: 1009264928}
+  m_Layer: 0
+  m_Name: House_v3 (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1009264927
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009264926}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 19.718, y: 0.002, z: -0.18486935}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 710392416}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1009264928
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009264926}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 12
+  m_Sprite: {fileID: 21300000, guid: 8d95783fbb40def4b8c32697b18cffde, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.48, y: 1.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -28104,7 +28189,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Museo ni Miguel Malvar
+  m_text: Museo ni Apolinario Mabini
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -28131,7 +28216,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 64.3
+  m_fontSize: 53.65
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -29752,7 +29837,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Bauan
+          m_StringArgument: Lobo
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1400887890
@@ -32691,7 +32776,7 @@ Transform:
   m_GameObject: {fileID: 1518419215}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.2, y: -2.52, z: 0}
+  m_LocalPosition: {x: 10.97, y: -2.52, z: 0}
   m_LocalScale: {x: 1.2038, y: 1.2165, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36193,7 +36278,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Museo ni Miguel Malvar
+          m_StringArgument: Mabini
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1650095637
@@ -44264,7 +44349,7 @@ Transform:
   m_GameObject: {fileID: 1960941490}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.15, y: -0.66, z: 0.24732438}
+  m_LocalPosition: {x: 17.319, y: -0.746, z: 0.24732438}
   m_LocalScale: {x: 1.6665366, y: 1.3949211, z: 0.8964212}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -50155,7 +50240,6 @@ SceneRoots:
   - {fileID: 1463701442}
   - {fileID: 980417885}
   - {fileID: 137224423}
-  - {fileID: 1896108684}
   - {fileID: 1518419217}
   - {fileID: 1328793661}
   - {fileID: 885368277}
@@ -50163,3 +50247,4 @@ SceneRoots:
   - {fileID: 401064431}
   - {fileID: 1254096523}
   - {fileID: 1900712680}
+  - {fileID: 1896108684}
