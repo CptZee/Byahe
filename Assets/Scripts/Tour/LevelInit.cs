@@ -13,7 +13,8 @@ public class LevelInit : MonoBehaviour
     public TextMeshProUGUI multicabText;
     private DataManager manager;
 
-    void Start(){
+    void Start()
+    {
         manager = DataManager.instance;
         manager.CurrentScene = manager.Destination;
         manager.Destination = "";
@@ -23,19 +24,55 @@ public class LevelInit : MonoBehaviour
     {
         gasText.text = manager.Gas.ToString("F0");
         moneyText.text = manager.Money.ToString("F0");
-        tourIncomeText.text = "Establishment Passive Income (Coins/Second)" + manager.Income.ToString();
-        souvenirIncomeText.text = "Establishment Passive Income (Coins/Second)" + manager.Income.ToString();
-        
-        if(manager.MabiniShop1){
-            shop1.SetActive(true);
+        tourIncomeText.text = "Total Passive Income (Coins/Second)" + manager.Income.ToString();
+        souvenirIncomeText.text = "Total Passive Income (Coins/Second)" + manager.Income.ToString();
+
+        switch (manager.CurrentScene)
+        {
+            case "Mabini":
+                if (manager.MabiniShop1)
+                    shop1.SetActive(true);
+                if (manager.MabiniShop2)
+                    shop2.SetActive(true);
+                break;
+            case "Malvar":
+                if (manager.MalvarShop1)
+                    shop1.SetActive(true);
+                if (manager.MalvarShop2)
+                    shop2.SetActive(true);
+                break;
+            case "Bauan":
+                if (manager.BauanShop1)
+                    shop1.SetActive(true);
+                if (manager.BauanShop2)
+                    shop2.SetActive(true);
+                break;
+            case "SanJose":
+                if (manager.SanJoseShop1)
+                    shop1.SetActive(true);
+                if (manager.SanJoseShop2)
+                    shop2.SetActive(true);
+                break;
+            case "Lobo":
+                if (manager.LoboShop1)
+                    shop1.SetActive(true);
+                if (manager.LoboShop2)
+                    shop2.SetActive(true);
+                break;
+            case "Goco":
+                if (manager.GocoShop1)
+                    shop1.SetActive(true);
+                if (manager.GocoShop2)
+                    shop2.SetActive(true);
+                break;
         }
-        if(manager.MabiniShop2){
-            shop2.SetActive(true);
-        }
-        if(manager.HasTricycle){
+
+        if (manager.HasTricycle)
+        {
             tricycleText.text = "Tricycle (Owned)";
         }
-        if(manager.HasMulticab){
+        if (manager.HasMulticab)
+        {
             multicabText.text = "Multicab (Owned)";
         }
     }
