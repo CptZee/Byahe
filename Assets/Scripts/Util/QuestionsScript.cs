@@ -40,6 +40,10 @@ public class QuestionsScript : MonoBehaviour
             gameObject.SetActive(false);
         }
         controls.SetActive(true);
+        failedPanel.SetActive(false);
+        if(succcessPanel.activeSelf)
+            RemoveQuestion();
+        succcessPanel.SetActive(false);
     }
 
     public void CorrectAnswer()
@@ -53,7 +57,7 @@ public class QuestionsScript : MonoBehaviour
         PlayerPrefs.SetFloat("Income", DataManager.instance.Income);
         PlayerPrefs.SetFloat("Knowledge", DataManager.instance.Knowledge);
         PlayerPrefs.Save();
-        RemoveQuestion();
+        succcessPanel.SetActive(true);
     }
 
     public void WrongAnswer()
@@ -66,7 +70,6 @@ public class QuestionsScript : MonoBehaviour
 
     public void RemoveQuestion()
     {
-        succcessPanel.SetActive(true);
         questions.RemoveAt(randomIndex);
     }
 

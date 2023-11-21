@@ -2463,8 +2463,8 @@ MonoBehaviour:
   - {fileID: 77366500}
   - {fileID: 189555689}
   maxUpgradePanel: {fileID: 1187059279}
-  succcessPanel: {fileID: 0}
-  failedPanel: {fileID: 0}
+  succcessPanel: {fileID: 592450348}
+  failedPanel: {fileID: 555609080}
   audioSource: {fileID: 1254096522}
   failedAudio: {fileID: 8300000, guid: bb2fe1f345be1894fadb526026ebaa9f, type: 3}
   successAudio: {fileID: 8300000, guid: c92987143eefcb742a79f09deec00842, type: 3}
@@ -4995,8 +4995,8 @@ MonoBehaviour:
   - {fileID: 77366500}
   - {fileID: 189555689}
   maxUpgradePanel: {fileID: 1187059279}
-  succcessPanel: {fileID: 0}
-  failedPanel: {fileID: 0}
+  succcessPanel: {fileID: 592450348}
+  failedPanel: {fileID: 555609080}
   audioSource: {fileID: 1254096522}
   failedAudio: {fileID: 8300000, guid: bb2fe1f345be1894fadb526026ebaa9f, type: 3}
   successAudio: {fileID: 8300000, guid: c92987143eefcb742a79f09deec00842, type: 3}
@@ -13470,7 +13470,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 2048, y: 1080}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
