@@ -21,4 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus/MabiniEpilogue.unity
     guid: 586c12017c01c204cb5ac9d7a06386d7
   m_configObjects:
-    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 10d2aebd6ddc94b45aef726c03fd8a24, type: 2}
+    com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 67c606880e78bdd41ac3c096264385e6, type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: d3359ba76657dc64e9043cb5319ea5c4, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: dc1729a7d028f1949ae535fa3a4812a1, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 5a56e864778ab414f8cb22a3a2cb8d09, type: 2}
