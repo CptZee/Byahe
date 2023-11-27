@@ -23,6 +23,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menus/MabiniEpilogue.unity
     guid: 586c12017c01c204cb5ac9d7a06386d7
+  - enabled: 1
+    path: Assets/Scenes/Balayan.unity
+    guid: d9bf7bc3143262546b0bb1821017ca6d
+  - enabled: 1
+    path: Assets/Scenes/Bauan.unity
+    guid: 5e44f3252b160a54f8eda40566d6d1f8
+  - enabled: 1
+    path: Assets/Scenes/Lobo.unity
+    guid: 467d37ac252f5094a88576aacd708a0d
+  - enabled: 1
+    path: Assets/Scenes/Malvar.unity
+    guid: d39101ba8d9e1454daedc72cf45bea71
+  - enabled: 1
+    path: Assets/Scenes/SanJose.unity
+    guid: afcc9a7c260ea3048a75eece4cdf9611
+  - enabled: 1
+    path: Assets/Scenes/Taal.unity
+    guid: b12fa93ea28379a478754ef888deda39
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 67c606880e78bdd41ac3c096264385e6, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: d3359ba76657dc64e9043cb5319ea5c4, type: 2}

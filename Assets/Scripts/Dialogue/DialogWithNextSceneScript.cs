@@ -12,6 +12,7 @@ public class DialogWithNextSceneScript : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1;
         textDisplay.text = string.Empty;
         StartDialogue();
     }

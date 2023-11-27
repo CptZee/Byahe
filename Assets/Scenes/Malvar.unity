@@ -233,7 +233,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -143.9}
+  m_AnchoredPosition: {x: 123, y: -144}
   m_SizeDelta: {x: 1091.6748, y: 35.3696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9536754
@@ -282,7 +282,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77366504}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
-        m_MethodName: WrongAnswer
+        m_MethodName: CorrectAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -312,7 +312,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c.  Inaugurated on June 12, 1898, by Andres Bonifacio.
+  m_text: c. 1896
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -339,7 +339,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 43.5
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1176,7 +1176,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77366504}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
-        m_MethodName: WrongAnswer
+        m_MethodName: CorrectAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1206,8 +1206,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. To commemorate Apolinario Mabini's life; the original house was moved
-    to a different location.
+  m_text: b. Batangas and Cavite
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -1234,7 +1233,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 37.55
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1420,7 +1419,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. He was the chief adviser to Emilio Aguinaldo.
+  m_text: b. Taal
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -1447,7 +1446,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.95
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1543,7 +1542,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77366504}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
-        m_MethodName: CorrectAnswer
+        m_MethodName: WrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2343,7 +2342,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 477c358a71a486b42b095d7ecff70224, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a9d784d2e81dc5045a71302f43574710, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3509,7 +3508,7 @@ MonoBehaviour:
   sign2: {fileID: 69224335}
   shop1: {fileID: 519008169}
   shop2: {fileID: 719477535}
-  landmark: {fileID: 0}
+  landmark: {fileID: 881907551}
   gasStation: {fileID: 2106897758}
   modShop: {fileID: 471075636}
   gasStationUI: {fileID: 72677165}
@@ -3638,7 +3637,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d. San jose
+  m_text: d. Bonifacio
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -3772,14 +3771,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The hammock is a symbol of Apolinario Mabini role in the struggle for
-    freedom and sovereignty of the Filipino nation. Mabini who became paralyzed in
-    1896, did not let his disability stop him from achieving greatness.
-
-
-    Tirivia:
-    The "Duyan" (cradle) is a symbolic representation of the simplicity of Apolinario
-    Mabini''s early life. It is said to have been crafted by his father.'
+  m_text: 'showcases the life and times of Gen. Miguel Malvar, Philippine''s last
+    highest general to surrender and his legacy to the liberation of the Philippines
+    against the United States. Malvar, a farmer and an industrious business man,
+    was born on 27 September 1865 and later joined the Katipunan before the Philippine
+    Revolution in 1896. When Pres. Aguinaldo was put into exile in Hong Kong, Malvar
+    accompanied him. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -3806,12 +3803,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.3
+  m_fontSize: 51.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 60
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -3913,7 +3910,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MUSEO NI APOLINARIO MABINI
+  m_text: MUSEO NI Miguel Malvar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -3940,7 +3937,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 119.05
+  m_fontSize: 142.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5882,8 +5879,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What historical event or movement led to the establishment of the Museo
-    ni Apolinario Mabini in Tanauan, Philippines?
+  m_text: 'What is the statue of Gen. Miguel Malvar holding while standing so proud
+    and dignified to attract visitors? '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -6272,7 +6269,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Do you want to buy 2 GAS for 10 Gold coins?
+  m_text: Do you want to buy 7.5 GAS for 10 Gold coins?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -6490,8 +6487,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What does the "Duyan" (cradle) symbolize in the context of Apolinario Mabini's
-    life and legacy?
+  m_text: 'How old does Miguel Malvar died? '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -6626,7 +6622,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a. He was a military commander.
+  m_text: a. Sto. Thomas
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -6749,7 +6745,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77366504}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
-        m_MethodName: WrongAnswer
+        m_MethodName: CorrectAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6843,7 +6839,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77366504}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
-        m_MethodName: WrongAnswer
+        m_MethodName: CorrectAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6873,7 +6869,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a. Declaration of Independence
+  m_text: a.  Rayadillo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -7750,7 +7746,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c. It was a decorative piece in his ancestral home.
+  m_text: c. Remembrance
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -7777,7 +7773,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.35
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8647,6 +8643,7 @@ MonoBehaviour:
   progressSlider: {fileID: 0}
   FadeImage: {fileID: 173636116}
   FadeDuration: 1
+  maxLoadingTime: 2
 --- !u!4 &401064431
 Transform:
   m_ObjectHideFlags: 0
@@ -8717,7 +8714,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -195.5}
+  m_AnchoredPosition: {x: 123, y: -198}
   m_SizeDelta: {x: 1091.6748, y: 35.3696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &403567958
@@ -8796,7 +8793,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d.  Inaugurated on September 16, 1991, by Corazon Aquino.
+  m_text: d. 1879
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -8823,7 +8820,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.8
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9029,7 +9026,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0.0000038146973}
-  m_SizeDelta: {x: 1132.1255, y: 459.4615}
+  m_SizeDelta: {x: 1393.2593, y: 459.4615}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &455119883
 MonoBehaviour:
@@ -9051,11 +9048,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Mabini Shrine in Tanauan Batangas \u2013 Tucked in Barangay Talaga, Tanauan
-    Batangas, the shrine marks the birthplace of Apolinario Mabini. At the heart
-    of a residential area along the Tanauan, it harbors a library, a museum, and
-    his tomb. It was inaugurated on July 23, 1956 by then Vice President Carlos P.
-    Garcia and Mrs. Luz Banzon-Magsaysay. "
+  m_text: "The museum showcases the life and times of Gen. Miguel Malvar, Philippine's
+    last highest general to surrender and his legacy to the liberation of the Philippines
+    against the United States. Malvar, a farmer and an industrious business man,
+    was born on 27 September 1865 and later joined the Katipunan before the Philippine
+    Revolution in 1896. When Pres. Aguinaldo was put into exile in Hong Kong, Malvar
+    accompanied him. \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -9082,14 +9080,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56.15
+  m_fontSize: 59.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 60
   m_fontStyle: 0
-  m_HorizontalAlignment: 16
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -9774,7 +9772,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: -17.685}
+  m_AnchoredPosition: {x: 123, y: -24.63}
   m_SizeDelta: {x: 1091.6748, y: 35.3696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &489319508
@@ -9853,7 +9851,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a. Inaugurated on August 13, 1898, by Emilio Aguinaldo.
+  m_text: a. 1820
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -9880,7 +9878,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.1
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10272,8 +10270,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 53.41919, y: 0}
-  m_SizeDelta: {x: -588.8589, y: 552.0358}
+  m_AnchoredPosition: {x: -4.1536865, y: 0}
+  m_SizeDelta: {x: -346.2308, y: 552.0358}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &527128220
 GameObject:
@@ -10389,7 +10387,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. The Philippine-American War
+  m_text: b. Paper
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -11588,7 +11586,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c. The Katipunan uprising
+  m_text: c. Sword
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -12555,7 +12553,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a. Taal
+  m_text: a. Juan Luna
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -13126,7 +13124,7 @@ Transform:
   m_GameObject: {fileID: 635488294}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.000926812, w: 0.9999996}
-  m_LocalPosition: {x: -26.81, y: 0.41, z: -0.18486935}
+  m_LocalPosition: {x: -26.85, y: 0.32, z: -0.18486935}
   m_LocalScale: {x: 2.5827706, y: 2.6924894, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13672,8 +13670,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Apolinario Mabini is often referred to as "The Sublime Paralytic" due to
-    what medical condition?
+  m_text: Who took control over all Filipino forces after the americans captured
+    Emilio Aguinaldo?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -14161,7 +14159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -128}
+  m_AnchoredPosition: {x: 142.41, y: -104.26}
   m_SizeDelta: {x: 1091.6748, y: 62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &699038752
@@ -14240,8 +14238,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c. It symbolizes the simplicity of his early life and was crafted by his
-    father.
+  m_text: c. 46
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -14268,7 +14265,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.9
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -14493,6 +14490,7 @@ Transform:
   - {fileID: 862377813}
   - {fileID: 1322942762}
   - {fileID: 293368296}
+  - {fileID: 1263849777}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &710862875
@@ -14889,10 +14887,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'What significant role did Apolinario Mabini play during the Philippine
-    Revolution against Spanish colonization, earning him the title "The Sublime Paralytic"?
-
-'
+  m_text: 'Where is the Museo ni Miguel Malvar located? '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -15221,7 +15216,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c. Treaty of Paris
+  m_text: c. Shirt
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -16040,18 +16035,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The Apolinario Mabini Replica House refers to a reconstruction or replica
-    of the ancestral home of Apolinario Mabini, a prominent figure in Philippine
-    history. Apolinario Mabini was a Filipino revolutionary leader and political
-    philosopher who played a significant role in the Philippine Revolution against
-    Spanish colonial rule in the late 19th century.
-
-
-    Trivia: The house is a
-    reconstruction or replica of the original Mabini residence. The original house
-    was destroyed during World War II.
-
-'
+  m_text: "On one end of the shrine is the Gen. Malvar Library and Museum, which
+    is filled with small glimpses to the past. The library houses several artifacts,
+    providing information about the life of Malvar and the Philippine Revolution
+    in general. It also showcases paintings, photos and other documents depicting
+    Malvar's battles, triuphs, struggles, and legacy.\r\n \r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -16078,12 +16066,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38
+  m_fontSize: 56.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 60
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -17639,7 +17627,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: -41}
+  m_AnchoredPosition: {x: 65, y: 70}
   m_SizeDelta: {x: 1091.6748, y: 35.3696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &873182371
@@ -17688,7 +17676,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77366504}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
-        m_MethodName: WrongAnswer
+        m_MethodName: CorrectAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17718,7 +17706,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a. Paintings and sculptures
+  m_text: a. 13 October 1911
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -18067,7 +18055,7 @@ GameObject:
   - component: {fileID: 881907553}
   - component: {fileID: 881907552}
   m_Layer: 0
-  m_Name: museo ni miguel malvar
+  m_Name: Landmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19719,9 +19707,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"The Sublime Paralytic Chair" is a symbol of Apolinario Mabini''s resilience
-    and determination. What significance does this chair hold in Mabini''s life and
-    legacy?'
+  m_text: What does the shrine of miguel malvar filled with?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -19748,7 +19734,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.25
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -20469,7 +20455,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Where was Apolinario Mabini born?
+  m_text: The museum is dedicated to whom?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -20660,7 +20646,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. It was used by him as a throne during his political career.
+  m_text: b. Memories
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -20687,7 +20673,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 37.5
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -20888,8 +20874,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d. To provide a modern residence for the Mabini family; the original house
-    was preserved.
+  m_text: d. Lipa and san Juan
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -20916,7 +20901,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.45
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -21840,7 +21825,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86902, y: -206}
+  m_AnchoredPosition: {x: 142.41, y: -158}
   m_SizeDelta: {x: 1091.6748, y: 62.5981}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1045854247
@@ -21919,7 +21904,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d. It represents his diplomatic skills in negotiating with foreign powers.
+  m_text: d. 47
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -21946,7 +21931,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.3
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -22062,7 +22047,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 49.819946, y: 10.280029}
+  m_AnchoredPosition: {x: 48.640015, y: 10.090027}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1060580391
@@ -22615,7 +22600,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c. To serve as a government office; the original house still stands today.
+  m_text: c. Manila and Baclaran
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -22642,7 +22627,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.6
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -23108,7 +23093,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d. Emancipation Proclamation
+  m_text: d. Sando
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -25232,11 +25217,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2096988935}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1132.125, y: 450}
-  m_Pivot: {x: 1, y: 0.5}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1222666735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25257,14 +25242,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'A Bust of Mabini - Rises between two imposing pylons, standing like inanimate
-    sentinels at the entrance to the shrine. Two rooms flank the stairs behind the
-    pylons.
-
-
-    Trivia: The bust of Apolinario Mabini would depict his likeness,
-    capturing his facial features, hairstyle, and perhaps any distinctive elements
-    like facial hair or attire.'
+  m_text: "After months of being an exile, Aguinaldo went back to the country to
+    continue the revolt against the Spanish authority. He entrusted the funds of
+    the revolution into the hands of Malvar. Malvar then participated and led some
+    of the victorious battles against the Spaniards in Batangas and Cavite. Aguinaldo\u2019s
+    Declaration of Independence on 12 June 1898 gave hope to many Filipinos, but
+    was quickly followed by a new conflict with the United States. The young and
+    brave Malvar led the battles of Quezon and eventually captured the provincial
+    capital of Tayabas after Aguinaldo\u2019s capture by the US. During the war he
+    was appointed division general of the Southern Luzon forces and led his troops
+    in several battles. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -25291,12 +25278,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46.9
+  m_fontSize: 55.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 60
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -26542,12 +26529,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263849775}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.0572, y: -1.4002, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.53, y: -0, z: -0.18486935}
   m_LocalScale: {x: 1.7161758, y: 2.2687426, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 710392416}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1266655943
 GameObject:
@@ -27487,7 +27474,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7bf5db7af677adc41a748bafe5396f9f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 357435dc91d28ed4aad4aa8f7957d762, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -27562,8 +27549,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Why was the Apolinario Mabini Replica House constructed, and what happened
-    to the original Mabini residence?
+  m_text: Where did Malvar lead some of the successful fights against the Spanish?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -27891,7 +27877,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77366504}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
-        m_MethodName: CorrectAnswer
+        m_MethodName: WrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27921,7 +27907,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a.  To house a museum; the original was destroyed during World War II.
+  m_text: a.  Taal and Tagaytay
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -27948,7 +27934,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36.5
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -28407,7 +28393,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c51faf1a24946ae498d166fedb241cfc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6bcb5a65cf9a62c449b729fa58588fc9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -28778,81 +28764,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366381010}
   m_CullTransparentMesh: 1
---- !u!1 &1368508403
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1368508404}
-  - component: {fileID: 1368508406}
-  - component: {fileID: 1368508405}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1368508404
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368508403}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2096988935}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 52, y: 0.0000076293945}
-  m_SizeDelta: {x: 492.8621, y: 445.0327}
-  m_Pivot: {x: 0, y: 0.5}
---- !u!114 &1368508405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368508403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 10d9b6a57922d2a4e810dc1a12dd55df, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1368508406
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368508403}
-  m_CullTransparentMesh: 1
 --- !u!1 &1373982259
 GameObject:
   m_ObjectHideFlags: 0
@@ -29153,7 +29064,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77366504}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
-        m_MethodName: CorrectAnswer
+        m_MethodName: WrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29183,8 +29094,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d. It served as his wheelchair, allowing him to continue his work despite
-    his paralysis.
+  m_text: d. Histories
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -29211,7 +29121,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.6
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -30747,7 +30657,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d. The People Power Revolution
+  m_text: d. Revolver
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -31042,7 +30952,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77366504}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
-        m_MethodName: CorrectAnswer
+        m_MethodName: WrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -31072,7 +30982,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. Malolos Constitution
+  m_text: b. Pulo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -31263,7 +31173,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. Deafness
+  m_text: b. Gen. Emilio Aguinaldo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -31582,12 +31492,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Mabini is also famous for having achieved all this despite having lost
-    the use of his legs to polio just prior to the Philippine revolution. This has
-    made Mabini one of the Philippines' most visually iconic national heroes, such
-    that he is often referred to as \"The Sublime Paralytic\" \n\nTrivia: Apolinario
-    Mabini earned the nickname \"The Sublime Paralytic\" due to his extraordinary
-    intellect and political acumen despite being paralyzed from the waist down.\r\n"
+  m_text: The Rayadillo uniform was a distinctive striped uniform worn by Spanish
+    colonial troops in the late 19th and early 20th centuries, particulary during
+    the Spanish - American War. The uniform featured blue and white stripes.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -31614,12 +31521,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.6
+  m_fontSize: 60
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 60
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -32692,7 +32599,7 @@ Transform:
   m_GameObject: {fileID: 1518419215}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.215, y: -2.515, z: 0}
+  m_LocalPosition: {x: 11.84, y: -2.53, z: 0}
   m_LocalScale: {x: 1.350116, y: 1.2725295, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33685,7 +33592,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -177}
+  m_AnchoredPosition: {x: 64.999985, y: -66}
   m_SizeDelta: {x: 1091.6748, y: 35.3696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1596743358
@@ -33764,7 +33671,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d. Rare books and manuscripts
+  m_text: d. 05 May 1905
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -34924,7 +34831,7 @@ Transform:
   m_GameObject: {fileID: 1606634151}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.84, y: 0.16, z: -0.18486935}
+  m_LocalPosition: {x: -15.68, y: 0.16, z: -0.18486935}
   m_LocalScale: {x: 2.1591642, y: 2.4599452, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35520,7 +35427,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -41.758}
+  m_AnchoredPosition: {x: 142.41, y: -41.758}
   m_SizeDelta: {x: 1091.6748, y: 63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1629782118
@@ -35599,7 +35506,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. It signifies his role as a military commander during the revolution.
+  m_text: b. 45
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -35626,7 +35533,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.55
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -36354,7 +36261,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -131}
+  m_AnchoredPosition: {x: 64.999985, y: -20}
   m_SizeDelta: {x: 1091.6748, y: 35.3696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1656975320
@@ -36403,7 +36310,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77366504}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
-        m_MethodName: CorrectAnswer
+        m_MethodName: WrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36433,7 +36340,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c. Cabinet, water jar, eyeglasses, cane, and wheelchair
+  m_text: c. 03 June 1908
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -36460,7 +36367,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.1
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -36629,7 +36536,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -88}
+  m_AnchoredPosition: {x: 64.999985, y: 23}
   m_SizeDelta: {x: 1091.6748, y: 35.3696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1668164705
@@ -36708,7 +36615,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. Ancient artifacts from the region
+  m_text: b. 11 March 1901
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -37034,7 +36941,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77366504}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
-        m_MethodName: WrongAnswer
+        m_MethodName: CorrectAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -37064,7 +36971,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a.  Blindness
+  m_text: a  Gen. Miguel Malvar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -37309,7 +37216,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77366504}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
-        m_MethodName: CorrectAnswer
+        m_MethodName: WrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -37339,7 +37246,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c. Paralysis
+  m_text: c. Gen. Jose Rizal
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -37803,7 +37710,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77366504}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
-        m_MethodName: CorrectAnswer
+        m_MethodName: WrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -37833,7 +37740,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. Tanauan
+  m_text: b. Jose Rizal
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -38051,9 +37958,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The Mabini Shrine in Tanauan, Batangas, marks the birthplace of Apolinario
-    Mabini and includes a library, museum, and his tomb. When was it inaugurated
-    and by whom?
+  m_text: In what year Gen. Miguel Malvar joined the katipunan before The Philippine
+    Revolution?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -38439,8 +38345,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What important document did Apolinario Mabini help draft for the First
-    Philippine Republic in 1899?
+  m_text: 'What is the name of the uniform that was a distinctive striped uniform
+    worn by Spanish colonial troops? '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -38688,7 +38594,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -78.300354}
+  m_AnchoredPosition: {x: 123, y: -103}
   m_SizeDelta: {x: 1091.6748, y: 71.9707}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1733757206
@@ -38737,7 +38643,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77366504}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
-        m_MethodName: CorrectAnswer
+        m_MethodName: WrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -38767,7 +38673,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. Inaugurated on July 23, 1956, by Carlos P. Garcia and Luz Banzon-Magsaysay.
+  m_text: b. 1860
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -38794,7 +38700,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.2
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -38879,7 +38785,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: 17.685}
+  m_AnchoredPosition: {x: 142.41, y: 36}
   m_SizeDelta: {x: 1091.6748, y: 35.3696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1734622080
@@ -38958,7 +38864,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a. It represents his love for literature and education.
+  m_text: a. 44
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -38985,7 +38891,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.15
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -39380,7 +39286,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c. He was a Spanish colonial governor.
+  m_text: c. Manila
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -40798,7 +40704,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77366504}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
-        m_MethodName: WrongAnswer
+        m_MethodName: CorrectAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -40828,7 +40734,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c. Lipa
+  m_text: c. Miguel Malvar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -42680,9 +42586,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Inside the museum at the Mabini Shrine in Tanauan, Batangas, various personal
-    items and memorabilia belonging to Apolinario Mabini are displayed. What are
-    some of these items that can be seen behind glass walls?
+  m_text: 'When did Miguel Malvar passed away? '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -42709,7 +42613,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.25
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -43874,7 +43778,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a.  The American Revolution
+  m_text: a. Book
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -44140,7 +44044,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d. He was a famous Filipino poet.
+  m_text: d. Tagaytay
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -44605,7 +44509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d. Epilepsy
+  m_text: d. Gen. Bonifacio
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -44861,7 +44765,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77366504}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
-        m_MethodName: WrongAnswer
+        m_MethodName: CorrectAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -44891,7 +44795,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a.  It was a gift from a foreign leader.
+  m_text: a. Glimpses to the past
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -45108,7 +45012,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ee668c66b1c68cc459ad9e6a6d306e6b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b9744103ab6b54b4993a11e5cd0207df, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -49445,7 +49349,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1368508404}
   - {fileID: 1222666734}
   m_Father: {fileID: 524322151}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -49750,7 +49653,7 @@ Transform:
   m_GameObject: {fileID: 2106897758}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.96, y: -1.02, z: 0.24732438}
+  m_LocalPosition: {x: 13.44, y: -1.07, z: 0.24732438}
   m_LocalScale: {x: 2, y: 1.9946, z: 2.8667}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -50322,7 +50225,6 @@ SceneRoots:
   - {fileID: 474109902}
   - {fileID: 1463701442}
   - {fileID: 980417885}
-  - {fileID: 137224423}
   - {fileID: 1896108684}
   - {fileID: 1518419217}
   - {fileID: 1328793661}
@@ -50332,4 +50234,4 @@ SceneRoots:
   - {fileID: 1254096523}
   - {fileID: 1900712680}
   - {fileID: 881907553}
-  - {fileID: 1263849777}
+  - {fileID: 137224423}
