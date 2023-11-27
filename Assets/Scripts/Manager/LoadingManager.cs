@@ -11,6 +11,7 @@ public class LoadingManager : MonoBehaviour
     public Image FadeImage;
     private string targetScene;
     public float FadeDuration;
+    public float maxLoadingTime = 2f;
 
     private void Awake()
     {
@@ -21,35 +22,24 @@ public class LoadingManager : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
-        if(sceneName.Equals(""))
+        if (sceneName.Equals(""))
         {
             targetScene = dataManager.Destination;
             Debug.Log("Set the destination to " + dataManager.Destination + " from " + dataManager.CurrentScene);
-        }else{
+        }
+        else
+        {
             targetScene = sceneName;
         }
         StartCoroutine(LoadSceneRoutine());
-    }
-
-    void saveData()
-    {
-        string oldCurrentScene = dataManager.CurrentScene;
-        if(oldCurrentScene.Equals(dataManager.Destination))
-            return;
-        
-        dataManager.CurrentScene = targetScene;
-        dataManager.Destination = oldCurrentScene;
-        dataManager.Save();
-        Debug.Log("Saved");
-        Debug.Log("Current Scene: " + dataManager.CurrentScene);
-        Debug.Log("Destination: " + dataManager.Destination);
     }
 
     private IEnumerator LoadSceneRoutine()
     {
         FadeImage.gameObject.SetActive(true);
         FadeImage.canvasRenderer.SetAlpha(0f);
-        progressSlider.value = 0;
+        if (progressSlider != null)
+            progressSlider.value = 0;
 
         while (!Fade(1f))
             yield return null;
@@ -60,21 +50,36 @@ public class LoadingManager : MonoBehaviour
             yield return null;
 
         AsyncOperation task = SceneManager.LoadSceneAsync(targetScene);
-        task.allowSceneActivation = false;
+        if (progressSlider != null)
+            task.allowSceneActivation = false;
         float progress = 0;
+        float elapsedLoadTime = 0f;
 
         while (!task.isDone)
         {
             progress = Mathf.MoveTowards(progress, task.progress, Time.deltaTime);
-            progressSlider.value = progress;
-            if (progress >= 0.9f)
+            Debug.Log("Loading Progress: " + progress);
+            if (progressSlider != null)
+                progressSlider.value = progress;
+
+            elapsedLoadTime += Time.deltaTime;
+            if (progressSlider != null && progress >= 0.9f)
             {
                 progressSlider.value = 2;
                 task.allowSceneActivation = true;
             }
+
+            if (elapsedLoadTime >= maxLoadingTime)
+            {
+                Debug.LogWarning("Loading exceeded max loading time.");
+                task.allowSceneActivation = true;
+                break;
+            }
+
             yield return null;
         }
     }
+
 
     private bool Fade(float traget)
     {

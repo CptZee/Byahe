@@ -8253,8 +8253,8 @@ MonoBehaviour:
   loadingPanel: {fileID: 1785138531}
   progressSlider: {fileID: 1019197309}
   FadeImage: {fileID: 1387922730}
-  MinLoadingTime: 3
   FadeDuration: 1
+  maxLoadingTime: 2
 --- !u!4 &401064431
 Transform:
   m_ObjectHideFlags: 0
@@ -14493,7 +14493,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &719477536
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21222,11 +21222,11 @@ RectTransform:
   - {fileID: 438905008}
   m_Father: {fileID: 1785138532}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.31518555, y: -466.3423}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1000, y: 60}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1019197309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24166,6 +24166,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 77366504}
+        m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
+        m_MethodName: CloseQuestions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 189555693}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
         m_MethodName: CloseQuestions
         m_Mode: 1
@@ -33239,6 +33251,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 189555693}
+        m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
+        m_MethodName: CloseMaxPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1550377187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33529,6 +33553,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 77366504}
+        m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
+        m_MethodName: CloseQuestions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 189555693}
         m_TargetAssemblyTypeName: QuestionsScript, Assembly-CSharp
         m_MethodName: CloseQuestions
         m_Mode: 1
@@ -50326,8 +50362,8 @@ SpriteRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 821005273}
   - {fileID: 653575977}
+  - {fileID: 821005273}
   - {fileID: 1939291125}
   - {fileID: 859506793}
   - {fileID: 153098099}

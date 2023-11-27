@@ -26,8 +26,8 @@ public class LevelInit : MonoBehaviour
     {
         gasText.text = manager.Gas.ToString("F0");
         moneyText.text = manager.Money.ToString("F0");
-        tourIncomeText.text = "Total Passive Income (Coins/Second)" + manager.Income.ToString();
-        souvenirIncomeText.text = "Total Passive Income (Coins/Second)" + manager.Income.ToString();
+        tourIncomeText.text = "Total Passive Income (Coins/Second): " + manager.Income.ToString();
+        souvenirIncomeText.text = "Total Passive Income (Coins/Second): " + manager.Income.ToString();
 
         switch (manager.CurrentScene)
         {
