@@ -14,6 +14,11 @@ public class DestinationHandler : MonoBehaviour
     public void LoadDestinationForMabini(string destination)
     {
         manager = DataManager.instance;
+        if (manager.Knowledge > 10)
+        {
+            LoadDestination(destination);
+            return;
+        }
         manager.Destination = destination;
         manager.CurrentScene = "TravelLevel";
         loadingManager.LoadScene("MabiniEpilogue");

@@ -24305,7 +24305,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 124710739}
         m_TargetAssemblyTypeName: DestinationHandler, Assembly-CSharp
-        m_MethodName: LoadDestinationForMabini
+        m_MethodName: LoadDestination
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -30206,7 +30206,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 124710739}
         m_TargetAssemblyTypeName: DestinationHandler, Assembly-CSharp
-        m_MethodName: LoadDestinationForMabini
+        m_MethodName: LoadDestination
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36740,7 +36740,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 124710739}
         m_TargetAssemblyTypeName: DestinationHandler, Assembly-CSharp
-        m_MethodName: LoadDestinationForMabini
+        m_MethodName: LoadDestination
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
