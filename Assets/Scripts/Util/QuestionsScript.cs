@@ -32,19 +32,20 @@ public class QuestionsScript : MonoBehaviour
 
     public void CloseQuestions()
     {
-        int i = 1;
-        foreach (GameObject gameObject in questions)
-        {
-            i++;
-            Time.timeScale = 1;
-            gameObject.SetActive(false);
-        }
         controls.SetActive(true);
         failedPanel.SetActive(false);
-        if(succcessPanel.activeSelf){
+        if (succcessPanel.activeSelf)
+        {
             RemoveQuestion();
         }
+        foreach (GameObject gameObject in questions)
+        {
+            gameObject.SetActive(false);
+        }
         succcessPanel.SetActive(false);
+        if (questions[randomIndex].activeSelf)
+            questions[randomIndex].SetActive(false);
+        Time.timeScale = 1;
     }
 
     public void CorrectAnswer()
@@ -70,7 +71,11 @@ public class QuestionsScript : MonoBehaviour
     public void RemoveQuestion()
     {
         GameObject obj = questions[randomIndex];
-        questions.RemoveAt(randomIndex);
+        if (obj.activeSelf)
+        {
+            questions.RemoveAt(randomIndex);
+            obj.SetActive(false);
+        }
     }
 
     public void CloseMaxPanel()
