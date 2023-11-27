@@ -7,9 +7,9 @@ public class LoadingManager : MonoBehaviour
 {
     public GameObject loadingPanel;
     private DataManager dataManager;
+    public Slider progressSlider;
     public Image FadeImage;
     private string targetScene;
-    public float MinLoadingTime;
     public float FadeDuration;
 
     private void Awake()
@@ -49,6 +49,7 @@ public class LoadingManager : MonoBehaviour
     {
         FadeImage.gameObject.SetActive(true);
         FadeImage.canvasRenderer.SetAlpha(0f);
+        progressSlider.value = 0;
 
         while (!Fade(1f))
             yield return null;
@@ -59,17 +60,18 @@ public class LoadingManager : MonoBehaviour
             yield return null;
 
         AsyncOperation task = SceneManager.LoadSceneAsync(targetScene);
-        float elapsedLoadTime = 0f;
+        task.allowSceneActivation = false;
+        float progress = 0;
 
         while (!task.isDone)
         {
-            elapsedLoadTime += Time.deltaTime;
-            yield return null;
-        }
-
-        while (elapsedLoadTime < MinLoadingTime)
-        {
-            elapsedLoadTime += Time.deltaTime;
+            progress = Mathf.MoveTowards(progress, task.progress, Time.deltaTime);
+            progressSlider.value = progress;
+            if (progress >= 0.9f)
+            {
+                progressSlider.value = 2;
+                task.allowSceneActivation = true;
+            }
             yield return null;
         }
     }

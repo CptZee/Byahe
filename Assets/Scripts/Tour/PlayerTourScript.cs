@@ -47,7 +47,6 @@ public class PlayerTourScript : MonoBehaviour
     void Update()
     {
         DataManager manager = DataManager.instance;
-        Debug.Log("Current Tour Actor: " + manager.TourActor);
         if (manager.TourActor.Equals("Kalesa"))
         {
             spriteVariation = -1;
@@ -56,26 +55,20 @@ public class PlayerTourScript : MonoBehaviour
         {
             spriteVariation = 1;
         }
-        Debug.Log("Current Sprite Variation " + spriteVariation);
         animator.SetFloat("SpriteVariation", spriteVariation);
-        Debug.Log("Current Sprite Variation in animator " + animator.GetFloat("SpriteVariation"));
     }
 
     public void MoveLeft()
     {
         float moveDirection = -1;
-        Debug.Log("Moving Left...");
         animator.SetFloat("Vertical", moveDirection);
         animator.SetFloat("Speed", moveSpeed);
-        Debug.Log("Current Velocity: " + rb.velocity);
         rb.velocity = new Vector2(moveDirection * moveSpeed, 0);
-        Debug.Log("New Velocity: " + rb.velocity);
     }
 
     public void MoveRight()
     {
         float moveDirection = 1;
-        Debug.Log("Moving Right...");
         animator.SetFloat("Vertical", moveDirection);
         animator.SetFloat("Speed", moveSpeed);
         rb.velocity = new Vector2(moveDirection * moveSpeed, 0);
@@ -83,7 +76,6 @@ public class PlayerTourScript : MonoBehaviour
 
     public void StopMovingRight()
     {
-        Debug.Log("Standing...");
         animator.SetFloat("Vertical", 0.01f);
         animator.SetFloat("Speed", 0);
         rb.velocity = Vector2.zero;
@@ -92,7 +84,6 @@ public class PlayerTourScript : MonoBehaviour
 
     public void StopMovingLeft()
     {
-        Debug.Log("Standing...");
         animator.SetFloat("Vertical", -0.01f);
         animator.SetFloat("Speed", 0);
         rb.velocity = Vector2.zero;
@@ -100,11 +91,9 @@ public class PlayerTourScript : MonoBehaviour
 
     public void Interact()
     {
-        Debug.Log("Interacting...");
         float distance = Vector3.Distance(transform.position, landmark.transform.position);
         if (distance < 5.0f)
         {
-            Debug.Log("Interacting with The landmark...");
             audioManager.PlayAudio(2);
             checkedLandmark = true;
             showUI(landmarkUI);
@@ -123,42 +112,36 @@ public class PlayerTourScript : MonoBehaviour
         if (distance < 2.0f)
         {
             audioManager.PlayAudio(0);
-            Debug.Log("Interacting with the gas station...");
             showUI(gasStationUI);
         }
         distance = Vector3.Distance(transform.position, modShop.transform.position);
         if (distance < 2.0f)
         {
             audioManager.PlayAudio(0);
-            Debug.Log("Interacting with the mod shop...");
             showUI(modShopUI);
         }
         distance = Vector3.Distance(transform.position, shop1.transform.position);
         if (distance < 3.0f && shop1.activeSelf)
         {
             audioManager.PlayAudio(1);
-            Debug.Log("Interacting with Shop 1...");
             showUI(shop1UI);
         }
         distance = Vector3.Distance(transform.position, shop2.transform.position);
         if (distance < 3.0f && shop2.activeSelf)
         {
             audioManager.PlayAudio(1);
-            Debug.Log("Interacting with Shop 2...");
             showUI(shop2UI);
         }
         distance = Vector3.Distance(transform.position, sign1.transform.position);
         if (distance < 3.0f && !shop1.activeSelf)
         {
             audioManager.PlayAudio(3);
-            Debug.Log("Interacting with Shop 1 Sign...");
             showUI(sign1UI);
         }
         distance = Vector3.Distance(transform.position, sign2.transform.position);
         if (distance < 3.0f && !shop2.activeSelf)
         {
             audioManager.PlayAudio(4);
-            Debug.Log("Interacting with Shop 2 Sign...");
             if (!checkedLandmark)
             {
                 showUI(notForSaleUI);
@@ -219,13 +202,12 @@ public class PlayerTourScript : MonoBehaviour
         DataManager manager = DataManager.instance;
         if (manager.Money < 10)
         {
-            Debug.Log("Not enough money");
             audioSource.clip = failedAudio;
             audioSource.Play();
             return;
         }
         manager.Money -= 10;
-        manager.Gas += 2;
+        manager.Gas += 7.5f;
         audioSource.clip = successAudio;
         audioSource.Play();
     }
@@ -233,10 +215,8 @@ public class PlayerTourScript : MonoBehaviour
     public void BuyShop1()
     {
         DataManager manager = DataManager.instance;
-        Debug.Log("Buying Shop 1...");
         if (manager.Money < 15)
         {
-            Debug.Log("Not enough money");
             audioSource.clip = failedAudio;
             audioSource.Play();
             return;
@@ -271,10 +251,8 @@ public class PlayerTourScript : MonoBehaviour
     public void BuyShop2()
     {
         DataManager manager = DataManager.instance;
-        Debug.Log("Buying Shop 2...");
         if (manager.Money < 25)
         {
-            Debug.Log("Not enough money");
             audioSource.clip = failedAudio;
             audioSource.Play();
 

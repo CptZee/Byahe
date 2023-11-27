@@ -16,6 +16,7 @@ public class MainMenuScript : MonoBehaviour
     public Slider audioSlider;
     private SettingsManager settingsManager;
     public AudioSource musicPlayer;
+    public LoadingManager loadingManager;
     void Start()
     {
         settingsManager = SettingsManager.instance;
@@ -69,7 +70,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void NewGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        loadingManager.LoadScene("Prologue");
         dataManager.Reset();
     }
 
@@ -106,25 +107,7 @@ public class MainMenuScript : MonoBehaviour
             PlayGame();
             return;
         }
-        StartCoroutine(LoadSceneRoutine());
-    }
-    private IEnumerator LoadSceneRoutine()
-    {
-
-        AsyncOperation task = SceneManager.LoadSceneAsync(PlayerPrefs.GetString("CurrentScene"));
-        float elapsedLoadTime = 0f;
-
-        while (!task.isDone)
-        {
-            elapsedLoadTime += Time.deltaTime;
-            yield return null;
-        }
-
-        while (elapsedLoadTime < 3)
-        {
-            elapsedLoadTime += Time.deltaTime;
-            yield return null;
-        }
+        loadingManager.LoadScene(PlayerPrefs.GetString("CurrentScene"));
     }
 
     public void ExitGame()

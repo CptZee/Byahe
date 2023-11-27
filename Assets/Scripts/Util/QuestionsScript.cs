@@ -23,35 +23,35 @@ public class QuestionsScript : MonoBehaviour
             randomIndex = Random.Range(0, questions.Count);
             GameObject randomGameObject = questions[randomIndex];
             randomGameObject.SetActive(true);
-            Debug.Log("Randomly selected GameObject: " + randomGameObject.name);
         }
         else
         {
-            Debug.LogWarning("Max upgrade reached");
             maxUpgradePanel.SetActive(true);
         }
     }
 
     public void CloseQuestions()
     {
+        int i = 1;
         foreach (GameObject gameObject in questions)
         {
+            i++;
             Time.timeScale = 1;
             gameObject.SetActive(false);
         }
         controls.SetActive(true);
         failedPanel.SetActive(false);
-        if(succcessPanel.activeSelf)
+        if(succcessPanel.activeSelf){
             RemoveQuestion();
+        }
         succcessPanel.SetActive(false);
     }
 
     public void CorrectAnswer()
     {
-        Debug.Log("Correct answer");
         audioSource.clip = successAudio;
         audioSource.Play();
-        DataManager.instance.Money += 2; //TODO: Tweak this later yeah?
+        DataManager.instance.Money += 5; //TODO: Tweak this later yeah?
         DataManager.instance.Income += 0.1f; //TODO: Tweak this later yeah?
         DataManager.instance.Knowledge += 1;
         PlayerPrefs.SetFloat("Income", DataManager.instance.Income);
@@ -62,7 +62,6 @@ public class QuestionsScript : MonoBehaviour
 
     public void WrongAnswer()
     {
-        Debug.Log("Wrong answer");
         audioSource.clip = failedAudio;
         audioSource.Play();
         failedPanel.SetActive(true);
@@ -70,6 +69,7 @@ public class QuestionsScript : MonoBehaviour
 
     public void RemoveQuestion()
     {
+        GameObject obj = questions[randomIndex];
         questions.RemoveAt(randomIndex);
     }
 

@@ -22,7 +22,6 @@ public class BirdPatrol : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Current bool: " + anim.GetBool(anim.GetParameter(0).name));
         Vector2 point = currentPoint.position - transform.position;
         if (currentPoint == pointB.transform)
         {
