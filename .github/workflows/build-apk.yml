@@ -30,9 +30,22 @@ jobs:
         with:
           targetPlatform: iOS
 
+      - name: Set up Xcode
+        uses: actions/setup-xcode@v2
+        with:
+          xcode-version: '13.2'  # Adjust the Xcode version as needed
+
+      - name: Build IPA using Xcode
+        run: xcodebuild -workspace YourProject.xcworkspace -scheme YourScheme -configuration Release -archivePath build/YourProject.xcarchive archive
+        working-directory: Build
+        env:
+          DEVELOPER_DIR: /Applications/Xcode_13.2.app/Contents/Developer  # Adjust the Xcode path as needed
+
+      - name: Export IPA
+        run: xcodebuild -exportArchive -archivePath build/YourProject.xcarchive -exportPath build -exportOptionsPlist ExportOptions.plist
+        working-directory: Build
+
       - uses: actions/upload-artifact@v3
         with:
-          name: Build
-          path: build
-  
-      
+          name: IPA
+          path: build/*.ipa
