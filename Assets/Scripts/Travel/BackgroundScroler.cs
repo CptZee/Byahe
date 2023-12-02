@@ -16,6 +16,7 @@ public class NewBehaviourScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         height = collider2d.size.y;
+        Debug.Log("Height: " + height);
         collider2d.enabled = false;
 
         rb.velocity = new Vector2(0, scrollSpeed);

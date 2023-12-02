@@ -7,6 +7,7 @@ public class ModShop : MonoBehaviour
     public AudioClip successAudio;
     public AudioClip failedAudio;
     public LoadingManager loadingManager;
+    public GameObject uiElements;
     public void BuyTricycle()
     {
         if (DataManager.instance.Money < 75)
@@ -14,6 +15,7 @@ public class ModShop : MonoBehaviour
             Debug.Log("Not enough money");
             audioSource.clip = failedAudio;
             audioSource.Play();
+            
         }
         else
         {
@@ -80,6 +82,7 @@ public class ModShop : MonoBehaviour
     void Close()
     {
         ModShopMenu.SetActive(false);
+        uiElements.SetActive(true);
         Time.timeScale = 1f;
     }
 }

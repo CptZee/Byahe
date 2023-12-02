@@ -233,8 +233,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -143.9}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 75.929985, y: -106}
+  m_SizeDelta: {x: 996.512, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9536754
 MonoBehaviour:
@@ -312,7 +312,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c.  Inaugurated on June 12, 1898, by Andres Bonifacio.
+  m_text: c. The Pirates
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -339,7 +339,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 43.5
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -423,8 +423,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 531, y: 91}
-  m_SizeDelta: {x: 564.8535, y: 29.7141}
+  m_AnchoredPosition: {x: 508.19904, y: 63}
+  m_SizeDelta: {x: 527.299, y: 39.324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &10595453
 MonoBehaviour:
@@ -473,12 +473,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -1127,8 +1127,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.856, y: -58.980637}
-  m_SizeDelta: {x: 1091.6748, y: 59.7947}
+  m_AnchoredPosition: {x: 88.929, y: 2.1943626}
+  m_SizeDelta: {x: 1027.531, y: 59.795}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &36600522
 MonoBehaviour:
@@ -1206,8 +1206,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. To commemorate Apolinario Mabini's life; the original house was moved
-    to a different location.
+  m_text: b. Spanish Secular in 1753
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -1234,12 +1233,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 37.55
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -1397,8 +1396,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -60}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 89.000984, y: 37.685013}
+  m_SizeDelta: {x: 1015.03, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &41101430
 MonoBehaviour:
@@ -1420,7 +1419,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. He was the chief adviser to Emilio Aguinaldo.
+  m_text: b. Balayan
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -1447,12 +1446,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.95
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -2184,10 +2183,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1878502752}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 78, y: 0}
-  m_SizeDelta: {x: 421.376, y: 421.376}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -270.27435}
+  m_SizeDelta: {x: 559.274, y: 540.5487}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &74261145
 MonoBehaviour:
@@ -2209,7 +2208,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 477c358a71a486b42b095d7ecff70224, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b1ea1175abdbffd4d847435b93df8642, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2444,8 +2443,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 531, y: 91}
-  m_SizeDelta: {x: 564.8535, y: 29.7141}
+  m_AnchoredPosition: {x: 504.65802, y: 65}
+  m_SizeDelta: {x: 530.304, y: 29.714}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &92073653
 MonoBehaviour:
@@ -2494,12 +2493,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -3425,8 +3424,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -131}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 93.159, y: -131}
+  m_SizeDelta: {x: 1019.094, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &146118506
 MonoBehaviour:
@@ -3504,7 +3503,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d. San jose
+  m_text: d. 400
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -3531,12 +3530,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -3613,10 +3612,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 447722163}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1132.125, y: 450}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1511.1564, y: -270.27435}
+  m_SizeDelta: {x: 898.9, y: 540.5487}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &147990351
 MonoBehaviour:
@@ -3638,14 +3637,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The hammock is a symbol of Apolinario Mabini role in the struggle for
-    freedom and sovereignty of the Filipino nation. Mabini who became paralyzed in
-    1896, did not let his disability stop him from achieving greatness.
-
-
-    Tirivia:
-    The "Duyan" (cradle) is a symbolic representation of the simplicity of Apolinario
-    Mabini''s early life. It is said to have been crafted by his father.'
+  m_text: A historical marker in front of the church. The church has stood for more
+    than 400 years which makes it one of the oldest churches in Batangas and in Southern
+    Tagalog. The first church was constructed using poor materials under the management
+    of Franciscan Priest on 1579 then it was later turned to the Jesuits in 1591.
+    The construction of the stone church was started in 1749 and was completed in
+    1759. The church was later supervised by Spanish Seculars in 1753, then the Recolletos
+    in 1876 and eventually turned to Filipino Seculars in 1908
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -3672,7 +3670,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.3
+  m_fontSize: 45.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3756,8 +3754,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 32.163, y: -191.97}
-  m_SizeDelta: {x: 1550.1, y: 89.1227}
+  m_AnchoredPosition: {x: 0.000022888, y: -188}
+  m_SizeDelta: {x: 1643.3531, y: 104.6649}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &153515706
 MonoBehaviour:
@@ -3779,7 +3777,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MUSEO NI APOLINARIO MABINI
+  m_text: Balayan Catholic Church Facade
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -3806,15 +3804,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 119.05
+  m_fontSize: 100
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 32
-  m_fontSizeMax: 160
-  m_fontStyle: 1
+  m_fontSizeMax: 100
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4024,8 +4022,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 531, y: 91}
-  m_SizeDelta: {x: 564.8535, y: 29.7141}
+  m_AnchoredPosition: {x: 506.95, y: 65}
+  m_SizeDelta: {x: 528.679, y: 29.714}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &158324004
 MonoBehaviour:
@@ -4074,12 +4072,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -4878,6 +4876,7 @@ GameObject:
   - component: {fileID: 205694565}
   - component: {fileID: 205694564}
   - component: {fileID: 205694563}
+  - component: {fileID: 205694566}
   m_Layer: 5
   m_Name: Previous
   m_TagString: Untagged
@@ -4902,7 +4901,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 200, y: 100}
+  m_AnchoredPosition: {x: 200, y: 47}
   m_SizeDelta: {x: 350, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &205694563
@@ -4999,6 +4998,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205694561}
   m_CullTransparentMesh: 1
+--- !u!114 &205694566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205694561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c879bf8942829f040af334230699b3b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &206759954
 GameObject:
   m_ObjectHideFlags: 0
@@ -5725,8 +5736,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: 86}
-  m_SizeDelta: {x: 1091.6748, y: 192.5165}
+  m_AnchoredPosition: {x: 93.159, y: 86}
+  m_SizeDelta: {x: 1019.094, y: 192.516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &249940531
 MonoBehaviour:
@@ -5748,8 +5759,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What historical event or movement led to the establishment of the Museo
-    ni Apolinario Mabini in Tanauan, Philippines?
+  m_text: 'In what year doea the church finished? '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -5776,12 +5786,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -5860,8 +5870,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 5.0619, y: -114.6193}
-  m_SizeDelta: {x: 1010.1238, y: 151.2385}
+  m_AnchoredPosition: {x: 82.83998, y: -92.00003}
+  m_SizeDelta: {x: 1014.931, y: 66.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &251435684
 MonoBehaviour:
@@ -5892,8 +5902,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278246363
-  m_fontColor: {r: 0.8584906, g: 0.8584905, b: 0, a: 1}
+    rgba: 4280070163
+  m_fontColor: {r: 0.07471521, g: 0.6886792, b: 0.10996216, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5910,12 +5920,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
+  m_fontSize: 80
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 32
-  m_fontSizeMax: 120
+  m_fontSizeMax: 80
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
@@ -5969,13 +5979,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 255181366}
+  - component: {fileID: 255181367}
   m_Layer: 5
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &255181366
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5997,6 +6008,32 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &255181367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255181365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 50
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &257223364
 GameObject:
   m_ObjectHideFlags: 0
@@ -6333,8 +6370,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: 86}
-  m_SizeDelta: {x: 1091.6748, y: 192.5165}
+  m_AnchoredPosition: {x: 89.236, y: 86}
+  m_SizeDelta: {x: 1026.94, y: 192.516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &273558332
 MonoBehaviour:
@@ -6356,8 +6393,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What does the "Duyan" (cradle) symbolize in the context of Apolinario Mabini's
-    life and legacy?
+  m_text: 'The church also lend a small room containing some statues and images of
+    what? '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -6384,12 +6421,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -6469,8 +6506,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: -17.685}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 89, y: 80}
+  m_SizeDelta: {x: 1015.03, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &278008200
 MonoBehaviour:
@@ -6492,7 +6529,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a. He was a military commander.
+  m_text: a. Manila
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -6519,12 +6556,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -6660,8 +6697,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: 0}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 92, y: 100}
+  m_SizeDelta: {x: 1023.933, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &287711728
 MonoBehaviour:
@@ -6739,7 +6776,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a. Declaration of Independence
+  m_text: a. Historical church
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -6766,12 +6803,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -7537,8 +7574,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -121}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 90.255, y: -71}
+  m_SizeDelta: {x: 1024.902, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &341119429
 MonoBehaviour:
@@ -7616,7 +7653,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c. It was a decorative piece in his ancestral home.
+  m_text: c. 1879
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -7643,12 +7680,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.35
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -8259,6 +8296,7 @@ GameObject:
   - component: {fileID: 391184294}
   - component: {fileID: 391184293}
   - component: {fileID: 391184296}
+  - component: {fileID: 391184297}
   m_Layer: 5
   m_Name: LeftBtn
   m_TagString: Untagged
@@ -8412,6 +8450,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &391184297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391184291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c879bf8942829f040af334230699b3b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &393671081
 GameObject:
   m_ObjectHideFlags: 0
@@ -8594,9 +8644,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingPanel: {fileID: 1312083923}
+  progressSlider: {fileID: 0}
   FadeImage: {fileID: 173636116}
-  MinLoadingTime: 3
   FadeDuration: 1
+  maxLoadingTime: 2
 --- !u!4 &401064431
 Transform:
   m_ObjectHideFlags: 0
@@ -8667,8 +8718,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -195.5}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 75.929985, y: -157.6}
+  m_SizeDelta: {x: 996.512, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &403567958
 MonoBehaviour:
@@ -8746,7 +8797,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d.  Inaugurated on September 16, 1991, by Corazon Aquino.
+  m_text: d.  The Nun
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -8773,12 +8824,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.8
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -8916,6 +8967,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 447722163}
+  - component: {fileID: 447722164}
   m_Layer: 5
   m_Name: 3
   m_TagString: Untagged
@@ -8944,6 +8996,32 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &447722164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447722162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 50
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &455119881
 GameObject:
   m_ObjectHideFlags: 0
@@ -8976,10 +9054,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 255181366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.0000038146973}
-  m_SizeDelta: {x: 1132.1255, y: 459.4615}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1514.1416, y: -270.27435}
+  m_SizeDelta: {x: 866.98, y: 540.5487}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &455119883
 MonoBehaviour:
@@ -9001,11 +9079,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Mabini Shrine in Tanauan Batangas \u2013 Tucked in Barangay Talaga, Tanauan
-    Batangas, the shrine marks the birthplace of Apolinario Mabini. At the heart
-    of a residential area along the Tanauan, it harbors a library, a museum, and
-    his tomb. It was inaugurated on July 23, 1956 by then Vice President Carlos P.
-    Garcia and Mrs. Luz Banzon-Magsaysay. "
+  m_text: the Parish Church of Immaculate Conception also known as Balayan Church,
+    is a Parish Church in the town of Balayan, Batangas in the Philippines, within
+    the Archdiocese of Lipa. The church is listed as a National Cultural Treasure
+    as its construction was supervised by Filipino Seculars during the Spanish Colonial
+    Period.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -9032,14 +9110,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56.15
+  m_fontSize: 55.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 60
   m_fontStyle: 0
-  m_HorizontalAlignment: 16
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -9049,7 +9127,7 @@ MonoBehaviour:
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
+  m_wordWrappingRatios: 0.379
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
@@ -9724,8 +9802,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: -17.685}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 78, y: 9}
+  m_SizeDelta: {x: 996.512, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &489319508
 MonoBehaviour:
@@ -9803,7 +9881,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a. Inaugurated on August 13, 1898, by Emilio Aguinaldo.
+  m_text: a. The Balayan people
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -9830,7 +9908,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.1
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10038,10 +10116,10 @@ RectTransform:
   - {fileID: 205694562}
   m_Father: {fileID: 1057509300}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -11.493164, y: 14.517822}
-  m_SizeDelta: {x: -192.0609, y: -144.9057}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.000015258789}
+  m_SizeDelta: {x: 1855.9391, y: 1009.0943}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &493687451
 MonoBehaviour:
@@ -10050,7 +10128,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493687449}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -10222,8 +10300,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 53.41919, y: 0}
-  m_SizeDelta: {x: -588.8589, y: 552.0358}
+  m_AnchoredPosition: {x: 0, y: -47.2884}
+  m_SizeDelta: {x: -341.7939, y: 540.5487}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &527128220
 GameObject:
@@ -10260,8 +10338,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -68}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 93.000015, y: 34}
+  m_SizeDelta: {x: 1019.094, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &527128222
 MonoBehaviour:
@@ -10339,7 +10417,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. The Philippine-American War
+  m_text: b.1760
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -10366,12 +10444,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -10534,8 +10612,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 531, y: 91}
-  m_SizeDelta: {x: 564.8535, y: 29.7141}
+  m_AnchoredPosition: {x: 578.9832, y: 91}
+  m_SizeDelta: {x: 527.299, y: 29.714}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &529588616
 MonoBehaviour:
@@ -10584,12 +10662,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -11459,8 +11537,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -131}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 93.000015, y: -29}
+  m_SizeDelta: {x: 1019.094, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &573138402
 MonoBehaviour:
@@ -11538,7 +11616,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c. The Katipunan uprising
+  m_text: c. 1761
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -11565,12 +11643,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -11649,8 +11727,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 531, y: 91}
-  m_SizeDelta: {x: 564.8535, y: 29.7141}
+  m_AnchoredPosition: {x: 510.88593, y: 63}
+  m_SizeDelta: {x: 525.196, y: 39.324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &574572212
 MonoBehaviour:
@@ -11699,12 +11777,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -12426,8 +12504,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: 60}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 93.159, y: 60}
+  m_SizeDelta: {x: 1019.094, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &604725575
 MonoBehaviour:
@@ -12505,7 +12583,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a. Taal
+  m_text: a. 100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -12532,12 +12610,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -13328,7 +13406,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 653575973}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
@@ -13515,8 +13593,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: 86}
-  m_SizeDelta: {x: 1091.6748, y: 192.5165}
+  m_AnchoredPosition: {x: 93.159, y: 86}
+  m_SizeDelta: {x: 1019.094, y: 192.516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &660226958
 MonoBehaviour:
@@ -13538,8 +13616,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Apolinario Mabini is often referred to as "The Sublime Paralytic" due to
-    what medical condition?
+  m_text: 'In what year does the church construction began? '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -13566,12 +13643,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -14027,8 +14104,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -128}
-  m_SizeDelta: {x: 1091.6748, y: 62}
+  m_AnchoredPosition: {x: 89.236, y: -80}
+  m_SizeDelta: {x: 1026.94, y: 38.695}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &699038752
 MonoBehaviour:
@@ -14106,8 +14183,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c. It symbolizes the simplicity of his early life and was crafted by his
-    father.
+  m_text: c. Priests
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -14134,12 +14210,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.9
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -14731,8 +14807,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: 130.3167}
-  m_SizeDelta: {x: 1091.6748, y: 192.5165}
+  m_AnchoredPosition: {x: 95.191, y: 161}
+  m_SizeDelta: {x: 1015.03, y: 88.737}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &726185349
 MonoBehaviour:
@@ -14754,10 +14830,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'What significant role did Apolinario Mabini play during the Philippine
-    Revolution against Spanish colonization, earning him the title "The Sublime Paralytic"?
-
-'
+  m_text: 'Where was the Balayan Catholic Church Facade located? '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -14784,12 +14857,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -15007,8 +15080,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -131}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 92.00005, y: -31}
+  m_SizeDelta: {x: 1023.933, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &736015452
 MonoBehaviour:
@@ -15086,7 +15159,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c. Treaty of Paris
+  m_text: c. Oldest Church
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -15113,12 +15186,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -15580,8 +15653,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 5.0619, y: -114.6193}
-  m_SizeDelta: {x: 1010.1238, y: 151.2385}
+  m_AnchoredPosition: {x: 87.86307, y: -94.00006}
+  m_SizeDelta: {x: 1007.85, y: 73.928}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &800649746
 MonoBehaviour:
@@ -15612,8 +15685,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278246363
-  m_fontColor: {r: 0.8584906, g: 0.8584905, b: 0, a: 1}
+    rgba: 4281249048
+  m_fontColor: {r: 0.09291565, g: 0.6792453, b: 0.18047877, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -15630,12 +15703,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
+  m_fontSize: 80
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 32
-  m_fontSizeMax: 120
+  m_fontSizeMax: 80
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
@@ -15880,10 +15953,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1878502752}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1132.125, y: 450}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1514.1445, y: -270.27435}
+  m_SizeDelta: {x: 904.87, y: 540.5487}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &820637666
 MonoBehaviour:
@@ -15905,18 +15978,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The Apolinario Mabini Replica House refers to a reconstruction or replica
-    of the ancestral home of Apolinario Mabini, a prominent figure in Philippine
-    history. Apolinario Mabini was a Filipino revolutionary leader and political
-    philosopher who played a significant role in the Philippine Revolution against
-    Spanish colonial rule in the late 19th century.
-
-
-    Trivia: The house is a
-    reconstruction or replica of the original Mabini residence. The original house
-    was destroyed during World War II.
-
-'
+  m_text: "\rThe facade of the old cata church in Balayan showcases a remarkable
+    blend of coral stone, wood, and bricks. The predominant materials of coral stone
+    lend a unique and timeless character to the church's exterior. Standing proudly,
+    the church features a distinctive four-layer bell tower that adds to its architectural
+    grandeur. Each layer of the tower contributes to the church's historical charm,
+    reflecting the craftsmanship of the era in which it was built. This iconic structure
+    stands as a testament to the rich heritage and cultural significance of the Balayan
+    community."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -15943,7 +16012,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38
+  m_fontSize: 42.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -17419,8 +17488,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: -41}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 91.826, y: 44}
+  m_SizeDelta: {x: 1021.761, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &873182371
 MonoBehaviour:
@@ -17498,7 +17567,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a. Paintings and sculptures
+  m_text: a. 1995
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -17525,12 +17594,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -17611,7 +17680,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -188, y: 70}
+  m_AnchoredPosition: {x: -239, y: 26}
   m_SizeDelta: {x: 320, y: 155.55792}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &875461757
@@ -19040,8 +19109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 531, y: 91}
-  m_SizeDelta: {x: 564.8535, y: 29.7141}
+  m_AnchoredPosition: {x: 505, y: 63}
+  m_SizeDelta: {x: 529.802, y: 39.324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &946393886
 MonoBehaviour:
@@ -19090,12 +19159,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -19174,8 +19243,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 5.0619, y: -114.6193}
-  m_SizeDelta: {x: 1010.1238, y: 151.2385}
+  m_AnchoredPosition: {x: 88.915, y: -112}
+  m_SizeDelta: {x: 1007.85, y: 73.928}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &956336186
 MonoBehaviour:
@@ -19206,8 +19275,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278246363
-  m_fontColor: {r: 0.8584906, g: 0.8584905, b: 0, a: 1}
+    rgba: 4281249048
+  m_fontColor: {r: 0.09291565, g: 0.6792453, b: 0.18047877, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -19224,12 +19293,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
+  m_fontSize: 80
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 32
-  m_fontSizeMax: 120
+  m_fontSizeMax: 80
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
@@ -19308,8 +19377,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: 107.16846}
-  m_SizeDelta: {x: 1091.6748, y: 150.1796}
+  m_AnchoredPosition: {x: 90.255, y: 107.16846}
+  m_SizeDelta: {x: 1024.902, y: 150.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &958082264
 MonoBehaviour:
@@ -19331,9 +19400,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"The Sublime Paralytic Chair" is a symbol of Apolinario Mabini''s resilience
-    and determination. What significance does this chair hold in Mabini''s life and
-    legacy?'
+  m_text: 'What year does the Recolletos supervised the church? '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -19360,12 +19427,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.25
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -20058,8 +20125,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: 86}
-  m_SizeDelta: {x: 1091.6748, y: 192.5165}
+  m_AnchoredPosition: {x: 93.159, y: 86}
+  m_SizeDelta: {x: 1019.094, y: 192.516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &987848429
 MonoBehaviour:
@@ -20081,7 +20148,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Where was Apolinario Mabini born?
+  m_text: 'How many years that the church was build? '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -20108,12 +20175,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -20193,8 +20260,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -68}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 90.255, y: -18}
+  m_SizeDelta: {x: 1024.902, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &991273995
 MonoBehaviour:
@@ -20272,7 +20339,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. It was used by him as a throne during his political career.
+  m_text: b. 1877
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -20299,12 +20366,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 37.5
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -20358,6 +20425,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 992709930}
+  - component: {fileID: 992709931}
   m_Layer: 5
   m_Name: 5
   m_TagString: Untagged
@@ -20386,6 +20454,32 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &992709931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992709929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 50
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &995331313
 GameObject:
   m_ObjectHideFlags: 0
@@ -20421,8 +20515,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.843, y: -200.40656}
-  m_SizeDelta: {x: 1091.7, y: 54.9097}
+  m_AnchoredPosition: {x: 88.916, y: -139.23155}
+  m_SizeDelta: {x: 1027.555, y: 54.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &995331315
 MonoBehaviour:
@@ -20500,8 +20594,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d. To provide a modern residence for the Mabini family; the original house
-    was preserved.
+  m_text: d.Philippines Secular in 1753
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -20528,12 +20621,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.45
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -20931,8 +21024,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 10.3714}
+  m_SizeDelta: {x: 0, y: -20.7427}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1012476004
 MonoBehaviour:
@@ -20981,12 +21074,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 65
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 65
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -21452,8 +21545,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86902, y: -206}
-  m_SizeDelta: {x: 1091.6748, y: 62.5981}
+  m_AnchoredPosition: {x: 89.236, y: -116.41}
+  m_SizeDelta: {x: 1026.94, y: 34.115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1045854247
 MonoBehaviour:
@@ -21531,7 +21624,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d. It represents his diplomatic skills in negotiating with foreign powers.
+  m_text: d. Heroes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -21558,12 +21651,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.3
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -21674,7 +21767,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 15.280029, y: 4.340027}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1060580391
@@ -21845,8 +21938,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 5.0619, y: -114.6193}
-  m_SizeDelta: {x: 1010.1238, y: 151.2385}
+  m_AnchoredPosition: {x: 88.904, y: -107}
+  m_SizeDelta: {x: 1007.85, y: 73.928}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1063025474
 MonoBehaviour:
@@ -21877,8 +21970,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278246363
-  m_fontColor: {r: 0.8584906, g: 0.8584905, b: 0, a: 1}
+    rgba: 4281249048
+  m_fontColor: {r: 0.09291565, g: 0.6792453, b: 0.18047877, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -21895,12 +21988,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
+  m_fontSize: 80
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 32
-  m_fontSizeMax: 120
+  m_fontSizeMax: 80
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
@@ -22148,8 +22241,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.856, y: -134}
-  m_SizeDelta: {x: 1091.6748, y: 64.6798}
+  m_AnchoredPosition: {x: 88.929, y: -72.825}
+  m_SizeDelta: {x: 1027.531, y: 64.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1077725568
 MonoBehaviour:
@@ -22227,7 +22320,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c. To serve as a government office; the original house still stands today.
+  m_text: c.  Japanese Secular in 1753
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -22254,12 +22347,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.6
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -22641,8 +22734,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -193}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 92.00005, y: -93}
+  m_SizeDelta: {x: 1023.933, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1092423507
 MonoBehaviour:
@@ -22720,7 +22813,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d. Emancipation Proclamation
+  m_text: d.Popular Church
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -22747,12 +22840,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -22901,6 +22994,7 @@ MonoBehaviour:
   successAudio: {fileID: 8300000, guid: c92987143eefcb742a79f09deec00842, type: 3}
   failedAudio: {fileID: 8300000, guid: bb2fe1f345be1894fadb526026ebaa9f, type: 3}
   loadingManager: {fileID: 401064430}
+  uiElements: {fileID: 159835988}
 --- !u!1 &1100969424
 GameObject:
   m_ObjectHideFlags: 0
@@ -23478,7 +23572,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -188, y: 70}
+  m_AnchoredPosition: {x: -239, y: 26}
   m_SizeDelta: {x: 320, y: 155.55792}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1125040516
@@ -24207,6 +24301,7 @@ GameObject:
   - component: {fileID: 1185524740}
   - component: {fileID: 1185524739}
   - component: {fileID: 1185524738}
+  - component: {fileID: 1185524741}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -24231,7 +24326,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -200, y: 100}
+  m_AnchoredPosition: {x: -200, y: 47}
   m_SizeDelta: {x: 350, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1185524738
@@ -24328,6 +24423,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185524736}
   m_CullTransparentMesh: 1
+--- !u!114 &1185524741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185524736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c879bf8942829f040af334230699b3b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1187059279
 GameObject:
   m_ObjectHideFlags: 0
@@ -24561,8 +24668,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 10.3714}
+  m_SizeDelta: {x: 0, y: -20.7427}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1187660481
 MonoBehaviour:
@@ -24611,12 +24718,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 65
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 65
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -24844,10 +24951,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2096988935}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1132.125, y: 450}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1514.1, y: -270.27435}
+  m_SizeDelta: {x: 1514.1, y: 540.5487}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1222666735
 MonoBehaviour:
@@ -24869,14 +24976,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'A Bust of Mabini - Rises between two imposing pylons, standing like inanimate
-    sentinels at the entrance to the shrine. Two rooms flank the stairs behind the
-    pylons.
-
-
-    Trivia: The bust of Apolinario Mabini would depict his likeness,
-    capturing his facial features, hairstyle, and perhaps any distinctive elements
-    like facial hair or attire.'
+  m_text: "The Old Cota , Balayan church complex originally had stone fortifications
+    as a measure against pirates who have sacked the town at least three times. After
+    a raid in 1754, a stone cota or fort was erected with the church and convent
+    inside. To guard the bay, a small fortification was also constructed on top of
+    a hill on the other end of the town.\r\n\nThe construction of the church began
+    in 1749 and finished in 1759. In 1795, a new stone church was built for the Immaculate
+    Conception. The priests had a new convent constructed in the late 1850s after
+    demolishing the old one. Earthquakes damaged the church complex and led to renovations
+    and reconstructions to restore it in the years after. The church used to have
+    a stone fortification because of pirate raids. You\u2019ll see remnants of this
+    when you visit.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -24903,7 +25013,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46.9
+  m_fontSize: 43.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -25957,6 +26067,7 @@ GameObject:
   - component: {fileID: 1261869238}
   - component: {fileID: 1261869237}
   - component: {fileID: 1261869236}
+  - component: {fileID: 1261869239}
   m_Layer: 5
   m_Name: PauseBtn
   m_TagString: Untagged
@@ -26077,6 +26188,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261869233}
   m_CullTransparentMesh: 1
+--- !u!114 &1261869239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261869233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c879bf8942829f040af334230699b3b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1266655943
 GameObject:
   m_ObjectHideFlags: 0
@@ -26111,8 +26234,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 5.0619, y: -114.6193}
-  m_SizeDelta: {x: 1010.1238, y: 151.2385}
+  m_AnchoredPosition: {x: 82.83998, y: -92.00003}
+  m_SizeDelta: {x: 1014.931, y: 66.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1266655945
 MonoBehaviour:
@@ -26143,8 +26266,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278246363
-  m_fontColor: {r: 0.8584906, g: 0.8584905, b: 0, a: 1}
+    rgba: 4280070163
+  m_fontColor: {r: 0.07471521, g: 0.6886792, b: 0.10996216, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -26161,12 +26284,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
+  m_fontSize: 80
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 32
-  m_fontSizeMax: 120
+  m_fontSizeMax: 80
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
@@ -26973,6 +27096,7 @@ GameObject:
   - component: {fileID: 1317644300}
   - component: {fileID: 1317644299}
   - component: {fileID: 1317644298}
+  - component: {fileID: 1317644302}
   m_Layer: 5
   m_Name: RightBtn
   m_TagString: Untagged
@@ -27126,6 +27250,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317644296}
   m_CullTransparentMesh: 1
+--- !u!114 &1317644302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317644296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c879bf8942829f040af334230699b3b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1321514667
 GameObject:
   m_ObjectHideFlags: 0
@@ -27158,10 +27294,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 992709930}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 76, y: 0}
-  m_SizeDelta: {x: 475.2408, y: 475.2408}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -270.27435}
+  m_SizeDelta: {x: 559.6682, y: 540.5487}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1321514669
 MonoBehaviour:
@@ -27183,7 +27319,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7bf5db7af677adc41a748bafe5396f9f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 64ee60106041aa34282aeb5e03cc4dda, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -27235,8 +27371,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: 86}
-  m_SizeDelta: {x: 1091.6748, y: 192.5165}
+  m_AnchoredPosition: {x: 88.941, y: 86}
+  m_SizeDelta: {x: 1027.531, y: 192.516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1322627178
 MonoBehaviour:
@@ -27258,8 +27394,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Why was the Apolinario Mabini Replica House constructed, and what happened
-    to the original Mabini residence?
+  m_text: 'The church was later supervised by what? '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -27286,12 +27421,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -27538,8 +27673,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.882, y: -0.000023842}
-  m_SizeDelta: {x: 1091.6748, y: 58.1664}
+  m_AnchoredPosition: {x: 88.904, y: 80}
+  m_SizeDelta: {x: 1027.531, y: 58.166}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1326963242
 MonoBehaviour:
@@ -27617,7 +27752,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a.  To house a museum; the original was destroyed during World War II.
+  m_text: a.  American Secular in 1753
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -27644,12 +27779,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36.5
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -28078,10 +28213,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 255181366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 572.1582, y: 471.0662}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -270.27435}
+  m_SizeDelta: {x: 597.1616, y: 540.5487}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1355032963
 MonoBehaviour:
@@ -28558,81 +28693,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366381010}
   m_CullTransparentMesh: 1
---- !u!1 &1368508403
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1368508404}
-  - component: {fileID: 1368508406}
-  - component: {fileID: 1368508405}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1368508404
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368508403}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2096988935}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 52, y: 0.0000076293945}
-  m_SizeDelta: {x: 492.8621, y: 445.0327}
-  m_Pivot: {x: 0, y: 0.5}
---- !u!114 &1368508405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368508403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 10d9b6a57922d2a4e810dc1a12dd55df, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1368508406
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368508403}
-  m_CullTransparentMesh: 1
 --- !u!1 &1373982259
 GameObject:
   m_ObjectHideFlags: 0
@@ -28727,6 +28787,7 @@ GameObject:
   - component: {fileID: 1375039059}
   - component: {fileID: 1375039062}
   - component: {fileID: 1375039061}
+  - component: {fileID: 1375039063}
   - component: {fileID: 1375039060}
   m_Layer: 5
   m_Name: Close
@@ -28752,7 +28813,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -188, y: 70}
+  m_AnchoredPosition: {x: -259, y: 22}
   m_SizeDelta: {x: 320, y: 155.55792}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1375039060
@@ -28849,6 +28910,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375039058}
   m_CullTransparentMesh: 1
+--- !u!114 &1375039063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375039058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c879bf8942829f040af334230699b3b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1380210468
 GameObject:
   m_ObjectHideFlags: 0
@@ -28884,8 +28957,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -188.11493}
-  m_SizeDelta: {x: 1091.6748, y: 64.6797}
+  m_AnchoredPosition: {x: 90.255, y: -138.11493}
+  m_SizeDelta: {x: 1024.902, y: 64.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1380210470
 MonoBehaviour:
@@ -28963,8 +29036,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d. It served as his wheelchair, allowing him to continue his work despite
-    his paralysis.
+  m_text: d. 1880
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -28991,12 +29063,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.6
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -29075,8 +29147,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 5.0619, y: -114.6193}
-  m_SizeDelta: {x: 1010.1238, y: 151.2385}
+  m_AnchoredPosition: {x: 82.83998, y: -92.00003}
+  m_SizeDelta: {x: 1014.931, y: 66.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1388644834
 MonoBehaviour:
@@ -29107,8 +29179,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278246363
-  m_fontColor: {r: 0.8584906, g: 0.8584905, b: 0, a: 1}
+    rgba: 4280070163
+  m_fontColor: {r: 0.07471521, g: 0.6886792, b: 0.10996216, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -29125,12 +29197,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
+  m_fontSize: 80
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 32
-  m_fontSizeMax: 120
+  m_fontSizeMax: 80
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
@@ -29186,6 +29258,7 @@ GameObject:
   - component: {fileID: 1393810674}
   - component: {fileID: 1393810677}
   - component: {fileID: 1393810676}
+  - component: {fileID: 1393810678}
   - component: {fileID: 1393810675}
   m_Layer: 5
   m_Name: Close
@@ -29211,7 +29284,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -188, y: 70}
+  m_AnchoredPosition: {x: -259, y: 22}
   m_SizeDelta: {x: 320, y: 155.55792}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1393810675
@@ -29308,6 +29381,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393810673}
   m_CullTransparentMesh: 1
+--- !u!114 &1393810678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393810673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c879bf8942829f040af334230699b3b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1397432914
 GameObject:
   m_ObjectHideFlags: 0
@@ -29881,7 +29966,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -188, y: 70}
+  m_AnchoredPosition: {x: -239, y: 26}
   m_SizeDelta: {x: 320, y: 155.55792}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1430269100
@@ -30180,8 +30265,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 5.0619, y: -114.6193}
-  m_SizeDelta: {x: 1010.1238, y: 151.2385}
+  m_AnchoredPosition: {x: 79.691, y: -112}
+  m_SizeDelta: {x: 1007.85, y: 73.928}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1437384441
 MonoBehaviour:
@@ -30212,8 +30297,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278246363
-  m_fontColor: {r: 0.8584906, g: 0.8584905, b: 0, a: 1}
+    rgba: 4281249048
+  m_fontColor: {r: 0.09291565, g: 0.6792453, b: 0.18047877, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -30230,12 +30315,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
+  m_fontSize: 80
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 32
-  m_fontSizeMax: 120
+  m_fontSizeMax: 80
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
@@ -30315,8 +30400,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -193}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 93.000015, y: -91}
+  m_SizeDelta: {x: 1019.094, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1438124874
 MonoBehaviour:
@@ -30394,7 +30479,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d. The People Power Revolution
+  m_text: d. 1762
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -30421,12 +30506,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -30640,8 +30725,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -68}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 92.00005, y: 32}
+  m_SizeDelta: {x: 1023.933, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1445741302
 MonoBehaviour:
@@ -30719,7 +30804,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. Malolos Constitution
+  m_text: b.National Cultural Treasure
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -30746,12 +30831,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -30831,8 +30916,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -68}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 93.159, y: -22}
+  m_SizeDelta: {x: 1019.094, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1457519113
 MonoBehaviour:
@@ -30910,7 +30995,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. Deafness
+  m_text: b. 1747
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -30937,12 +31022,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -31204,10 +31289,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 992709930}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1132.125, y: 450}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1513.9923, y: -270.27435}
+  m_SizeDelta: {x: 904.1713, y: 540.5487}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1470919571
 MonoBehaviour:
@@ -31229,12 +31314,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Mabini is also famous for having achieved all this despite having lost
-    the use of his legs to polio just prior to the Philippine revolution. This has
-    made Mabini one of the Philippines' most visually iconic national heroes, such
-    that he is often referred to as \"The Sublime Paralytic\" \n\nTrivia: Apolinario
-    Mabini earned the nickname \"The Sublime Paralytic\" due to his extraordinary
-    intellect and political acumen despite being paralyzed from the waist down.\r\n"
+  m_text: "Few meters from the church is a stone arc depicting angels and doves.
+    Located beside the church is the Immaculate Conception College which was an old
+    convent. This finally concludes our Pilgrimage in Batangas. We were supposed
+    to visit the Calaruega but it\u2019s too dark already and we have to go back
+    in Cavite. It was such a rewarding experience for me, and I would love to visit
+    all these churches again. For those who missed my previous posts, you can visit
+    them again here."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -31261,7 +31347,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.6
+  m_fontSize: 47.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -33332,8 +33418,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -177}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 91.826, y: -92}
+  m_SizeDelta: {x: 1021.761, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1596743358
 MonoBehaviour:
@@ -33411,7 +33497,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d. Rare books and manuscripts
+  m_text: d. 1695
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -33438,12 +33524,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -35167,8 +35253,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -41.758}
-  m_SizeDelta: {x: 1091.6748, y: 63}
+  m_AnchoredPosition: {x: 89.236, y: -30.106}
+  m_SizeDelta: {x: 1026.94, y: 39.695}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1629782118
 MonoBehaviour:
@@ -35246,7 +35332,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. It signifies his role as a military commander during the revolution.
+  m_text: b. Angels
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -35273,12 +35359,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.55
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -35418,6 +35504,7 @@ GameObject:
   - component: {fileID: 1644992864}
   - component: {fileID: 1644992867}
   - component: {fileID: 1644992866}
+  - component: {fileID: 1644992868}
   - component: {fileID: 1644992865}
   m_Layer: 5
   m_Name: Close
@@ -35443,7 +35530,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -188, y: 70}
+  m_AnchoredPosition: {x: -259, y: 22}
   m_SizeDelta: {x: 320, y: 155.55792}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1644992865
@@ -35540,6 +35627,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644992863}
   m_CullTransparentMesh: 1
+--- !u!114 &1644992868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644992863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c879bf8942829f040af334230699b3b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1647414629
 GameObject:
   m_ObjectHideFlags: 0
@@ -35649,8 +35748,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 5.0619, y: -114.6193}
-  m_SizeDelta: {x: 1010.1238, y: 151.2385}
+  m_AnchoredPosition: {x: 84.87, y: -115}
+  m_SizeDelta: {x: 1007.85, y: 73.928}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1647665306
 MonoBehaviour:
@@ -35681,8 +35780,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278246363
-  m_fontColor: {r: 0.8584906, g: 0.8584905, b: 0, a: 1}
+    rgba: 4281249048
+  m_fontColor: {r: 0.09291565, g: 0.6792453, b: 0.18047877, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -35699,12 +35798,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
+  m_fontSize: 80
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 32
-  m_fontSizeMax: 120
+  m_fontSizeMax: 80
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
@@ -35917,8 +36016,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -131}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 91.826, y: -46}
+  m_SizeDelta: {x: 1021.761, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1656975320
 MonoBehaviour:
@@ -35996,7 +36095,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c. Cabinet, water jar, eyeglasses, cane, and wheelchair
+  m_text: c. 1795
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -36023,12 +36122,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.1
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -36108,8 +36207,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -88}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 91.826, y: -3}
+  m_SizeDelta: {x: 1021.761, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1668164705
 MonoBehaviour:
@@ -36187,7 +36286,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. Ancient artifacts from the region
+  m_text: b. 1895
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -36214,12 +36313,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -36464,8 +36563,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: 0}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 93.159, y: 46}
+  m_SizeDelta: {x: 1019.094, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1676157841
 MonoBehaviour:
@@ -36543,7 +36642,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a.  Blindness
+  m_text: a.  1746
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -36570,12 +36669,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -36739,8 +36838,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -131}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 93.159, y: -85}
+  m_SizeDelta: {x: 1019.094, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1680575277
 MonoBehaviour:
@@ -36818,7 +36917,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c. Paralysis
+  m_text: c. 1748
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -36845,12 +36944,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -36931,7 +37030,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -188, y: 70}
+  m_AnchoredPosition: {x: -239, y: 26}
   m_SizeDelta: {x: 320, y: 155.55792}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1689414303
@@ -37233,8 +37332,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: 0}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 93.159, y: 0}
+  m_SizeDelta: {x: 1019.094, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1708501476
 MonoBehaviour:
@@ -37312,7 +37411,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. Tanauan
+  m_text: b. 200
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -37339,12 +37438,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -37507,8 +37606,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: 130.3167}
-  m_SizeDelta: {x: 1091.6748, y: 192.5165}
+  m_AnchoredPosition: {x: 88.914986, y: 94.316696}
+  m_SizeDelta: {x: 1018.3, y: 192.516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1715483215
 MonoBehaviour:
@@ -37530,9 +37629,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The Mabini Shrine in Tanauan, Batangas, marks the birthplace of Apolinario
-    Mabini and includes a library, museum, and his tomb. When was it inaugurated
-    and by whom?
+  m_text: Who are the one who had a new convent constructed in the late 1850s after
+    demolishing the old one?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -37895,8 +37993,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: 86}
-  m_SizeDelta: {x: 1091.6748, y: 192.5165}
+  m_AnchoredPosition: {x: 90.739975, y: 86}
+  m_SizeDelta: {x: 1023.933, y: 192.516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1724570673
 MonoBehaviour:
@@ -37918,8 +38016,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What important document did Apolinario Mabini help draft for the First
-    Philippine Republic in 1899?
+  m_text: 'The church was listed as a what? '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -37946,12 +38043,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -38167,8 +38264,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -78.300354}
-  m_SizeDelta: {x: 1091.6748, y: 71.9707}
+  m_AnchoredPosition: {x: 77.999985, y: -69.300354}
+  m_SizeDelta: {x: 996.512, y: 71.971}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1733757206
 MonoBehaviour:
@@ -38246,7 +38343,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b. Inaugurated on July 23, 1956, by Carlos P. Garcia and Luz Banzon-Magsaysay.
+  m_text: b. The Priests
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -38273,7 +38370,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.2
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -38358,8 +38455,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: 17.685}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 89.236, y: 17.685}
+  m_SizeDelta: {x: 1026.94, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1734622080
 MonoBehaviour:
@@ -38437,7 +38534,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a. It represents his love for literature and education.
+  m_text: a. Saints
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -38464,12 +38561,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.15
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -38626,8 +38723,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 531, y: 91}
-  m_SizeDelta: {x: 564.8535, y: 29.7141}
+  m_AnchoredPosition: {x: 508.19904, y: 63}
+  m_SizeDelta: {x: 527.299, y: 39.324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1737139527
 MonoBehaviour:
@@ -38676,12 +38773,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -38836,8 +38933,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -109}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 89.000984, y: -11.314987}
+  m_SizeDelta: {x: 1015.03, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1747035788
 MonoBehaviour:
@@ -38859,7 +38956,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c. He was a Spanish colonial governor.
+  m_text: c. Tagaytay
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -38886,12 +38983,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -39003,6 +39100,7 @@ GameObject:
   - component: {fileID: 1748288455}
   - component: {fileID: 1748288458}
   - component: {fileID: 1748288457}
+  - component: {fileID: 1748288459}
   - component: {fileID: 1748288456}
   m_Layer: 5
   m_Name: Close
@@ -39028,7 +39126,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -188, y: 70}
+  m_AnchoredPosition: {x: -259, y: 22}
   m_SizeDelta: {x: 320, y: 155.55792}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1748288456
@@ -39125,6 +39223,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1748288454}
   m_CullTransparentMesh: 1
+--- !u!114 &1748288459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748288454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c879bf8942829f040af334230699b3b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1748461553
 GameObject:
   m_ObjectHideFlags: 0
@@ -39243,8 +39353,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 531, y: 91}
-  m_SizeDelta: {x: 564.8535, y: 29.7141}
+  m_AnchoredPosition: {x: 502.73895, y: 65}
+  m_SizeDelta: {x: 531.664, y: 29.714}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1753543489
 MonoBehaviour:
@@ -39293,12 +39403,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -39573,8 +39683,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 531, y: 91}
-  m_SizeDelta: {x: 564.8535, y: 29.7141}
+  m_AnchoredPosition: {x: 492, y: 65}
+  m_SizeDelta: {x: 536.617, y: 29.714}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1786420728
 MonoBehaviour:
@@ -39623,7 +39733,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 49.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -39707,8 +39817,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 529, y: 70}
-  m_SizeDelta: {x: 564.8535, y: 29.7141}
+  m_AnchoredPosition: {x: 501.28918, y: 64.461}
+  m_SizeDelta: {x: 531.358, y: 70.636}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1786704105
 MonoBehaviour:
@@ -39757,12 +39867,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -40228,8 +40338,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -68}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 93.159, y: -68}
+  m_SizeDelta: {x: 1019.094, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1832577038
 MonoBehaviour:
@@ -40307,7 +40417,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: c. Lipa
+  m_text: c. 300
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -40334,12 +40444,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -41191,7 +41301,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -188, y: 70}
+  m_AnchoredPosition: {x: -239, y: 26}
   m_SizeDelta: {x: 320, y: 155.55792}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1850080088
@@ -41641,6 +41751,7 @@ GameObject:
   - component: {fileID: 1866931878}
   - component: {fileID: 1866931881}
   - component: {fileID: 1866931880}
+  - component: {fileID: 1866931882}
   - component: {fileID: 1866931879}
   m_Layer: 5
   m_Name: Close
@@ -41666,7 +41777,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -188, y: 70}
+  m_AnchoredPosition: {x: -259, y: 22}
   m_SizeDelta: {x: 320, y: 155.55792}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1866931879
@@ -41763,6 +41874,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866931877}
   m_CullTransparentMesh: 1
+--- !u!114 &1866931882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866931877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c879bf8942829f040af334230699b3b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1867284716
 GameObject:
   m_ObjectHideFlags: 0
@@ -41940,6 +42063,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1878502752}
+  - component: {fileID: 1878502753}
   m_Layer: 5
   m_Name: 4
   m_TagString: Untagged
@@ -41968,6 +42092,32 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1878502753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878502751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 50
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &1883589837
 GameObject:
   m_ObjectHideFlags: 0
@@ -42136,8 +42286,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: 86}
-  m_SizeDelta: {x: 1091.6748, y: 192.5165}
+  m_AnchoredPosition: {x: 91.826, y: 86}
+  m_SizeDelta: {x: 1021.761, y: 192.516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1890297352
 MonoBehaviour:
@@ -42159,9 +42309,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Inside the museum at the Mabini Shrine in Tanauan, Batangas, various personal
-    items and memorabilia belonging to Apolinario Mabini are displayed. What are
-    some of these items that can be seen behind glass walls?
+  m_text: 'In what year does the new stone church was built for the Immaculate Conception? '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -42188,12 +42336,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.25
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -42695,8 +42843,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 5.0619, y: -114.6193}
-  m_SizeDelta: {x: 1010.1238, y: 151.2385}
+  m_AnchoredPosition: {x: 82.83998, y: -92.00003}
+  m_SizeDelta: {x: 1014.931, y: 66.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1915976430
 MonoBehaviour:
@@ -42727,8 +42875,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278246363
-  m_fontColor: {r: 0.8584906, g: 0.8584905, b: 0, a: 1}
+    rgba: 4280070163
+  m_fontColor: {r: 0.07471521, g: 0.6886792, b: 0.10996216, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -42745,12 +42893,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
+  m_fontSize: 80
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 32
-  m_fontSizeMax: 120
+  m_fontSizeMax: 80
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
@@ -42829,8 +42977,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 12.676102}
+  m_SizeDelta: {x: 0, y: -25.3522}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1917614857
 MonoBehaviour:
@@ -42879,12 +43027,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 65
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 65
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -43273,8 +43421,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: 0}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 93, y: 102}
+  m_SizeDelta: {x: 1019.094, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1929187867
 MonoBehaviour:
@@ -43352,7 +43500,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a.  The American Revolution
+  m_text: a. 1759
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -43379,12 +43527,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -43595,8 +43743,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -156}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 89.000984, y: -58.314987}
+  m_SizeDelta: {x: 1015.03, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1947873448
 MonoBehaviour:
@@ -43618,7 +43766,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d. He was a famous Filipino poet.
+  m_text: d. Taal
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -43645,12 +43793,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -44004,8 +44152,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.869, y: -193}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 93.159, y: -147}
+  m_SizeDelta: {x: 1019.094, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1976646336
 MonoBehaviour:
@@ -44083,7 +44231,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: d. Epilepsy
+  m_text: d. 1749
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -44110,12 +44258,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -44290,8 +44438,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.86898, y: 0}
-  m_SizeDelta: {x: 1091.6748, y: 35.3696}
+  m_AnchoredPosition: {x: 90.255, y: 50}
+  m_SizeDelta: {x: 1024.902, y: 35.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1978759776
 MonoBehaviour:
@@ -44369,7 +44517,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a.  It was a gift from a foreign leader.
+  m_text: a.  1876
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -44396,12 +44544,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 12
-  m_fontSizeMax: 50
+  m_fontSizeMax: 45
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -44561,10 +44709,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 447722163}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 17, y: 0}
-  m_SizeDelta: {x: 559.2675, y: 402.6427}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -270.27435}
+  m_SizeDelta: {x: 559.2675, y: 540.5487}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &2000379738
 MonoBehaviour:
@@ -44586,7 +44734,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ee668c66b1c68cc459ad9e6a6d306e6b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 772ab30113cb1fe4fab1c3c7b4243b42, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -45203,6 +45351,7 @@ GameObject:
   - component: {fileID: 2022532292}
   - component: {fileID: 2022532291}
   - component: {fileID: 2022532290}
+  - component: {fileID: 2022532293}
   m_Layer: 5
   m_Name: ActionBtn
   m_TagString: Untagged
@@ -45323,6 +45472,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022532288}
   m_CullTransparentMesh: 1
+--- !u!114 &2022532293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022532288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c879bf8942829f040af334230699b3b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2027615632
 GameObject:
   m_ObjectHideFlags: 0
@@ -45553,6 +45714,7 @@ GameObject:
   - component: {fileID: 2039183762}
   - component: {fileID: 2039183761}
   - component: {fileID: 2039183760}
+  - component: {fileID: 2039183763}
   m_Layer: 5
   m_Name: Close
   m_TagString: Untagged
@@ -45577,7 +45739,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 25}
+  m_AnchoredPosition: {x: 0, y: -28.000092}
   m_SizeDelta: {x: 350, y: 150}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2039183760
@@ -45674,6 +45836,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2039183758}
   m_CullTransparentMesh: 1
+--- !u!114 &2039183763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039183758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c879bf8942829f040af334230699b3b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2047660224
 GameObject:
   m_ObjectHideFlags: 0
@@ -48904,6 +49078,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2096988935}
+  - component: {fileID: 2096988936}
   m_Layer: 5
   m_Name: 2
   m_TagString: Untagged
@@ -48923,7 +49098,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1368508404}
   - {fileID: 1222666734}
   m_Father: {fileID: 524322151}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -48932,6 +49106,32 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2096988936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096988934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 50
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &2097563600
 GameObject:
   m_ObjectHideFlags: 0
@@ -49604,8 +49804,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 5.0619, y: -114.6193}
-  m_SizeDelta: {x: 1010.1238, y: 151.2385}
+  m_AnchoredPosition: {x: 125, y: -92}
+  m_SizeDelta: {x: 943.674, y: 66.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2142616892
 MonoBehaviour:
@@ -49636,8 +49836,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278246363
-  m_fontColor: {r: 0.8584906, g: 0.8584905, b: 0, a: 1}
+    rgba: 4280070163
+  m_fontColor: {r: 0.07471521, g: 0.6886792, b: 0.10996216, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -49654,12 +49854,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
+  m_fontSize: 80
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 32
-  m_fontSizeMax: 120
+  m_fontSizeMax: 80
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
