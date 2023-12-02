@@ -11,6 +11,7 @@ public class LevelInit : MonoBehaviour
     public GameObject shop2;
     public TextMeshProUGUI tricycleText;
     public TextMeshProUGUI multicabText;
+    public TextMeshProUGUI gasStationValuesText;
     private DataManager manager;
 
     void Start()
@@ -28,6 +29,8 @@ public class LevelInit : MonoBehaviour
         moneyText.text = manager.Money.ToString("F0");
         tourIncomeText.text = "Total Passive Income (Coins/Second): " + manager.Income.ToString();
         souvenirIncomeText.text = "Total Passive Income (Coins/Second): " + manager.Income.ToString();
+
+        gasStationValuesText.text = $"Gas: {manager.Gas:F2}\n<size=80%>Gold: {manager.Money:F2}</size>";
 
         switch (manager.CurrentScene)
         {

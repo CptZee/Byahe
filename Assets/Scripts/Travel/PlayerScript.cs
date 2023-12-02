@@ -86,6 +86,8 @@ public class PlayerScript : MonoBehaviour
         {
             gameOverPanel.SetActive(true);
             manager.Money -= 12.5f;
+            if(manager.Money < 0)
+                manager.Money = 0; //Prevent negative money
             Time.timeScale = 0;
             gameOver = true;
         }
@@ -96,6 +98,7 @@ public class PlayerScript : MonoBehaviour
         }
         if (manager.TravelActor.Equals("Multicab"))
         {
+            transform.localScale = new Vector3(1, 1, 1);
             spriteVariation = 1;
         }
         Debug.Log("Current Sprite Variation " + spriteVariation);
