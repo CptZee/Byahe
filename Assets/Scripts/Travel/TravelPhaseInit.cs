@@ -4,11 +4,27 @@ using UnityEngine.UI;
 public class TravelPhaseInit : MonoBehaviour
 {
     public Slider gasSlider;
+    public GameObject tutorialScreen;
     private DataManager datamanager;
+    private ScoreManager scoreManager;
     void Start()
     {
         datamanager = DataManager.instance;
+        scoreManager = ScoreManager.instance;
         gasSlider.maxValue = datamanager.Gas;
-        Debug.Log("Max Gas: " + gasSlider.maxValue );
+        if (!scoreManager.prologueFinished)
+        {
+            Time.timeScale = 0;
+            tutorialScreen.SetActive(true);
+        }
+        else
+            tutorialScreen.SetActive(false);
+    }
+
+    public void CloseTutorialScreen()
+    {
+        scoreManager.SetBool("prologueFinished", true);
+        Time.timeScale = 1;
+        tutorialScreen.SetActive(false);
     }
 }

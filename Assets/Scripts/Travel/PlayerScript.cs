@@ -30,7 +30,8 @@ public class PlayerScript : MonoBehaviour
     private bool gameOver = false;
     void Start()
     {
-        Time.timeScale = 1; //Resume the game if it is paused
+        if (ScoreManager.instance.prologueFinished)
+            Time.timeScale = 1;
 
         // Adjust the Box Collider dimensions to match the Sprite dimensions
         boxCollider.size = spriteRenderer.sprite.bounds.size;
@@ -86,7 +87,7 @@ public class PlayerScript : MonoBehaviour
         {
             gameOverPanel.SetActive(true);
             manager.Money -= 12.5f;
-            if(manager.Money < 0)
+            if (manager.Money < 0)
                 manager.Money = 0; //Prevent negative money
             Time.timeScale = 0;
             gameOver = true;
