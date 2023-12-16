@@ -50,7 +50,7 @@ public class DataManager : MonoBehaviour
         HasTricycle = false;
         HasMulticab = false;
         CurrentScene = "TravelLevel";
-        Destination = "Mabini";
+        Destination = "Lipa";
         Gas = 100;
         Money = 100;
         Income = 0;

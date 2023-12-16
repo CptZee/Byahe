@@ -19,6 +19,7 @@ public class ScoreManager : MonoBehaviour
 
     public void Load()
     {
+        prologueFinished = PlayerPrefs.GetInt("prologueFinished") == 1;
         tutorialFinished = PlayerPrefs.GetInt("tutorialFinished") == 1;
         mabiniFinished = PlayerPrefs.GetInt("mabiniFinished") == 1;
         malvarFinished = PlayerPrefs.GetInt("malvarFinished") == 1;
@@ -39,6 +40,7 @@ public class ScoreManager : MonoBehaviour
 
     public void Save()
     {
+        SetBool("prologueFinished", prologueFinished);
         SetBool("tutorialFinished", tutorialFinished);
         SetBool("mabiniFinished", mabiniFinished);
         SetBool("malvarFinished", malvarFinished);
@@ -59,6 +61,7 @@ public class ScoreManager : MonoBehaviour
 
     public void Reset()
     {
+        prologueFinished = false;
         tutorialFinished = false;
         mabiniFinished = false;
         malvarFinished = false;
@@ -90,6 +93,7 @@ public class ScoreManager : MonoBehaviour
         PlayerPrefs.Save();
     }
 
+    public bool prologueFinished { get; set; }
     public bool tutorialFinished { get; set; }
     public bool mabiniFinished { get; set; }
     public bool malvarFinished { get; set; }
