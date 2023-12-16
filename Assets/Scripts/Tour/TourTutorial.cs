@@ -4,11 +4,14 @@ using UnityEngine;
 public class TourTutorial : MonoBehaviour
 {
     public List<GameObject> tutorialUIs;
+    public List<GameObject> introUIs;
+    public GameObject fadePanel;
     private Attention attentionScript;
     private TutorialManager tutorialManager;
     private Transform playerSprite;
     private List<GameObject> interactables;
     private float minDistance;
+    private int introIndex = 0;
     public void Start()
     {
         attentionScript = GetComponent<Attention>();
@@ -17,11 +20,15 @@ public class TourTutorial : MonoBehaviour
         interactables = attentionScript.interactables;
         minDistance = attentionScript.minDistance;
 
+        //DEBUG CODE
+        ShowUI(0);
+        //DEBUG CODE
+
         if (!tutorialManager.tutorialStartFinished)
         {
             tutorialManager.tutorialStartFinished = true;
+            ShowUI(0);
             tutorialManager.Save();
-            tutorialUIs[0].SetActive(true);
         }
     }
     public void Update()
@@ -38,9 +45,8 @@ public class TourTutorial : MonoBehaviour
                         case 0: //Landmark
                             if (!tutorialManager.landmarkFinished)
                             {
-                                tutorialManager.landmarkFinished = true;
-                                tutorialUIs[1].SetActive(true);
-                                Time.timeScale = 1;
+                                //tutorialManager.landmarkFinished = true;
+                                ShowUI(1);
                                 tutorialManager.Save();
                             }
                             break;
@@ -68,12 +74,34 @@ public class TourTutorial : MonoBehaviour
         }
     }
 
+    public void ShowUI(int index)
+    {
+        tutorialUIs[index].SetActive(true);
+        fadePanel.SetActive(true);
+        Time.timeScale = 0;
+    }
+
     public void CloseUIs()
     {
+        fadePanel.SetActive(false);
         foreach (GameObject ui in tutorialUIs)
         {
             ui.SetActive(false);
         }
-        Time.timeScale = 0;
+        Time.timeScale = 1;
+    }
+
+    public void IntroContinue()
+    {
+        introIndex += 1;
+        if (introIndex == introUIs.Count)
+            CloseUIs();
+        for (int i = 0; i < introUIs.Count; i++)
+        {
+            if (introIndex == i)
+                introUIs[i].SetActive(true);
+            else
+                introUIs[i].SetActive(false);
+        }
     }
 }

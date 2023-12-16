@@ -3851,6 +3851,7 @@ GameObject:
   - component: {fileID: 817920397}
   - component: {fileID: 817920400}
   - component: {fileID: 817920399}
+  - component: {fileID: 817920401}
   m_Layer: 0
   m_Name: DataManager
   m_TagString: Untagged
@@ -3908,6 +3909,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 351de28b3f915e144940643f7916671e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &817920401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817920396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f348d1a4ec75ad48b8e27316ed2a14c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &825502927
@@ -4373,7 +4386,7 @@ MonoBehaviour:
   sfxSource: {fileID: 1198434082}
   openClip: {fileID: 8300000, guid: 4769246bccead504ea20ff837e26dca6, type: 3}
   newGamePanel: {fileID: 1877202060}
-  dataManager: {fileID: 817920397}
+  scoreManager: {fileID: 0}
   tutorialPanel: {fileID: 1612648265}
   settingsUI: {fileID: 1970662937}
   aboutUsPanel: {fileID: 2112104673}
