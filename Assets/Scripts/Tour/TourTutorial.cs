@@ -5,6 +5,7 @@ public class TourTutorial : MonoBehaviour
 {
     public List<GameObject> tutorialUIs;
     public List<GameObject> introUIs;
+    public List<GameObject> landmarkUIs;
     public GameObject fadePanel;
     private Attention attentionScript;
     private TutorialManager tutorialManager;
@@ -12,6 +13,7 @@ public class TourTutorial : MonoBehaviour
     private List<GameObject> interactables;
     private float minDistance;
     private int introIndex = 0;
+    private int landmarkIndex = 0;
     public void Start()
     {
         attentionScript = GetComponent<Attention>();
@@ -26,7 +28,6 @@ public class TourTutorial : MonoBehaviour
 
         if (!tutorialManager.tutorialStartFinished)
         {
-            tutorialManager.tutorialStartFinished = true;
             ShowUI(0);
             tutorialManager.Save();
         }
@@ -45,9 +46,7 @@ public class TourTutorial : MonoBehaviour
                         case 0: //Landmark
                             if (!tutorialManager.landmarkFinished)
                             {
-                                //tutorialManager.landmarkFinished = true;
                                 ShowUI(1);
-                                tutorialManager.Save();
                             }
                             break;
                         case 1: //Shop 1
@@ -95,13 +94,35 @@ public class TourTutorial : MonoBehaviour
     {
         introIndex += 1;
         if (introIndex == introUIs.Count)
+        {
+            tutorialManager.tutorialStartFinished = true;
+            tutorialManager.Save();
             CloseUIs();
+        }
         for (int i = 0; i < introUIs.Count; i++)
         {
             if (introIndex == i)
                 introUIs[i].SetActive(true);
             else
                 introUIs[i].SetActive(false);
+        }
+    }
+
+    public void LandmarkContinue()
+    {
+        landmarkIndex += 1;
+        if (landmarkIndex == landmarkUIs.Count)
+        {
+            tutorialManager.landmarkFinished = true;
+            tutorialManager.Save();
+            CloseUIs();
+        }
+        for (int i = 0; i < landmarkUIs.Count; i++)
+        {
+            if (landmarkIndex == i)
+                landmarkUIs[i].SetActive(true);
+            else
+                landmarkUIs[i].SetActive(false);
         }
     }
 }
