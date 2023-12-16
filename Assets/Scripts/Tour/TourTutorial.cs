@@ -95,9 +95,9 @@ public class TourTutorial : MonoBehaviour
         introIndex += 1;
         if (introIndex == introUIs.Count)
         {
+            CloseUIs();
             tutorialManager.tutorialStartFinished = true;
             tutorialManager.Save();
-            CloseUIs();
         }
         for (int i = 0; i < introUIs.Count; i++)
         {
@@ -113,9 +113,9 @@ public class TourTutorial : MonoBehaviour
         landmarkIndex += 1;
         if (landmarkIndex == landmarkUIs.Count)
         {
+            CloseUIs();
             tutorialManager.landmarkFinished = true;
             tutorialManager.Save();
-            CloseUIs();
         }
         for (int i = 0; i < landmarkUIs.Count; i++)
         {
