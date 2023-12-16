@@ -3849,6 +3849,7 @@ GameObject:
   m_Component:
   - component: {fileID: 817920398}
   - component: {fileID: 817920397}
+  - component: {fileID: 817920400}
   - component: {fileID: 817920399}
   m_Layer: 0
   m_Name: DataManager
@@ -3897,6 +3898,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   incomeInterval: 15
+--- !u!114 &817920400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817920396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351de28b3f915e144940643f7916671e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &825502927
 GameObject:
   m_ObjectHideFlags: 0

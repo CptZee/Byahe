@@ -8,7 +8,8 @@ public class MainMenuScript : MonoBehaviour
     public AudioSource sfxSource;
     public AudioClip openClip;
     public GameObject newGamePanel;
-    public DataManager dataManager;
+    private DataManager dataManager;
+    public ScoreManager scoreManager;
     public GameObject tutorialPanel;
     public GameObject settingsUI;
     public GameObject aboutUsPanel;
@@ -20,6 +21,8 @@ public class MainMenuScript : MonoBehaviour
     void Start()
     {
         settingsManager = SettingsManager.instance;
+        dataManager = DataManager.instance;
+        scoreManager = ScoreManager.instance;
         musicSlider.value = settingsManager.MusicLevel;
         audioSlider.value = settingsManager.AudioLevel;
         if (musicPlayer != null)
@@ -71,6 +74,7 @@ public class MainMenuScript : MonoBehaviour
     public void NewGame()
     {
         loadingManager.LoadScene("Prologue");
+        scoreManager.Reset();
         dataManager.Reset();
     }
 
@@ -102,6 +106,7 @@ public class MainMenuScript : MonoBehaviour
     {
         Debug.Log("Continuing Game");
         dataManager.Load();
+        scoreManager.Load();
         if (!PlayerPrefs.HasKey("CurrentScene"))
         {
             PlayGame();

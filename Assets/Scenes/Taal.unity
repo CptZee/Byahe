@@ -14972,10 +14972,10 @@ MonoBehaviour:
   souvenirIncomeText: {fileID: 1060580393}
   shop1: {fileID: 519008169}
   shop2: {fileID: 719477535}
-  kalesaText: {fileID: 0}
+  kalesaText: {fileID: 1100969426}
   tricycleText: {fileID: 1499995862}
   multicabText: {fileID: 537306942}
-  jeepneyText: {fileID: 0}
+  jeepneyText: {fileID: 471053134}
   gasStationValuesText: {fileID: 0}
 --- !u!1 &403032354
 GameObject:
