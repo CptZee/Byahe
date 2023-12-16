@@ -28,7 +28,6 @@ public class Attention : MonoBehaviour
             foreach (GameObject interactable in interactables)
             {
                 float distance = Vector3.Distance(playerSprite.position, interactable.transform.position);
-                Debug.Log(interactable.name + ": " + distance);
                 if (distance < minDistance)
                     gameObject.GetComponent<SpriteRenderer>().enabled = true;
             }
