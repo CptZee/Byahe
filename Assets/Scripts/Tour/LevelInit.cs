@@ -27,13 +27,13 @@ public class LevelInit : MonoBehaviour
     }
     void Update()
     {
-        if (manager.TourActor.Equals("Kalesa"))
+        if (manager.TourActor.Equals("Kalesa") && jeepneyText != null)
             jeepneyText.SetText("JEEPNEY (EQUIPED)");
-        if(manager.TourActor.Equals("Tricycle"))
+        if(manager.TourActor.Equals("Tricycle") && tricycleText != null)
             tricycleText.SetText("Tricycle (EQUIPED)");
-        if (manager.TravelActor.Equals("Jeepney"))
+        if (manager.TravelActor.Equals("Jeepney") && kalesaText != null)
             kalesaText.SetText("Kalesa (EQUIPED)");
-        if (manager.TravelActor.Equals("Multicab"))
+        if (manager.TravelActor.Equals("Multicab") && multicabText != null)
             multicabText.SetText("Multicab (EQUIPED)");
         gasText.text = manager.Gas.ToString("F0");
         moneyText.text = manager.Money.ToString("F0");

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerTourScript : MonoBehaviour
@@ -13,7 +14,6 @@ public class PlayerTourScript : MonoBehaviour
     private int spriteVariation = 0;
 
     //This part is really ifty and prolly should be moved to its own later on
-
     public GameObject uiButtons;
     public GameObject terminal;
     public GameObject sign1;
@@ -36,12 +36,16 @@ public class PlayerTourScript : MonoBehaviour
     public AudioClip successAudio;
     public AudioClip failedAudio;
     private bool checkedLandmark = false;
+    private List<float> yLanes = new List<float> { -2.5f, -3f, -3.5f };
+    private int yLanePositionIndex = 0;
 
     void Start()
     {
-        Time.timeScale = 1; //Resume the game if it is paused
+        if (ScoreManager.instance.tutorialFinished)
+            Time.timeScale = 1;
         boxCollider.size = spriteRenderer.sprite.bounds.size;
         boxCollider.offset = spriteRenderer.sprite.bounds.center;
+        gameObject.transform.position = new Vector3(transform.position.x, yLanes[yLanePositionIndex], 0);
     }
 
     void Update()
@@ -56,6 +60,46 @@ public class PlayerTourScript : MonoBehaviour
             spriteVariation = 1;
         }
         animator.SetFloat("SpriteVariation", spriteVariation);
+        switch(yLanePositionIndex)
+        {
+            case 0:
+                gameObject.GetComponent<SpriteRenderer>().sortingOrder = 18;
+                break;
+            case 1:
+                gameObject.GetComponent<SpriteRenderer>().sortingOrder = 19;
+                break;
+            case 2:
+                gameObject.GetComponent<SpriteRenderer>().sortingOrder = 20;
+                break;
+        }
+    }
+
+    public void MoveUp()
+    {
+        switch(yLanePositionIndex)
+        {
+            case 2:
+                yLanePositionIndex = 1;
+                break;
+            case 1:
+                yLanePositionIndex = 0;
+                break;
+        }
+        gameObject.transform.position = new Vector3(transform.position.x, yLanes[yLanePositionIndex], 0);
+    }
+
+    public void MoveDown()
+    {
+        switch(yLanePositionIndex)
+        {
+            case 1:
+                yLanePositionIndex = 2;
+                break;
+            case 0:
+                yLanePositionIndex = 1;
+                break;
+        }
+        transform.transform.position = new Vector3(transform.position.x, yLanes[yLanePositionIndex], 0);
     }
 
     public void MoveLeft()
@@ -102,7 +146,8 @@ public class PlayerTourScript : MonoBehaviour
         if (distance < 2.0f)
         {
             audioManager.PlayAudio(0);
-            if(DataManager.instance.Gas < 50){
+            if (DataManager.instance.Gas < 50)
+            {
                 showUI(cantTravelUI);
                 return;
             }
@@ -197,8 +242,9 @@ public class PlayerTourScript : MonoBehaviour
         hideUI(destinationUI);
     }
 
-    public void BuyGas(){
-        
+    public void BuyGas()
+    {
+
         DataManager manager = DataManager.instance;
         if (manager.Money < 10)
         {
@@ -222,7 +268,8 @@ public class PlayerTourScript : MonoBehaviour
             return;
         }
         manager.Money -= 15;
-        switch(manager.CurrentScene){
+        switch (manager.CurrentScene)
+        {
             case "Mabini":
                 manager.MabiniShop1 = true;
                 break;
@@ -260,7 +307,8 @@ public class PlayerTourScript : MonoBehaviour
             return;
         }
         manager.Money = DataManager.instance.Money - 25;
-        switch(manager.CurrentScene){
+        switch (manager.CurrentScene)
+        {
             case "Mabini":
                 manager.MabiniShop2 = true;
                 break;

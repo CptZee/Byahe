@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class TourTutorial : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    private Attention attentionScript;
+    public void Start(){
+        attentionScript = GetComponent<Attention>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void Update(){
+        if (attentionScript.interactables != null)
+        {
+            // Reference
+            foreach (GameObject interactable in attentionScript.interactables)
+            {
+                
+            }
+        }
     }
 }
