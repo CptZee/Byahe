@@ -9,15 +9,17 @@ public class LevelInit : MonoBehaviour
     public TextMeshProUGUI souvenirIncomeText;
     public GameObject shop1;
     public GameObject shop2;
+    public TextMeshProUGUI kalesaText;
     public TextMeshProUGUI tricycleText;
     public TextMeshProUGUI multicabText;
+    public TextMeshProUGUI jeepneyText;
     public TextMeshProUGUI gasStationValuesText;
     private DataManager manager;
 
     void Start()
     {
         manager = DataManager.instance;
-        if(manager.Destination == "")
+        if (manager.Destination == "")
             return;
         manager.CurrentScene = manager.Destination;
         manager.Destination = "";
@@ -25,6 +27,14 @@ public class LevelInit : MonoBehaviour
     }
     void Update()
     {
+        if (manager.TourActor.Equals("Kalesa"))
+            jeepneyText.SetText("JEEPNEY (EQUIPED)");
+        if(manager.TourActor.Equals("Tricycle"))
+            tricycleText.SetText("Tricycle (EQUIPED)");
+        if (manager.TravelActor.Equals("Jeepney"))
+            kalesaText.SetText("Kalesa (EQUIPED)");
+        if (manager.TravelActor.Equals("Multicab"))
+            multicabText.SetText("Multicab (EQUIPED)");
         gasText.text = manager.Gas.ToString("F0");
         moneyText.text = manager.Money.ToString("F0");
         tourIncomeText.text = "Total Passive Income (Coins/Second): " + manager.Income.ToString();

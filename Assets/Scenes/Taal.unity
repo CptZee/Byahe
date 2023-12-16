@@ -14972,8 +14972,10 @@ MonoBehaviour:
   souvenirIncomeText: {fileID: 1060580393}
   shop1: {fileID: 519008169}
   shop2: {fileID: 719477535}
+  kalesaText: {fileID: 0}
   tricycleText: {fileID: 1499995862}
   multicabText: {fileID: 537306942}
+  jeepneyText: {fileID: 0}
   gasStationValuesText: {fileID: 0}
 --- !u!1 &403032354
 GameObject:
@@ -41898,6 +41900,7 @@ MonoBehaviour:
   failedAudio: {fileID: 8300000, guid: bb2fe1f345be1894fadb526026ebaa9f, type: 3}
   loadingManager: {fileID: 401064430}
   uiElements: {fileID: 0}
+  failedElement: {fileID: 0}
 --- !u!1 &1096421093
 GameObject:
   m_ObjectHideFlags: 0
