@@ -2343,7 +2343,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TUTORIAL
+  m_text: GUIDE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -2814,7 +2814,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TUTORIAL
+  m_text: USER GUIDE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -7781,7 +7781,7 @@ GameObject:
   - component: {fileID: 1589101885}
   - component: {fileID: 1589101888}
   m_Layer: 5
-  m_Name: Tutorial
+  m_Name: Guide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
