@@ -24,7 +24,7 @@ public class HighscoreWatcher : MonoBehaviour
             + @"<b>San Jose Time:</b> " + FormatMilliseconds(ScoreManager.instance.sanJoseTime) + "<br>"
             + @"<b>Lobo Time:</b> " + FormatMilliseconds(ScoreManager.instance.loboTime) + "<br>"
             + @"<b>Balayan Time:</b> " + FormatMilliseconds(ScoreManager.instance.balayanTime) + "<br>"
-            + @"<b>Highest Money:</b> " + ScoreManager.instance.highestMoney+ "<br>"
+            + @"<b>Highest Money:</b> " + ScoreManager.instance.highestMoney + "<br>"
             + @"<b>Highest Gas:</b> " + ScoreManager.instance.highestGas + "<br>";
         leaderboardText.text = text;
     }
@@ -36,29 +36,33 @@ public class HighscoreWatcher : MonoBehaviour
 
         string formattedTime = "";
 
-        if (timeSpan.Days > 0)
+        if (milliseconds == float.MaxValue)
         {
-            formattedTime += $"{timeSpan.Days} {(timeSpan.Days == 1 ? "day" : "days")}, ";
+
+            if (timeSpan.Days > 0)
+            {
+                formattedTime += $"{timeSpan.Days} {(timeSpan.Days == 1 ? "day" : "days")}, ";
+            }
+
+            if (timeSpan.Hours > 0)
+            {
+                formattedTime += $"{timeSpan.Hours} {(timeSpan.Hours == 1 ? "hour" : "hours")}, ";
+            }
+
+            if (timeSpan.Minutes > 0)
+            {
+                formattedTime += $"{timeSpan.Minutes} {(timeSpan.Minutes == 1 ? "minute" : "minutes")}, ";
+            }
+
+            if (timeSpan.Seconds > 0)
+            {
+                formattedTime += $"{timeSpan.Seconds} {(timeSpan.Seconds == 1 ? "second" : "seconds")}";
+            }
+
+            formattedTime = formattedTime.TrimEnd(',', ' ');
         }
 
-        if (timeSpan.Hours > 0)
-        {
-            formattedTime += $"{timeSpan.Hours} {(timeSpan.Hours == 1 ? "hour" : "hours")}, ";
-        }
-
-        if (timeSpan.Minutes > 0)
-        {
-            formattedTime += $"{timeSpan.Minutes} {(timeSpan.Minutes == 1 ? "minute" : "minutes")}, ";
-        }
-
-        if (timeSpan.Seconds > 0)
-        {
-            formattedTime += $"{timeSpan.Seconds} {(timeSpan.Seconds == 1 ? "second" : "seconds")}";
-        }
-
-        formattedTime = formattedTime.TrimEnd(',', ' ');
-
-        if(formattedTime == "")
+        if (formattedTime == "")
             formattedTime = "N/A";
 
         return formattedTime;

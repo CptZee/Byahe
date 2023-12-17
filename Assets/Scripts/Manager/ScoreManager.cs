@@ -10,9 +10,23 @@ public class ScoreManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(this.gameObject);
             if (!PlayerPrefs.HasKey("tutorialFinished"))
+            {
+                SetTimes();
                 return;
+            }
             Load();
         }
+    }
+
+    private void SetTimes()
+    {
+        tutorialTime = float.MaxValue;
+        mabiniTime = float.MaxValue;
+        malvarTime = float.MaxValue;
+        bauanTime = float.MaxValue;
+        sanJoseTime = float.MaxValue;
+        loboTime = float.MaxValue;
+        balayanTime = float.MaxValue;
     }
 
     public void Load()
