@@ -257,6 +257,7 @@ public class TourTutorial : MonoBehaviour
     public void GoToMainMenu()
     {
         CloseUIs();
+        ScoreManager.instance.Reset();
         tutorialManager.Reset();
         tutorialManager.Save();
         loadingManager.LoadScene("Main Menu");

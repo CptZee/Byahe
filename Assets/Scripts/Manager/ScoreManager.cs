@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
@@ -69,15 +67,6 @@ public class ScoreManager : MonoBehaviour
         sanJoseFinished = false;
         loboFinished = false;
         balayanFinished = false;
-        tutorialTime = 0;
-        mabiniTime = 0;
-        malvarTime = 0;
-        bauanTime = 0;
-        sanJoseTime = 0;
-        loboTime = 0;
-        balayanTime = 0;
-        highestMoney = 0;
-        highestGas = 0;
         Save();
     }
 

@@ -16,9 +16,11 @@ public class LevelInit : MonoBehaviour
     public TextMeshProUGUI gasStationValuesText;
     public GameObject gameoverPanel;
     private DataManager manager;
+    private ScoreManager scoreManager;
 
     void Start()
     {
+        scoreManager = ScoreManager.instance;
         manager = DataManager.instance;
         if (manager.Destination == "")
             return;
@@ -93,6 +95,7 @@ public class LevelInit : MonoBehaviour
         }
 
         CheckGameOver();
+        UpdateCurrencyScore();
     }
 
     public void CheckGameOver()
@@ -103,5 +106,14 @@ public class LevelInit : MonoBehaviour
         {
             gameoverPanel.SetActive(true);
         }
+    }
+
+    public void UpdateCurrencyScore()
+    {
+        if(manager.Money > scoreManager.highestMoney)
+            scoreManager.highestMoney = manager.Money;
+        if(manager.Gas > scoreManager.highestGas)
+            scoreManager.highestGas = manager.Gas;
+        scoreManager.Save();
     }
 }

@@ -13,6 +13,7 @@ public class MainMenuScript : MonoBehaviour
     public GameObject tutorialPanel;
     public GameObject settingsUI;
     public GameObject aboutUsPanel;
+    public GameObject highscorePanel;
     public Slider musicSlider;
     public Slider audioSlider;
     private SettingsManager settingsManager;
@@ -82,9 +83,20 @@ public class MainMenuScript : MonoBehaviour
     {
         aboutUsPanel.SetActive(true);
     }
+
+    public void ShowHighscores()
+    {
+        highscorePanel.SetActive(true);
+    }
+
     public void showSettingsUI()
     {
         settingsUI.SetActive(true);
+    }
+
+    public void CloseHighscores()
+    {
+        highscorePanel.SetActive(false);
     }
 
     public void CloseAboutUS()
