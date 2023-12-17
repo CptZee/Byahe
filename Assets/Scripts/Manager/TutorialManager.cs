@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TutorialManager : MonoBehaviour
@@ -23,6 +21,8 @@ public class TutorialManager : MonoBehaviour
         landmarkFinished = PlayerPrefs.GetInt("landmarkFinished") == 1;
         signFinished = PlayerPrefs.GetInt("signFinished") == 1;
         shopFinished = PlayerPrefs.GetInt("shopFinished") == 1;
+        gasStationFinished = PlayerPrefs.GetInt("gasStationFinished") == 1;
+        terminalFinished = PlayerPrefs.GetInt("terminalFinished") == 1;
     }
 
     public void Save()
@@ -30,7 +30,8 @@ public class TutorialManager : MonoBehaviour
         SetBool("tutorialStartFinished", tutorialStartFinished);
         SetBool("landmarkFinished", landmarkFinished);
         SetBool("signFinished", signFinished);
-        SetBool("shopFinished", shopFinished);
+        SetBool("gasStationFinished", gasStationFinished);
+        SetBool("terminalFinished", terminalFinished);
     }
 
     public void Reset()
@@ -39,6 +40,8 @@ public class TutorialManager : MonoBehaviour
         landmarkFinished = false;
         signFinished = false;
         shopFinished = false;
+        gasStationFinished = false;
+        terminalFinished = false;
         Save();
     }
 
@@ -48,8 +51,10 @@ public class TutorialManager : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    public bool tutorialStartFinished { get; set;}
-    public bool landmarkFinished { get; set;}
-    public bool signFinished { get; set;}
-    public bool shopFinished { get; set;}
+    public bool tutorialStartFinished { get; set; }
+    public bool landmarkFinished { get; set; }
+    public bool signFinished { get; set; }
+    public bool shopFinished { get; set; }
+    public bool gasStationFinished { get; set; }
+    public bool terminalFinished { get; set; }
 }

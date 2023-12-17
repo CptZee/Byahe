@@ -44,7 +44,7 @@ public class PlayerTourScript : MonoBehaviour
         boxCollider.size = spriteRenderer.sprite.bounds.size;
         boxCollider.offset = spriteRenderer.sprite.bounds.center;
         gameObject.transform.position = new Vector3(transform.position.x, yLanes[yLanePositionIndex], 0);
-        shop1.transform.position = new Vector3(shop1.transform.position.x, shop1.transform.position.x + 10f, 0f);
+        shop1.transform.position = new Vector3(shop1.transform.position.x, shop1.transform.position.y + 10, shop1.transform.position.z);
     }
 
     void Update()
@@ -269,6 +269,9 @@ public class PlayerTourScript : MonoBehaviour
         manager.Money -= 15;
         switch (manager.CurrentScene)
         {
+            case "Lipa":
+                manager.Money += 15; // This is free
+                break;
             case "Mabini":
                 manager.MabiniShop1 = true;
                 break;
@@ -291,7 +294,7 @@ public class PlayerTourScript : MonoBehaviour
         audioSource.clip = successAudio;
         audioSource.Play();
         shop1.SetActive(true);
-        shop1.transform.position = new Vector3(shop1.transform.position.x, shop1.transform.position.x - 10f, 0f);
+        shop1.transform.position = new Vector3(shop1.transform.position.x, shop1.transform.position.y - 10, shop1.transform.position.z);
         hideUI(sign1UI);
     }
 

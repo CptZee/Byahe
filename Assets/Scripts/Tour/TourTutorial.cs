@@ -8,7 +8,10 @@ public class TourTutorial : MonoBehaviour
     public List<GameObject> landmarkUIs;
     public List<GameObject> signUIs;
     public List<GameObject> shopUIs;
+    public List<GameObject> gasStationUIs;
+    public List<GameObject> terminalUIs;
     public GameObject fadePanel;
+    public LoadingManager loadingManager;
     private Attention attentionScript;
     private TutorialManager tutorialManager;
     private Transform playerSprite;
@@ -18,10 +21,14 @@ public class TourTutorial : MonoBehaviour
     private int landmarkIndex = 0;
     private int signIndex = 0;
     private int shopIndex = 0;
+    private int gasStationIndex = 0;
+    private int terminalIndex = 0;
     private bool tutorialStartFinished;
     private bool landmarkFinished;
     private bool signFinished;
     private bool shopFinished;
+    private bool gasStationFinished;
+    private bool terminalFinished;
     public void Start()
     {
         attentionScript = GetComponent<Attention>();
@@ -76,17 +83,21 @@ public class TourTutorial : MonoBehaviour
                                 UpdateTutorialStatus();
                             }
                             break;
-                        case 3: //Shop 2
-
-                            break;
-                        case 4: //Sign 2
-
-                            break;
                         case 5: //Gas Station
-
+                            if (!gasStationFinished)
+                            {
+                                gasStationFinished = true;
+                                ShowUI(i + 1);
+                                UpdateTutorialStatus();
+                            }
                             break;
                         case 6: //Terminal
-
+                            if (!terminalFinished)
+                            {
+                                terminalFinished = true;
+                                ShowUI(i + 1);
+                                UpdateTutorialStatus();
+                            }
                             break;
                     }
                 }
@@ -120,6 +131,8 @@ public class TourTutorial : MonoBehaviour
         landmarkFinished = tutorialManager.landmarkFinished;
         signFinished = tutorialManager.signFinished;
         shopFinished = tutorialManager.shopFinished;
+        gasStationFinished = tutorialManager.gasStationFinished;
+        terminalFinished = tutorialManager.terminalFinished;
     }
 
     private void UpdateTutorialStatus()
@@ -130,6 +143,8 @@ public class TourTutorial : MonoBehaviour
         tutorialManager.landmarkFinished = landmarkFinished;
         tutorialManager.signFinished = signFinished;
         tutorialManager.shopFinished = shopFinished;
+        tutorialManager.gasStationFinished = gasStationFinished;
+        tutorialManager.terminalFinished = terminalFinished;
     }
 
     public void IntroContinue()
@@ -202,5 +217,48 @@ public class TourTutorial : MonoBehaviour
             else
                 shopUIs[i].SetActive(false);
         }
+    }
+
+    public void GasStationContinue(){
+        gasStationIndex += 1;
+        if (gasStationIndex == gasStationUIs.Count)
+        {
+            CloseUIs();
+            tutorialManager.gasStationFinished = true;
+            tutorialManager.Save();
+        }
+        for (int i = 0; i < gasStationUIs.Count; i++)
+        {
+            if (gasStationIndex == i)
+                gasStationUIs[i].SetActive(true);
+            else
+                gasStationUIs[i].SetActive(false);
+        }
+    }
+
+    public void TerminalContinue()
+    {
+        terminalIndex += 1;
+        if (terminalIndex == terminalUIs.Count)
+        {
+            CloseUIs();
+            tutorialManager.terminalFinished = true;
+            tutorialManager.Save();
+        }
+        for (int i = 0; i < terminalUIs.Count; i++)
+        {
+            if (terminalIndex == i)
+                terminalUIs[i].SetActive(true);
+            else
+                terminalUIs[i].SetActive(false);
+        }
+    }
+
+    public void GoToMainMenu()
+    {
+        CloseUIs();
+        tutorialManager.Reset();
+        tutorialManager.Save();
+        loadingManager.LoadScene("Main Menu");
     }
 }
