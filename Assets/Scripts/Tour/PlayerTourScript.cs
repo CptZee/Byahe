@@ -44,6 +44,7 @@ public class PlayerTourScript : MonoBehaviour
         boxCollider.size = spriteRenderer.sprite.bounds.size;
         boxCollider.offset = spriteRenderer.sprite.bounds.center;
         gameObject.transform.position = new Vector3(transform.position.x, yLanes[yLanePositionIndex], 0);
+        shop1.transform.position = new Vector3(shop1.transform.position.x, shop1.transform.position.x + 10f, 0f);
     }
 
     void Update()
@@ -290,6 +291,7 @@ public class PlayerTourScript : MonoBehaviour
         audioSource.clip = successAudio;
         audioSource.Play();
         shop1.SetActive(true);
+        shop1.transform.position = new Vector3(shop1.transform.position.x, shop1.transform.position.x - 10f, 0f);
         hideUI(sign1UI);
     }
 

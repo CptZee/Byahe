@@ -21,18 +21,24 @@ public class TutorialManager : MonoBehaviour
     {
         tutorialStartFinished = PlayerPrefs.GetInt("tutorialStartFinished") == 1;
         landmarkFinished = PlayerPrefs.GetInt("landmarkFinished") == 1;
+        signFinished = PlayerPrefs.GetInt("signFinished") == 1;
+        shopFinished = PlayerPrefs.GetInt("shopFinished") == 1;
     }
 
     public void Save()
     {
         SetBool("tutorialStartFinished", tutorialStartFinished);
         SetBool("landmarkFinished", landmarkFinished);
+        SetBool("signFinished", signFinished);
+        SetBool("shopFinished", shopFinished);
     }
 
     public void Reset()
     {
         tutorialStartFinished = false;
         landmarkFinished = false;
+        signFinished = false;
+        shopFinished = false;
         Save();
     }
 
@@ -44,4 +50,6 @@ public class TutorialManager : MonoBehaviour
 
     public bool tutorialStartFinished { get; set;}
     public bool landmarkFinished { get; set;}
+    public bool signFinished { get; set;}
+    public bool shopFinished { get; set;}
 }

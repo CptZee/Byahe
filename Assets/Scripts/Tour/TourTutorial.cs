@@ -6,6 +6,8 @@ public class TourTutorial : MonoBehaviour
     public List<GameObject> tutorialUIs;
     public List<GameObject> introUIs;
     public List<GameObject> landmarkUIs;
+    public List<GameObject> signUIs;
+    public List<GameObject> shopUIs;
     public GameObject fadePanel;
     private Attention attentionScript;
     private TutorialManager tutorialManager;
@@ -14,6 +16,12 @@ public class TourTutorial : MonoBehaviour
     private float minDistance;
     private int introIndex = 0;
     private int landmarkIndex = 0;
+    private int signIndex = 0;
+    private int shopIndex = 0;
+    private bool tutorialStartFinished;
+    private bool landmarkFinished;
+    private bool signFinished;
+    private bool shopFinished;
     public void Start()
     {
         attentionScript = GetComponent<Attention>();
@@ -22,16 +30,15 @@ public class TourTutorial : MonoBehaviour
         interactables = attentionScript.interactables;
         minDistance = attentionScript.minDistance;
 
-        //DEBUG CODE
-        ShowUI(0);
-        //DEBUG CODE
+        SyncTutorialStatus();
 
-        if (!tutorialManager.tutorialStartFinished)
+        if (!tutorialStartFinished)
         {
             ShowUI(0);
             tutorialManager.Save();
         }
     }
+
     public void Update()
     {
         if (interactables != null)
@@ -44,16 +51,30 @@ public class TourTutorial : MonoBehaviour
                     switch (i)
                     {
                         case 0: //Landmark
-                            if (!tutorialManager.landmarkFinished)
+                            if (!landmarkFinished)
                             {
-                                ShowUI(1);
+                                landmarkFinished = true;
+                                ShowUI(i + 1);
+                                UpdateTutorialStatus();
                             }
                             break;
                         case 1: //Shop 1
-
+                            if (!shopFinished)
+                            {
+                                Debug.Log("Shop 1");
+                                shopFinished = true;
+                                ShowUI(i);
+                                UpdateTutorialStatus();
+                            }
                             break;
                         case 2: //Sign 1
-
+                            if (!signFinished)
+                            {
+                                Debug.Log("Sign 1");
+                                signFinished = true;
+                                ShowUI(i);
+                                UpdateTutorialStatus();
+                            }
                             break;
                         case 3: //Shop 2
 
@@ -73,14 +94,14 @@ public class TourTutorial : MonoBehaviour
         }
     }
 
-    public void ShowUI(int index)
+    private void ShowUI(int index)
     {
         tutorialUIs[index].SetActive(true);
         fadePanel.SetActive(true);
         Time.timeScale = 0;
     }
 
-    public void CloseUIs()
+    private void CloseUIs()
     {
         fadePanel.SetActive(false);
         foreach (GameObject ui in tutorialUIs)
@@ -88,6 +109,27 @@ public class TourTutorial : MonoBehaviour
             ui.SetActive(false);
         }
         Time.timeScale = 1;
+    }
+
+
+    private void SyncTutorialStatus()
+    {
+        if (tutorialManager == null)
+            return;
+        tutorialStartFinished = tutorialManager.tutorialStartFinished;
+        landmarkFinished = tutorialManager.landmarkFinished;
+        signFinished = tutorialManager.signFinished;
+        shopFinished = tutorialManager.shopFinished;
+    }
+
+    private void UpdateTutorialStatus()
+    {
+        if (tutorialManager == null)
+            return;
+        tutorialManager.tutorialStartFinished = tutorialStartFinished;
+        tutorialManager.landmarkFinished = landmarkFinished;
+        tutorialManager.signFinished = signFinished;
+        tutorialManager.shopFinished = shopFinished;
     }
 
     public void IntroContinue()
@@ -123,6 +165,42 @@ public class TourTutorial : MonoBehaviour
                 landmarkUIs[i].SetActive(true);
             else
                 landmarkUIs[i].SetActive(false);
+        }
+    }
+
+    public void SignContinue()
+    {
+        signIndex += 1;
+        if (signIndex == signUIs.Count)
+        {
+            CloseUIs();
+            tutorialManager.signFinished = true;
+            tutorialManager.Save();
+        }
+        for (int i = 0; i < signUIs.Count; i++)
+        {
+            if (signIndex == i)
+                signUIs[i].SetActive(true);
+            else
+                signUIs[i].SetActive(false);
+        }
+    }
+
+    public void ShopContinue()
+    {
+        shopIndex += 1;
+        if (shopIndex == shopUIs.Count)
+        {
+            CloseUIs();
+            tutorialManager.shopFinished = true;
+            tutorialManager.Save();
+        }
+        for (int i = 0; i < shopUIs.Count; i++)
+        {
+            if (shopIndex == i)
+                shopUIs[i].SetActive(true);
+            else
+                shopUIs[i].SetActive(false);
         }
     }
 }

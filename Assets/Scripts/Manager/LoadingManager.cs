@@ -58,7 +58,6 @@ public class LoadingManager : MonoBehaviour
         while (!task.isDone)
         {
             progress = Mathf.MoveTowards(progress, task.progress, Time.deltaTime);
-            Debug.Log("Loading Progress: " + progress);
             if (progressSlider != null)
                 progressSlider.value = progress;
 
