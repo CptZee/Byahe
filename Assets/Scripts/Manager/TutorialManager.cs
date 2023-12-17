@@ -17,6 +17,7 @@ public class TutorialManager : MonoBehaviour
 
     public void Load()
     {
+        travelFinished = PlayerPrefs.GetInt("travelFinished") == 1;
         tutorialStartFinished = PlayerPrefs.GetInt("tutorialStartFinished") == 1;
         landmarkFinished = PlayerPrefs.GetInt("landmarkFinished") == 1;
         signFinished = PlayerPrefs.GetInt("signFinished") == 1;
@@ -27,6 +28,7 @@ public class TutorialManager : MonoBehaviour
 
     public void Save()
     {
+        SetBool("travelFinished", travelFinished);
         SetBool("tutorialStartFinished", tutorialStartFinished);
         SetBool("landmarkFinished", landmarkFinished);
         SetBool("signFinished", signFinished);
@@ -37,6 +39,7 @@ public class TutorialManager : MonoBehaviour
     public void Reset()
     {
         tutorialStartFinished = false;
+        travelFinished = false;
         landmarkFinished = false;
         signFinished = false;
         shopFinished = false;
@@ -50,7 +53,7 @@ public class TutorialManager : MonoBehaviour
         PlayerPrefs.SetInt(key, value ? 1 : 0);
         PlayerPrefs.Save();
     }
-
+    public bool travelFinished { get; set; }
     public bool tutorialStartFinished { get; set; }
     public bool landmarkFinished { get; set; }
     public bool signFinished { get; set; }
