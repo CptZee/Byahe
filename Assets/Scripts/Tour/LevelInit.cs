@@ -31,7 +31,6 @@ public class LevelInit : MonoBehaviour
     }
     void Update()
     {
-        UpdateTime();
         CheckGameOver();
         UpdateCurrencyScore();
 
@@ -98,12 +97,6 @@ public class LevelInit : MonoBehaviour
         {
             multicabText.text = "Multicab (Owned)";
         }
-    }
-
-    private void UpdateTime()
-    {
-        float deltaTimeMilliseconds = Time.deltaTime * 1000.0f;
-        manager.Time += deltaTimeMilliseconds;
     }
 
     public void CheckGameOver()

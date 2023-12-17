@@ -59,15 +59,11 @@ public class DestinationHandler : MonoBehaviour
         }
 
         string currentSceneName = SceneManager.GetActiveScene().name;
-        Debug.LogWarning(currentSceneName + " is the scene and the time is: " + manager.Time + " and the current time is: " + scoreManager.tutorialTime);
-        if(scoreManager.tutorialTime != float.MaxValue)
-        {
+        if (scoreManager.tutorialTime != float.MaxValue)
             scoreManager.tutorialTime = manager.Time;
-            return;
-        }
-        if(currentSceneName == "Lipa" && manager.Time < scoreManager.tutorialTime)
+        if (currentSceneName == "Lipa" && manager.Time < scoreManager.tutorialTime)
             scoreManager.tutorialTime = manager.Time;
-
+        Debug.Log($"Tutorial Time: {scoreManager.tutorialTime}");
         scoreManager.Save();
     }
 }

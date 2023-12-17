@@ -68,7 +68,6 @@ public class PlayerScript : MonoBehaviour
         {
             if (!audioManager.IsPlaying())
             {
-                Debug.Log("Low Gas! " + gasSlider.value);
                 audioManager.PlayAudio(1); //Play Low Gas Sound
             }
         }
@@ -92,7 +91,6 @@ public class PlayerScript : MonoBehaviour
             Time.timeScale = 0;
             gameOver = true;
         }
-        Debug.Log("Current Tour Actor: " + manager.TourActor);
         if (manager.TravelActor.Equals("Jeepney"))
         {
             spriteVariation = -1;
@@ -102,9 +100,7 @@ public class PlayerScript : MonoBehaviour
             transform.localScale = new Vector3(1, 1, 1);
             spriteVariation = 1;
         }
-        Debug.Log("Current Sprite Variation " + spriteVariation);
         animator.SetFloat("SpriteVariation", spriteVariation);
-        Debug.Log("Current Sprite Variation in animator " + animator.GetFloat("SpriteVariation"));
 
         boxCollider.size = spriteRenderer.sprite.bounds.size;
         boxCollider.offset = spriteRenderer.sprite.bounds.center;
@@ -123,10 +119,6 @@ public class PlayerScript : MonoBehaviour
             // Set the BoxCollider size to match the trimmed size
             collider.size = trimmedSize;
         }
-        else
-        {
-            Debug.LogWarning("SpriteRenderer not found for " + collider.gameObject.name);
-        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -138,7 +130,6 @@ public class PlayerScript : MonoBehaviour
             gasLevel -= collisionGasLoss;
             gasLevel = Mathf.Clamp(gasLevel, 0f, gasSlider.maxValue);
             audioManager.PlayAudio(0); //Play Crash Sound
-            Debug.Log("Gas Level: " + gasLevel);
         }
 
     }

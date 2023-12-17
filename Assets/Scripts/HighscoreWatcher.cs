@@ -9,7 +9,7 @@ public class HighscoreWatcher : MonoBehaviour
 
     void Update()
     {
-
+        UpdateTime();
         UpdateLeaderboard();
     }
 
@@ -29,15 +29,21 @@ public class HighscoreWatcher : MonoBehaviour
         leaderboardText.text = text;
     }
 
+    private void UpdateTime()
+    {
+        float deltaTimeMilliseconds = Time.deltaTime * 1000.0f;
+        DataManager.instance.Time += deltaTimeMilliseconds;
+        DataManager.instance.Save();
+    }
 
     public static string FormatMilliseconds(float milliseconds)
     {
-        TimeSpan timeSpan = TimeSpan.FromMilliseconds(milliseconds);
 
         string formattedTime = "";
 
-        if (milliseconds == float.MaxValue)
+        if (milliseconds != float.MaxValue)
         {
+            TimeSpan timeSpan = TimeSpan.FromMilliseconds(milliseconds);
 
             if (timeSpan.Days > 0)
             {

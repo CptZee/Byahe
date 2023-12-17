@@ -11,6 +11,8 @@ public class ScoreManager : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
             if (!PlayerPrefs.HasKey("tutorialFinished"))
             {
+                SetTimes();
+                Save();
                 return;
             }
             Load();
@@ -47,6 +49,7 @@ public class ScoreManager : MonoBehaviour
         balayanTime = PlayerPrefs.GetFloat("balayanTime");
         highestMoney = PlayerPrefs.GetFloat("highestMoney");
         highestGas = PlayerPrefs.GetFloat("highestGas");
+        Debug.Log($"Loaded times: {tutorialTime}, {mabiniTime}, {malvarTime}, {bauanTime}, {sanJoseTime}, {loboTime}, {balayanTime}");
     }
 
     public void Save()
