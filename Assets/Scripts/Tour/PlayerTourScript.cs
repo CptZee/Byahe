@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -34,6 +35,8 @@ public class PlayerTourScript : MonoBehaviour
     public GameObject cantTravelUI;
     public GameObject destinationUI;
     public GameObject boundWarningUI;
+    public GameObject connedUI;
+    public GameObject conStart;
     public AudioClip successAudio;
     public AudioClip failedAudio;
     private bool checkedLandmark = false;
@@ -62,17 +65,49 @@ public class PlayerTourScript : MonoBehaviour
             spriteVariation = 1;
         }
         animator.SetFloat("SpriteVariation", spriteVariation);
-        switch (yLanePositionIndex)
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.LogWarning("Lane ID: " + yLanePositionIndex);
+        if (collision.gameObject.CompareTag("Con-Line1"))
         {
-            case 0:
-                gameObject.GetComponent<SpriteRenderer>().sortingOrder = 18;
-                break;
-            case 1:
-                gameObject.GetComponent<SpriteRenderer>().sortingOrder = 19;
-                break;
-            case 2:
-                gameObject.GetComponent<SpriteRenderer>().sortingOrder = 20;
-                break;
+            if (yLanePositionIndex != 0)
+                return;
+            Debug.LogWarning("Collided with NPC in Line " + 0);
+            connedUI.SetActive(true);
+            collision.gameObject.SetActive(false);
+            collision.gameObject.transform.position = new Vector3(conStart.transform.position.x,
+                collision.gameObject.transform.position.y,
+                collision.gameObject.transform.position.z);
+            StartCoroutine(DeactivateConnedUIAfterDelay(2.0f, collision));
+            DataManager.instance.Money -= 0.2f;
+        }
+        if (collision.gameObject.CompareTag("Con-Line2"))
+        {
+            if (yLanePositionIndex != 1)
+                return;
+            Debug.LogWarning("Collided with NPC in Line " + 1);
+            connedUI.SetActive(true);
+            collision.gameObject.SetActive(false);
+            collision.gameObject.transform.position = new Vector3(conStart.transform.position.x,
+                collision.gameObject.transform.position.y,
+                collision.gameObject.transform.position.z);
+            StartCoroutine(DeactivateConnedUIAfterDelay(2.0f, collision));
+            DataManager.instance.Money -= 0.2f;
+        }
+        if (collision.gameObject.CompareTag("Con-Line3"))
+        {
+            if (yLanePositionIndex != 2)
+                return;
+            Debug.LogWarning("Collided with NPC in Line " + 1);
+            connedUI.SetActive(true);
+            collision.gameObject.SetActive(false);
+            collision.gameObject.transform.position = new Vector3(conStart.transform.position.x,
+                collision.gameObject.transform.position.y,
+                collision.gameObject.transform.position.z);
+            StartCoroutine(DeactivateConnedUIAfterDelay(2.0f, collision));
+            DataManager.instance.Money -= 0.2f;
         }
     }
 
@@ -81,16 +116,19 @@ public class PlayerTourScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Wall"))
         {
             boundWarningUI.SetActive(true);
-            Debug.Log("Collided with a wall!");
         }
     }
-
+    IEnumerator DeactivateConnedUIAfterDelay(float delay, Collider2D otherCollider)
+    {
+        yield return new WaitForSeconds(delay);
+        connedUI.SetActive(false);
+        otherCollider.gameObject.SetActive(true);
+    }
     void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Wall"))
         {
             boundWarningUI.SetActive(false);
-            Debug.Log("No longer colliding with a wall.");
         }
     }
 
@@ -100,9 +138,11 @@ public class PlayerTourScript : MonoBehaviour
         {
             case 2:
                 yLanePositionIndex = 1;
+                gameObject.GetComponent<SpriteRenderer>().sortingOrder = 19;
                 break;
             case 1:
                 yLanePositionIndex = 0;
+                gameObject.GetComponent<SpriteRenderer>().sortingOrder = 18;
                 break;
         }
         gameObject.transform.position = new Vector3(transform.position.x, yLanes[yLanePositionIndex], 0);
@@ -114,9 +154,11 @@ public class PlayerTourScript : MonoBehaviour
         {
             case 1:
                 yLanePositionIndex = 2;
+                gameObject.GetComponent<SpriteRenderer>().sortingOrder = 20;
                 break;
             case 0:
                 yLanePositionIndex = 1;
+                gameObject.GetComponent<SpriteRenderer>().sortingOrder = 19;
                 break;
         }
         transform.transform.position = new Vector3(transform.position.x, yLanes[yLanePositionIndex], 0);

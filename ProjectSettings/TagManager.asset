@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Obstacles
   - Wall
+  - Tourist
+  - Con-Line1
+  - Con-Line2
+  - Con-Line3
   layers:
   - Default
   - TransparentFX

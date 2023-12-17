@@ -126,10 +126,10 @@ TextureImporter:
       name: Con_Artist_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 66
-        width: 67
-        height: 66
+        x: 17
+        y: 68
+        width: 31
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +147,10 @@ TextureImporter:
       name: Con_Artist_1
       rect:
         serializedVersion: 2
-        x: 67
-        y: 66
-        width: 67
-        height: 66
+        x: 81
+        y: 68
+        width: 37
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +168,10 @@ TextureImporter:
       name: Con_Artist_2
       rect:
         serializedVersion: 2
-        x: 134
-        y: 66
-        width: 67
-        height: 66
+        x: 158
+        y: 68
+        width: 20
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,10 +189,10 @@ TextureImporter:
       name: Con_Artist_3
       rect:
         serializedVersion: 2
-        x: 201
-        y: 66
-        width: 67
-        height: 66
+        x: 224
+        y: 68
+        width: 25
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,10 +210,10 @@ TextureImporter:
       name: Con_Artist_4
       rect:
         serializedVersion: 2
-        x: 0
+        x: 17
         y: 0
-        width: 67
-        height: 66
+        width: 33
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +231,10 @@ TextureImporter:
       name: Con_Artist_5
       rect:
         serializedVersion: 2
-        x: 67
+        x: 78
         y: 0
-        width: 67
-        height: 66
+        width: 43
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,10 +252,10 @@ TextureImporter:
       name: Con_Artist_6
       rect:
         serializedVersion: 2
-        x: 134
+        x: 158
         y: 0
-        width: 67
-        height: 66
+        width: 20
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,10 +273,10 @@ TextureImporter:
       name: Con_Artist_7
       rect:
         serializedVersion: 2
-        x: 201
+        x: 224
         y: 0
-        width: 67
-        height: 66
+        width: 27
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
