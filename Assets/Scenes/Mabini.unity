@@ -7863,6 +7863,7 @@ MonoBehaviour:
   - {fileID: 719477535}
   - {fileID: 1500403248}
   - {fileID: 69224335}
+  - {fileID: 153098097}
   minDistance: 3
   amplitude: 0.1
   frequency: 6
@@ -52867,7 +52868,6 @@ SceneRoots:
   - {fileID: 821005273}
   - {fileID: 1939291125}
   - {fileID: 859506793}
-  - {fileID: 153098099}
   - {fileID: 710392416}
   - {fileID: 474109902}
   - {fileID: 1463701442}
@@ -52882,3 +52882,4 @@ SceneRoots:
   - {fileID: 401064431}
   - {fileID: 1254096523}
   - {fileID: 1900712680}
+  - {fileID: 153098099}
