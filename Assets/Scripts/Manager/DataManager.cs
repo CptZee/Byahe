@@ -27,6 +27,7 @@ public class DataManager : MonoBehaviour
         Gas = PlayerPrefs.GetFloat("Gas");
         Money = PlayerPrefs.GetFloat("Money");
         Income = PlayerPrefs.GetFloat("Income");
+        Time = PlayerPrefs.GetFloat("Time");
         Knowledge = PlayerPrefs.GetFloat("Knowledge");
         MabiniShop1 = PlayerPrefs.GetInt("MabiniShop1") == 1;
         MabiniShop2 = PlayerPrefs.GetInt("MabiniShop2") == 1;
@@ -53,6 +54,7 @@ public class DataManager : MonoBehaviour
         Destination = "Lipa";
         Gas = 100;
         Money = 100;
+        Time = 0;
         Income = 0;
         Knowledge = 0;
         MabiniShop1 = false;
@@ -82,6 +84,7 @@ public class DataManager : MonoBehaviour
         PlayerPrefs.SetFloat("Gas", Gas);
         PlayerPrefs.SetFloat("Money", Money);
         PlayerPrefs.SetFloat("Income", Income);
+        PlayerPrefs.SetFloat("Time", Time);
         PlayerPrefs.SetFloat("Knowledge", Knowledge);
         PlayerPrefs.SetInt("MabiniShop1", MabiniShop1 ? 1 : 0);
         PlayerPrefs.SetInt("MabiniShop2", MabiniShop2 ? 1 : 0);
@@ -131,6 +134,7 @@ public class DataManager : MonoBehaviour
     public float Gas { get; set; }
     public float Money { get; set; }
     public float Income { get; set; }
+    public float Time { get; set; }
     public float Knowledge { get; set; }
     public bool MabiniShop1 { get; set; }
     public bool MabiniShop2 { get; set; }
