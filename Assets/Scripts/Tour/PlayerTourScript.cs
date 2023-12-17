@@ -33,6 +33,7 @@ public class PlayerTourScript : MonoBehaviour
     public GameObject shop2UI;
     public GameObject cantTravelUI;
     public GameObject destinationUI;
+    public GameObject boundWarningUI;
     public AudioClip successAudio;
     public AudioClip failedAudio;
     private bool checkedLandmark = false;
@@ -41,7 +42,7 @@ public class PlayerTourScript : MonoBehaviour
 
     void Start()
     {
-        if(TutorialManager.instance.tutorialStartFinished)
+        if (TutorialManager.instance.tutorialStartFinished)
             Time.timeScale = 1;
         boxCollider.size = spriteRenderer.sprite.bounds.size;
         boxCollider.offset = spriteRenderer.sprite.bounds.center;
@@ -61,7 +62,7 @@ public class PlayerTourScript : MonoBehaviour
             spriteVariation = 1;
         }
         animator.SetFloat("SpriteVariation", spriteVariation);
-        switch(yLanePositionIndex)
+        switch (yLanePositionIndex)
         {
             case 0:
                 gameObject.GetComponent<SpriteRenderer>().sortingOrder = 18;
@@ -75,9 +76,27 @@ public class PlayerTourScript : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            boundWarningUI.SetActive(true);
+            Debug.Log("Collided with a wall!");
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            boundWarningUI.SetActive(false);
+            Debug.Log("No longer colliding with a wall.");
+        }
+    }
+
     public void MoveUp()
     {
-        switch(yLanePositionIndex)
+        switch (yLanePositionIndex)
         {
             case 2:
                 yLanePositionIndex = 1;
@@ -91,7 +110,7 @@ public class PlayerTourScript : MonoBehaviour
 
     public void MoveDown()
     {
-        switch(yLanePositionIndex)
+        switch (yLanePositionIndex)
         {
             case 1:
                 yLanePositionIndex = 2;
