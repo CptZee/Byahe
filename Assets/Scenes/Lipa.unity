@@ -25710,7 +25710,7 @@ MonoBehaviour:
   m_text: 'Oh, one more thing...
 
     Watch out for these people, rumors has it that
-    they are con artists trying targeting people like you!'
+    they are con artists targeting people like you!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -25737,7 +25737,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 71.95
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -30729,7 +30729,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 042a2a53f4a98514ebc632974c5d3046, type: 3}
+  m_Sprite: {fileID: -2070875471, guid: d1a9f379963d2824e8c0efbe137b46c3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
