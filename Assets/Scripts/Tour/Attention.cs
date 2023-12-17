@@ -30,6 +30,8 @@ public class Attention : MonoBehaviour
                 float distance = Vector3.Distance(playerSprite.position, interactable.transform.position);
                 if (distance < minDistance)
                     gameObject.GetComponent<SpriteRenderer>().enabled = true;
+                if (interactable.gameObject.name == "Landmark" && distance < (minDistance + 2))
+                    gameObject.GetComponent<SpriteRenderer>().enabled = true;
             }
         }
     }
