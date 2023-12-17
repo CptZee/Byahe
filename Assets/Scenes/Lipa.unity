@@ -10808,6 +10808,8 @@ MonoBehaviour:
   - {fileID: 1999136914}
   - {fileID: 670607901}
   - {fileID: 1120242247}
+  - {fileID: 611593415}
+  - {fileID: 1934032320}
   introUIs:
   - {fileID: 1644056762}
   - {fileID: 1958066808}
@@ -19745,7 +19747,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 425986049}
         m_TargetAssemblyTypeName: TourTutorial, Assembly-CSharp
-        m_MethodName: ShopContinue
+        m_MethodName: GasStationContinue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20046,7 +20048,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 425986049}
         m_TargetAssemblyTypeName: TourTutorial, Assembly-CSharp
-        m_MethodName: ShopContinue
+        m_MethodName: TerminalContinue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

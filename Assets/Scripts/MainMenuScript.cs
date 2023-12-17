@@ -76,6 +76,7 @@ public class MainMenuScript : MonoBehaviour
     {
         loadingManager.LoadScene("Prologue");
         scoreManager.Reset();
+        TutorialManager.instance.Reset();
         dataManager.Reset();
     }
 

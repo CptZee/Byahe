@@ -7089,7 +7089,6 @@ GameObject:
   - component: {fileID: 1278064562}
   - component: {fileID: 1278064565}
   - component: {fileID: 1278064564}
-  - component: {fileID: 1278064563}
   m_Layer: 5
   m_Name: TutorialMenu
   m_TagString: Untagged
@@ -7117,24 +7116,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.00012207031, y: 0.000061035156}
   m_SizeDelta: {x: 2131.6802, y: 1312.9038}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1278064563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1278064561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d700e63fc3d1dbc479c3e6c4f73bcc78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseOverlay: {fileID: 1278064561}
-  quitOverlay: {fileID: 1992305232}
-  loadingManager: {fileID: 0}
-  musicSlider: {fileID: 0}
-  audioSlider: {fileID: 0}
-  musicPlayer: {fileID: 0}
 --- !u!114 &1278064564
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -38,12 +38,7 @@ public class TourTutorial : MonoBehaviour
         minDistance = attentionScript.minDistance;
 
         SyncTutorialStatus();
-
-        if (!tutorialStartFinished)
-        {
-            ShowUI(0);
-            tutorialManager.Save();
-        }
+        ShowUI(0);
     }
 
     public void Update()
@@ -70,7 +65,7 @@ public class TourTutorial : MonoBehaviour
                             {
                                 Debug.Log("Shop 1");
                                 shopFinished = true;
-                                ShowUI(i);
+                                ShowUI(3);
                                 UpdateTutorialStatus();
                             }
                             break;
@@ -87,7 +82,7 @@ public class TourTutorial : MonoBehaviour
                             if (!gasStationFinished)
                             {
                                 gasStationFinished = true;
-                                ShowUI(i + 1);
+                                ShowUI(4);
                                 UpdateTutorialStatus();
                             }
                             break;
@@ -95,7 +90,7 @@ public class TourTutorial : MonoBehaviour
                             if (!terminalFinished)
                             {
                                 terminalFinished = true;
-                                ShowUI(i + 1);
+                                ShowUI(5);
                                 UpdateTutorialStatus();
                             }
                             break;
@@ -219,7 +214,8 @@ public class TourTutorial : MonoBehaviour
         }
     }
 
-    public void GasStationContinue(){
+    public void GasStationContinue()
+    {
         gasStationIndex += 1;
         if (gasStationIndex == gasStationUIs.Count)
         {
