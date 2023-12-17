@@ -24,6 +24,8 @@ public class TravelPhaseInit : MonoBehaviour
     public void CloseTutorialScreen()
     {
         scoreManager.SetBool("prologueFinished", true);
+        TutorialManager.instance.travelFinished = true;
+        TutorialManager.instance.Save();
         Time.timeScale = 1;
         tutorialScreen.SetActive(false);
     }

@@ -11,7 +11,6 @@ public class ScoreManager : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
             if (!PlayerPrefs.HasKey("tutorialFinished"))
             {
-                SetTimes();
                 return;
             }
             Load();

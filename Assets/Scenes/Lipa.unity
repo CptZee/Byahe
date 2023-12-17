@@ -10356,6 +10356,7 @@ MonoBehaviour:
   jeepneyText: {fileID: 0}
   gasStationValuesText: {fileID: 232788289}
   gameoverPanel: {fileID: 77105315}
+  fadePanel: {fileID: 1948230006}
 --- !u!1 &403567956
 GameObject:
   m_ObjectHideFlags: 0
@@ -20569,7 +20570,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CANCEL
+  m_text: CLOSE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -31119,7 +31120,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Continue
+  m_text: Start Over
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
@@ -55608,7 +55609,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 425986049}
         m_TargetAssemblyTypeName: TourTutorial, Assembly-CSharp
-        m_MethodName: IntroContinue
+        m_MethodName: GoToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -58335,7 +58336,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CANCEL
+  m_text: CLOSE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}
   m_sharedMaterial: {fileID: 3875246423772536431, guid: 3a090ca6436877f4d82bb9b1a55f7cf4, type: 2}

@@ -8,14 +8,15 @@ public class DestinationHandler : MonoBehaviour
     public void LoadDestination(string destination)
     {
         manager = DataManager.instance;
+        SetNewHighscore(destination);
         manager.Destination = destination;
         manager.CurrentScene = "TravelLevel";
         loadingManager.LoadScene(manager.CurrentScene);
-        SetNewHighscore(destination);
     }
     public void LoadDestinationForMabini(string destination)
     {
         manager = DataManager.instance;
+        SetNewHighscore(destination);
         if (manager.Knowledge > 10)
         {
             LoadDestination(destination);
@@ -24,7 +25,6 @@ public class DestinationHandler : MonoBehaviour
         manager.Destination = destination;
         manager.CurrentScene = "TravelLevel";
         loadingManager.LoadScene("MabiniEpilogue");
-        SetNewHighscore(destination);
     }
 
     private void SetNewHighscore(string destination)
@@ -59,7 +59,13 @@ public class DestinationHandler : MonoBehaviour
         }
 
         string currentSceneName = SceneManager.GetActiveScene().name;
-        if(currentSceneName == "Lipa" && scoreManager.tutorialTime < manager.Time)
+        Debug.LogWarning(currentSceneName + " is the scene and the time is: " + manager.Time + " and the current time is: " + scoreManager.tutorialTime);
+        if(scoreManager.tutorialTime != float.MaxValue)
+        {
+            scoreManager.tutorialTime = manager.Time;
+            return;
+        }
+        if(currentSceneName == "Lipa" && manager.Time < scoreManager.tutorialTime)
             scoreManager.tutorialTime = manager.Time;
 
         scoreManager.Save();

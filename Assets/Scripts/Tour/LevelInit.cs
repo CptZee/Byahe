@@ -15,6 +15,7 @@ public class LevelInit : MonoBehaviour
     public TextMeshProUGUI jeepneyText;
     public TextMeshProUGUI gasStationValuesText;
     public GameObject gameoverPanel;
+    public GameObject fadePanel;
     private DataManager manager;
     private ScoreManager scoreManager;
 
@@ -30,6 +31,10 @@ public class LevelInit : MonoBehaviour
     }
     void Update()
     {
+        UpdateTime();
+        CheckGameOver();
+        UpdateCurrencyScore();
+
         if (manager.TourActor.Equals("Kalesa") && jeepneyText != null)
             jeepneyText.SetText("JEEPNEY (EQUIPED)");
         if (manager.TourActor.Equals("Tricycle") && tricycleText != null)
@@ -93,10 +98,6 @@ public class LevelInit : MonoBehaviour
         {
             multicabText.text = "Multicab (Owned)";
         }
-
-        UpdateTime();
-        CheckGameOver();
-        UpdateCurrencyScore();
     }
 
     private void UpdateTime()
@@ -111,6 +112,7 @@ public class LevelInit : MonoBehaviour
             return;
         if (manager.Money <= 9 && manager.Income == 0)
         {
+            fadePanel.SetActive(true);
             gameoverPanel.SetActive(true);
         }
     }

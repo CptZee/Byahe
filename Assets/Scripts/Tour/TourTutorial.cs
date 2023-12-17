@@ -38,7 +38,16 @@ public class TourTutorial : MonoBehaviour
         minDistance = attentionScript.minDistance;
 
         SyncTutorialStatus();
-        ShowUI(0);
+        if (!tutorialStartFinished)
+        {
+            tutorialStartFinished = true;
+            UpdateTutorialStatus();
+            ShowUI(0);
+        }
+        else
+        {
+            CloseUIs();
+        }
     }
 
     public void Update()

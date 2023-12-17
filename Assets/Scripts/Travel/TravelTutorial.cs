@@ -7,7 +7,9 @@ public class TravelTutorial : MonoBehaviour
     public GameObject tutorialPanel;
     void Start()
     {
-        if(TutorialManager.instance.travelFinished)
+        if(TutorialManager.instance.travelFinished){
             tutorialPanel.SetActive(false);
+            Time.timeScale = 1;
+        }
     }
 }

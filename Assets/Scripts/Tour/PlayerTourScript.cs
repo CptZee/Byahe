@@ -41,6 +41,8 @@ public class PlayerTourScript : MonoBehaviour
 
     void Start()
     {
+        if(TutorialManager.instance.tutorialStartFinished)
+            Time.timeScale = 1;
         boxCollider.size = spriteRenderer.sprite.bounds.size;
         boxCollider.offset = spriteRenderer.sprite.bounds.center;
         gameObject.transform.position = new Vector3(transform.position.x, yLanes[yLanePositionIndex], 0);
