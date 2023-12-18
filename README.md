@@ -4,7 +4,7 @@
 Welcome to Byahe, a captivating mobile gaming experience that takes you on an adventure through the beautiful province of Batangas in the Philippines. Set against the backdrop of Batangas' breathtaking landscapes and historic landmarks, this game isn't just about entertainment; it's a virtual tour that educates and celebrates the rich cultural heritage of the region.
 
 ## Why Batangas?
-![Byahe Prologue](https://i.imgur.com/ohIwxZX.png)
+![Byahe Map](https://i.imgur.com/5CiIdGV.png)
 The story of "Byahe" unfolds within the picturesque province of Batangas, Philippines, primarily because of its rich historical landmarks. Batangas boasts a tapestry of historical significance that provides a compelling backdrop for the game's narrative. These landmarks, each with its own unique story, serve as the cornerstone of the player's exploration journey.
 
 In Batangas, players embark on an educational adventure, uncovering the deep-rooted history and cultural heritage of the region. The province is adorned with landmarks that bear witness to centuries of heritage, from colonial-era churches like the Basilica of St. Martin de Tours in Taal to the historical significance of the Taal Volcano.
