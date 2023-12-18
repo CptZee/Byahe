@@ -4935,10 +4935,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseOverlay: {fileID: 782554505}
   quitOverlay: {fileID: 1992305232}
-  loadingManager: {fileID: 0}
+  loadingManager: {fileID: 1279520185}
   musicSlider: {fileID: 1161230693}
   audioSlider: {fileID: 948270907}
-  musicPlayer: {fileID: 0}
+  musicPlayer: {fileID: 1796883685}
 --- !u!114 &782554507
 MonoBehaviour:
   m_ObjectHideFlags: 0

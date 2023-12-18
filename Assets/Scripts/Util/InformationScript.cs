@@ -33,7 +33,8 @@ public class InformationScript : MonoBehaviour
     public void CloseInformation()
     {
         informationPanel.SetActive(false);
-        controls.SetActive(true);
         Time.timeScale = 1;
+        if (controls != null)
+            controls.SetActive(true);
     }
 }

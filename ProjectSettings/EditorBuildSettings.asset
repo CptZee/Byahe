@@ -44,6 +44,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lipa.unity
     guid: 7d5465a4634638c4d85b5bfeffec327a
+  - enabled: 1
+    path: Assets/Scenes/Menus/Map.unity
+    guid: cd8b3578d12268143b999f5409a28caa
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 67c606880e78bdd41ac3c096264385e6, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: d3359ba76657dc64e9043cb5319ea5c4, type: 2}

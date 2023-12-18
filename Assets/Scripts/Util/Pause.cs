@@ -11,7 +11,6 @@ public class Pause : MonoBehaviour
     public Slider audioSlider;
     private SettingsManager settingsManager;
     private DataManager sessionManager;
-    public AudioSource musicPlayer;
 
     void Start()
     {
