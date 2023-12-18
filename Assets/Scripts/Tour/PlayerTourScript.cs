@@ -36,7 +36,9 @@ public class PlayerTourScript : MonoBehaviour
     public GameObject destinationUI;
     public GameObject boundWarningUI;
     public GameObject connedUI;
+    public GameObject touristUI;
     public GameObject conStart;
+    public GameObject touristStart;
     public AudioClip successAudio;
     public AudioClip failedAudio;
     private bool checkedLandmark = false;
@@ -74,7 +76,6 @@ public class PlayerTourScript : MonoBehaviour
         {
             if (yLanePositionIndex != 0)
                 return;
-            Debug.LogWarning("Collided with NPC in Line " + 0);
             connedUI.SetActive(true);
             collision.gameObject.SetActive(false);
             collision.gameObject.transform.position = new Vector3(conStart.transform.position.x,
@@ -87,7 +88,6 @@ public class PlayerTourScript : MonoBehaviour
         {
             if (yLanePositionIndex != 1)
                 return;
-            Debug.LogWarning("Collided with NPC in Line " + 1);
             connedUI.SetActive(true);
             collision.gameObject.SetActive(false);
             collision.gameObject.transform.position = new Vector3(conStart.transform.position.x,
@@ -100,7 +100,6 @@ public class PlayerTourScript : MonoBehaviour
         {
             if (yLanePositionIndex != 2)
                 return;
-            Debug.LogWarning("Collided with NPC in Line " + 1);
             connedUI.SetActive(true);
             collision.gameObject.SetActive(false);
             collision.gameObject.transform.position = new Vector3(conStart.transform.position.x,
@@ -108,6 +107,42 @@ public class PlayerTourScript : MonoBehaviour
                 collision.gameObject.transform.position.z);
             StartCoroutine(DeactivateConnedUIAfterDelay(2.0f, collision));
             DataManager.instance.Money -= 0.2f;
+        }
+        if (collision.gameObject.CompareTag("Tourist-Line1"))
+        {
+            if (yLanePositionIndex != 0)
+                return;
+            touristUI.SetActive(true);
+            collision.gameObject.SetActive(false);
+            collision.gameObject.transform.position = new Vector3(touristStart.transform.position.x,
+                collision.gameObject.transform.position.y,
+                collision.gameObject.transform.position.z);
+            StartCoroutine(DeactivateTouristUIAfterDelay(2.0f, collision));
+            DataManager.instance.Money += 0.1f;
+        }
+        if (collision.gameObject.CompareTag("Tourist-Line2"))
+        {
+            if (yLanePositionIndex != 1)
+                return;
+            touristUI.SetActive(true);
+            collision.gameObject.SetActive(false);
+            collision.gameObject.transform.position = new Vector3(touristStart.transform.position.x,
+                collision.gameObject.transform.position.y,
+                collision.gameObject.transform.position.z);
+            StartCoroutine(DeactivateTouristUIAfterDelay(2.0f, collision));
+            DataManager.instance.Money += 0.1f;
+        }
+        if (collision.gameObject.CompareTag("Tourist-Line3"))
+        {
+            if (yLanePositionIndex != 2)
+                return;
+            touristUI.SetActive(true);
+            collision.gameObject.SetActive(false);
+            collision.gameObject.transform.position = new Vector3(touristStart.transform.position.x,
+                collision.gameObject.transform.position.y,
+                collision.gameObject.transform.position.z);
+            StartCoroutine(DeactivateTouristUIAfterDelay(2.0f, collision));
+            DataManager.instance.Money += 0.1f;
         }
     }
 
@@ -122,6 +157,12 @@ public class PlayerTourScript : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         connedUI.SetActive(false);
+        otherCollider.gameObject.SetActive(true);
+    }
+    IEnumerator DeactivateTouristUIAfterDelay(float delay, Collider2D otherCollider)
+    {
+        yield return new WaitForSeconds(delay);
+        touristUI.SetActive(false);
         otherCollider.gameObject.SetActive(true);
     }
     void OnCollisionExit2D(Collision2D collision)

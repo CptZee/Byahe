@@ -10,6 +10,9 @@ TagManager:
   - Con-Line1
   - Con-Line2
   - Con-Line3
+  - Tourist-Line1
+  - Tourist-Line2
+  - Tourist-Line3
   layers:
   - Default
   - TransparentFX
