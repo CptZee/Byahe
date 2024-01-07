@@ -35,7 +35,7 @@ This game is perfect for anyone interested in Filipino culture, history enthusia
 3. Build and Run on Android Device
 
 ## Play the Game
-[![Play on itch.io](https://i.imgur.com/dD97spb.png)]((https://cptz.itch.io/byahe))
+[![Play on itch.io](https://i.imgur.com/dD97spb.png)](https://cptz.itch.io/byahe)
 
 ## Contributing
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
