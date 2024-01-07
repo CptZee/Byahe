@@ -34,8 +34,8 @@ This game is perfect for anyone interested in Filipino culture, history enthusia
 2. Open the project in Unity
 3. Build and Run on Android Device
 
-## Releases
-For the latest updates and releases, visit the [Releases]([https://github.com/CptZee/bug-buster/releases](https://cptz.itch.io/byahe) page.
+## Play the Game
+[![Play on itch.io](https://i.imgur.com/dD97spb.png)]((https://cptz.itch.io/byahe))
 
 ## Contributing
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
