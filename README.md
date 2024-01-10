@@ -26,10 +26,6 @@ The primary aim of this game is to showcase these remarkable landmarks and share
 ![Byahe](https://i.imgur.com/TLmUUxI.gif)
 Check out (https://i.imgur.com/TLmUUxI.gif)
 
-## GAME UML
-![Byahe UML](https://i.imgur.com/lyjEZX0.png)
-Here is a simple Use Case Diagram which shows the overall flow of the system and the accessible modules by each module. The player have access to all the modules of the game.
-
 ## Who is this Game For?
 This game is perfect for anyone interested in Filipino culture, history enthusiasts, and of course, residents and fans of Batangas! Whether you're a local looking to explore your home province in a new way or a tourist eager to learn, Byahe offers an engaging way to experience Batangas like never before.
 
@@ -37,6 +33,9 @@ This game is perfect for anyone interested in Filipino culture, history enthusia
 1. Clone this repository
 2. Open the project in Unity
 3. Build and Run on Android Device
+
+## Play the Game
+[![Play on itch.io](https://i.imgur.com/dD97spb.png)](https://cptz.itch.io/byahe)
 
 ## Contributing
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
