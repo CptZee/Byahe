@@ -5285,7 +5285,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 256.7636, y: -21.807198}
+  m_AnchoredPosition: {x: 256.7636, y: -21.80722}
   m_SizeDelta: {x: 350, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &205694563
@@ -14323,6 +14323,9 @@ RectTransform:
   - {fileID: 1261869234}
   - {fileID: 1838777624}
   - {fileID: 1018504083}
+  - {fileID: 1878336668}
+  - {fileID: 141650626}
+  - {fileID: 1793438162}
   - {fileID: 1978288103}
   - {fileID: 1766018046}
   - {fileID: 1057509300}
@@ -14330,9 +14333,6 @@ RectTransform:
   - {fileID: 124710738}
   - {fileID: 173636115}
   - {fileID: 1312083924}
-  - {fileID: 1793438162}
-  - {fileID: 1878336668}
-  - {fileID: 141650626}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -27062,7 +27062,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -284.52335, y: -21.807198}
+  m_AnchoredPosition: {x: -284.52332, y: -21.80722}
   m_SizeDelta: {x: 350, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1185524738
@@ -49296,7 +49296,6 @@ MonoBehaviour:
   loadingManager: {fileID: 401064430}
   musicSlider: {fileID: 206759955}
   audioSlider: {fileID: 1844919840}
-  musicPlayer: {fileID: 880373828}
 --- !u!114 &1978288105
 MonoBehaviour:
   m_ObjectHideFlags: 0

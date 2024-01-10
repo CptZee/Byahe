@@ -15635,6 +15635,9 @@ RectTransform:
   - {fileID: 1261869234}
   - {fileID: 1838777624}
   - {fileID: 1018504083}
+  - {fileID: 46382814}
+  - {fileID: 389937353}
+  - {fileID: 1697129061}
   - {fileID: 1978288103}
   - {fileID: 1766018046}
   - {fileID: 1057509300}
@@ -15642,9 +15645,6 @@ RectTransform:
   - {fileID: 124710738}
   - {fileID: 173636115}
   - {fileID: 1312083924}
-  - {fileID: 1697129061}
-  - {fileID: 46382814}
-  - {fileID: 389937353}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -49871,7 +49871,6 @@ MonoBehaviour:
   loadingManager: {fileID: 401064430}
   musicSlider: {fileID: 206759955}
   audioSlider: {fileID: 1844919840}
-  musicPlayer: {fileID: 880373828}
 --- !u!114 &1978288105
 MonoBehaviour:
   m_ObjectHideFlags: 0

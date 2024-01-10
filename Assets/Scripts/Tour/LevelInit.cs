@@ -43,7 +43,7 @@ public class LevelInit : MonoBehaviour
         if (manager.TravelActor.Equals("Multicab") && multicabText != null)
             multicabText.SetText("Multicab (EQUIPED)");
         gasText.text = manager.Gas.ToString("F0");
-        moneyText.text = manager.Money.ToString("F0");
+        moneyText.text = manager.Money.ToString("F1");
         tourIncomeText.text = "Total Passive Income (Coins/Second): " + manager.Income.ToString();
         souvenirIncomeText.text = "Total Passive Income (Coins/Second): " + manager.Income.ToString();
 
