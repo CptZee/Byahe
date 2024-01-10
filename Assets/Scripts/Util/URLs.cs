@@ -6,4 +6,8 @@ public class URLs : MonoBehaviour
     {
         Application.OpenURL("https://github.com/CptZee/Byahe/");
     }
+    public void OpenItchIOLink()
+    {
+        Application.OpenURL("https://cptz.itch.io/byahe");
+    }
 }
